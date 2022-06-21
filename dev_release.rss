@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dwarf Fortress Release Log</title>
+<atom:link href="http://www.bay12games.com/dwarves/dev_release.rss" rel="self" type="application/rss+xml" />
+    <link>http://www.bay12games.com/dwarves/index.html</link>
+    <description>DF releases</description>
+    <item>
+      <title>2021-01-28: DF 0.47.05 Released</title>
+      <pubDate>Thu, 28 Jan 2021 15:19:00 PST</pubDate>
+      <link>http://www.bay12games.com/dwarves/index.html#R2021-01-28</link>
+      <description>DF Version 0.47.05 has been released.</description>
+      <guid>http://www.bay12games.com/dwarves/index.html#R2021-01-28</guid>
+    </item>
+  </channel>
+</rss>

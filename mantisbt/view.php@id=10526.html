@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/dwarves/mantisbt/css/default.css" />
+	<script type="text/javascript" language="JavaScript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma-directive" content="no-cache" />
+	<meta http-equiv="Cache-Directive" content="no-cache" />
+	<meta http-equiv="Expires" content="Tue, 21 Jun 2022 21:27:18 GMT" />
+	<link rel="shortcut icon" href="/dwarves/mantisbt/images/favicon.ico" type="image/x-icon" />
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Text Search" href="http://bay12games.com/dwarves/mantisbt/browser_search_plugin.php?type=text" />	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Issue Id" href="http://bay12games.com/dwarves/mantisbt/browser_search_plugin.php?type=id" />	<title>0010526: Can't rebind Shift+Enter from military schedule menu - Dwarf Fortress Bug Tracker</title>
+<script type="text/javascript" src="/dwarves/mantisbt/javascript/min/common.js"></script>
+<script language="javascript">var loading_lang = "Loading...";</script><script type="text/javascript" src="/dwarves/mantisbt/javascript/min/ajax.js"></script>
+</head>
+<body>
+<div align="left"><a href="my_view_page.php"><img border="0" alt="Mantis Bug Tracker" src="/dwarves/mantisbt/images/mantis_logo.gif" /></a></div><table class="hide"><tr><td class="login-info-left">Anonymous | <a href="/dwarves/mantisbt/login_page.php?return=%2Fdwarves%2Fmantisbt%2Fview.php%3Fid%3D10526">Login</a> | <a href="/dwarves/mantisbt/signup_page.php">Signup for a new account</a></td><td class="login-info-middle"><span class="italic">2022-06-21 14:27 PDT</span></td><td class="login-info-right"><a href="http://bay12games.com/dwarves/mantisbt/issues_rss.php?"><img src="/dwarves/mantisbt/images/rss.png" alt="RSS" style="border-style: none; margin: 5px; vertical-align: middle;" /></a></td></tr></table><table class="width100" cellspacing="0"><tr><td class="menu"><a href="/dwarves/mantisbt/main_page.php">Main</a> | <a href="/dwarves/mantisbt/my_view_page.php">My View</a> | <a href="/dwarves/mantisbt/view_all_bug_page.php">View Issues</a> | <a href="/dwarves/mantisbt/changelog_page.php">Change Log</a> | <a href="/dwarves/mantisbt/roadmap_page.php">Roadmap</a></td><td class="menu right nowrap"><form method="post" action="/dwarves/mantisbt/jump_to_bug.php"><input type="text" name="bug_id" size="10" class="small" value="Issue #" onfocus="if (this.value == 'Issue #') this.value = ''" onblur="if (this.value == '') this.value = 'Issue #'" />&nbsp;<input type="submit" class="button-small" value="Jump" />&nbsp;</form></td></tr></table><br /><table class="width100" cellspacing="1"><tr><td class="form-title" colspan="3">View Issue Details&nbsp;<span class="small"><span class="bracket-link">[&nbsp;<a href="#bugnotes">Jump to Notes</a>&nbsp;]</span> </span></td><td class="center"><span class="small"></span></td><td class="right" colspan="2"><span class="small"><span class="bracket-link">[&nbsp;<a href="view.php?id=10526&amp;history=1#history">Issue History</a>&nbsp;]</span> </span><span class="small"><span class="bracket-link">[&nbsp;<a href="print_bug_page.php?bug_id=10526">Print</a>&nbsp;]</span> </span></td></tr><tr><td class="category" width="15%">ID</td><td class="category" width="20%">Project</td><td class="category" width="15%">Category</td><td class="category" width="15%">View Status</td><td class="category" width="15%">Date Submitted</td><td class="category" width="20%">Last Update</td></tr><tr class="row-1"><td>0010526</td><td>Dwarf Fortress</td><td>Technical -- Input/Keybinding/Macros</td><td>public</td><td>2018-01-15 04:50</td><td>2021-11-28 10:48</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-2"><td class="category">Reporter</td><td>huelter</td><td colspan="4">&nbsp;</td></tr><tr class="row-1"><td class="category">Assigned To</td><td>lethosor</td><td colspan="4">&nbsp;</td></tr><tr class="row-2"><td class="category">Priority</td><td>normal</td><td class="category">Severity</td><td>major</td><td class="category">Reproducibility</td><td>always</td></tr><tr class="row-1"><td class="category">Status</td><td bgcolor="#d2f5b0">resolved</td><td class="category">Resolution</td><td>no change required</td><td colspan="2">&nbsp;</td></tr><tr class="row-2"><td class="category">Platform</td><td></td><td class="category">OS</td><td></td><td class="category">OS Version</td><td></td></tr><tr class="row-1"><td class="category">Product Version</td><td>0.44.05</td><td colspan="4">&nbsp;</td></tr><tr class="row-2"><td class="category">Target Version</td><td></td><td class="category">Fixed in Version</td><td></td><td colspan="2">&nbsp;</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-1"><td class="category">Summary</td><td colspan="5">0010526: Can't rebind Shift+Enter from military schedule menu</td></tr><tr class="row-2"><td class="category">Description</td><td colspan="5">As bug <a href="/dwarves/mantisbt/view.php?id=3007" title="[acknowledged] Can't send shift + &lt;whatever&gt; to the terminal">0003007</a> says, you can't send Shift+Key combinations to DF when running TEXT mode. This makes it impossible to set squad orders on the military menu, because you have to press Shift+Enter to confirm an order.<br />
+<br />
+If <a href="/dwarves/mantisbt/view.php?id=3007" title="[acknowledged] Can't send shift + &lt;whatever&gt; to the terminal">0003007</a> is not to be fixed, there should at least be a way to rebind this key on the options.</td></tr><tr class="row-1"><td class="category">Tags</td><td colspan="5">No tags attached.</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-2"><td class="category"><a name="attachments" id="attachments" />Attached Files</td><td colspan="5"></td></tr><tr align="center"><td align="center" colspan="6"><table><tr class="vcenter"><td class="center"></td></tr></table></td></tr></table><br/>
+
+<div id="relationships_open"><table class="width100" cellspacing="1">
+<tr class="row-2" valign="top">
+	<td width="15%" class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'relationships' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Relationships	</td>
+</tr>
+<tr>
+	<td colspan="2"><table border="0" width="100%" cellpadding="0" cellspacing="1"><tr bgcolor="#ffcd85"><td><span class="nowrap">child of</span>&nbsp;</td><td><a href="view.php?id=5494">0005494</a></td><td><span class="issue-status" title="open">acknowledged</span></td><td><span class="nowrap"><a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a></span>&nbsp;</td><td>Shift-enter to save changes to schedule orders does not work in TEXT print mode&nbsp;</td></tr>
+</table></td>
+</tr>
+</table>
+
+</div><div id="relationships_closed" class="hidden"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title">
+		<a href="" onclick="ToggleDiv( 'relationships' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Relationships	</td>
+</tr>
+</table>
+
+</div>
+<a name="bugnotes" id="bugnotes" /><br />
+
+<div id="bugnotes_open"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+<a href="" onclick="ToggleDiv( 'bugnotes' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;		Notes	</td>
+</tr>
+<tr class="bugnote" id="c37618">
+        <td class="bugnote-public">
+				<span class="small">(<a href="view.php?id=10526#c37618" title="Direct link to note">0037618)</a></span><br />
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>		<span class="small">(manager)</span>
+				<br />
+		<span class="small">2018-01-15 06:06</span><br />
+				<br /><div class="small">
+				</div>
+	</td>
+	<td class="bugnote-note-public">
+		Please don't waste our time by intentionally filing duplicate bug reports.	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="2"></td>
+</tr>
+<tr class="bugnote" id="c37619">
+        <td class="bugnote-public">
+				<span class="small">(<a href="view.php?id=10526#c37619" title="Direct link to note">0037619)</a></span><br />
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=12685">huelter</a>		<span class="small">(reporter)</span>
+				<br />
+		<span class="small">2018-01-15 06:10</span><br />
+				<br /><div class="small">
+				</div>
+	</td>
+	<td class="bugnote-note-public">
+		Sure. What if I open a new bug report without mentioning <a href="/dwarves/mantisbt/view.php?id=3007" title="[acknowledged] Can't send shift + &lt;whatever&gt; to the terminal">0003007</a>?	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="2"></td>
+</tr>
+<tr class="bugnote" id="c37628">
+        <td class="bugnote-public">
+				<span class="small">(<a href="view.php?id=10526#c37628" title="Direct link to note">0037628)</a></span><br />
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>		<span class="small">(manager)</span>
+				<br />
+		<span class="small">2018-01-15 15:23</span><br />
+		<span class="small">edited on:&#32;2018-01-15 15:28</span><br />		<br /><div class="small">
+				</div>
+	</td>
+	<td class="bugnote-note-public">
+		This is the SEC_SELECT binding in interface.txt, which you can edit in the esc -&gt; key bindings menu (&quot;secondary select&quot; under &quot;general&quot;).<br />
+<br />
+I think there was a misunderstanding here. Loci, as far as I can tell, this isn't strictly a duplicate. <a href="/dwarves/mantisbt/view.php?id=3007" title="[acknowledged] Can't send shift + &lt;whatever&gt; to the terminal">0003007</a> may be hard/impossible for Toady to fix, but this report isn't asking for &quot;shift+enter&quot; support under ncurses - it's asking for a way to <i>rebind</i> that key to work around <a href="/dwarves/mantisbt/view.php?id=3007" title="[acknowledged] Can't send shift + &lt;whatever&gt; to the terminal">0003007</a>, which there already is. Sure, SEC_SELECT is used in places besides the military screen, but it'll have the same issue under ncurses in all of those places.<br />
+<br />
+Huelter - I'm pretty sure I found the screen you were talking about (m-s-e), but if that's not it, only two other bindings use Shift+Enter by default, so try changing these too:<br />
+- SELECT_ALL, under key bindings -&gt; &quot;general&quot; -&gt; &quot;select all&quot;<br />
+- D_MILITARY_ALERTS_SET_RETAIN, under key bindings -&gt; &quot;Militia&quot; -&gt; &quot;Main: Military, Alerts, Set/Retain&quot;<br />
+<br />
+	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="2"></td>
+</tr>
+<tr class="bugnote" id="c37651">
+        <td class="bugnote-public">
+				<span class="small">(<a href="view.php?id=10526#c37651" title="Direct link to note">0037651)</a></span><br />
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=12685">huelter</a>		<span class="small">(reporter)</span>
+				<br />
+		<span class="small">2018-01-17 06:12</span><br />
+				<br /><div class="small">
+				</div>
+	</td>
+	<td class="bugnote-note-public">
+		Thanks, I was not aware that &quot;secondary select&quot; is what I was asking for.	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="2"></td>
+</tr>
+</table>
+
+</div><div id="bugnotes_closed" class="hidden">
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'bugnotes' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;		Notes	</td>
+</tr>
+</table>
+</div>
+<a name="history" id="history" /><br />
+
+<div id="history_open"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+<a href="" onclick="ToggleDiv( 'history' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Issue History	</td>
+</tr>
+<tr class="row-category-history">
+	<td class="small-caption">
+		Date Modified	</td>
+	<td class="small-caption">
+		Username	</td>
+	<td class="small-caption">
+		Field	</td>
+	<td class="small-caption">
+		Change	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-15 04:50	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=12685">huelter</a>	</td>
+	<td class="small-caption">
+		New Issue	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-01-15 06:06	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>	</td>
+	<td class="small-caption">
+		Note Added: 0037618	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-15 06:06	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>	</td>
+	<td class="small-caption">
+		Relationship added	</td>
+	<td class="small-caption">
+		duplicate of 0003007	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-01-15 06:06	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>	</td>
+	<td class="small-caption">
+		Status	</td>
+	<td class="small-caption">
+		new =&gt; resolved	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-15 06:06	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>	</td>
+	<td class="small-caption">
+		Resolution	</td>
+	<td class="small-caption">
+		open =&gt; duplicate	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-01-15 06:06	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>	</td>
+	<td class="small-caption">
+		Assigned To	</td>
+	<td class="small-caption">
+		 =&gt; Loci	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-15 06:10	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=12685">huelter</a>	</td>
+	<td class="small-caption">
+		Note Added: 0037619	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-01-15 06:10	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=12685">huelter</a>	</td>
+	<td class="small-caption">
+		Status	</td>
+	<td class="small-caption">
+		resolved =&gt; needs feedback	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-15 06:10	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=12685">huelter</a>	</td>
+	<td class="small-caption">
+		Resolution	</td>
+	<td class="small-caption">
+		duplicate =&gt; reopened	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-01-15 06:27	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>	</td>
+	<td class="small-caption">
+		Status	</td>
+	<td class="small-caption">
+		needs feedback =&gt; resolved	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-15 06:27	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>	</td>
+	<td class="small-caption">
+		Resolution	</td>
+	<td class="small-caption">
+		reopened =&gt; duplicate	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-01-15 15:23	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Note Added: 0037628	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-15 15:26	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Note Edited: 0037628	</td>
+	<td class="small-caption">
+		<a href="bug_revision_view_page.php?bugnote_id=0037628#r15249">View Revisions</a>	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-01-15 15:27	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Resolution	</td>
+	<td class="small-caption">
+		duplicate =&gt; no change required	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-15 15:27	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Relationship replaced	</td>
+	<td class="small-caption">
+		child of 0003007	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-01-15 15:28	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Note Edited: 0037628	</td>
+	<td class="small-caption">
+		<a href="bug_revision_view_page.php?bugnote_id=0037628#r15250">View Revisions</a>	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-17 06:12	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=12685">huelter</a>	</td>
+	<td class="small-caption">
+		Note Added: 0037651	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-01-17 06:12	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=12685">huelter</a>	</td>
+	<td class="small-caption">
+		Status	</td>
+	<td class="small-caption">
+		resolved =&gt; needs feedback	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-17 06:12	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=12685">huelter</a>	</td>
+	<td class="small-caption">
+		Resolution	</td>
+	<td class="small-caption">
+		no change required =&gt; reopened	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-01-17 09:09	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>	</td>
+	<td class="small-caption">
+		Status	</td>
+	<td class="small-caption">
+		needs feedback =&gt; assigned	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-17 09:09	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>	</td>
+	<td class="small-caption">
+		Assigned To	</td>
+	<td class="small-caption">
+		Loci =&gt; lethosor	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2018-01-17 10:59	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Status	</td>
+	<td class="small-caption">
+		assigned =&gt; resolved	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2018-01-17 10:59	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Resolution	</td>
+	<td class="small-caption">
+		reopened =&gt; no change required	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2021-11-28 10:47	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Relationship added	</td>
+	<td class="small-caption">
+		child of 0005494	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2021-11-28 10:48	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Relationship deleted	</td>
+	<td class="small-caption">
+		child of 0003007	</td>
+</tr>
+</table>
+</div><div id="history_closed" class="hidden"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+	<a href="" onclick="ToggleDiv( 'history' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Issue History	</td>
+</tr>
+</table>
+
+</div>	<br />
+	<hr size="1" />
+<table border="0" width="100%" cellspacing="0" cellpadding="0"><tr valign="top"><td>	<address>Copyright &copy; 2000 - 2010 MantisBT Group</address>
+</td><td>
+	<div align="right"><a href="http://www.mantisbt.org" title="Free Web Based Bug Tracker"><img src="/dwarves/mantisbt/images/mantis_logo_button.gif" width="88" height="35" alt="Powered by Mantis Bugtracker" border="0" /></a></div>
+</td></tr></table>
+</body>
+</html>

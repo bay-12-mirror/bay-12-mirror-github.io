@@ -1,0 +1,299 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/dwarves/mantisbt/css/default.css" />
+	<script type="text/javascript" language="JavaScript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma-directive" content="no-cache" />
+	<meta http-equiv="Cache-Directive" content="no-cache" />
+	<meta http-equiv="Expires" content="Tue, 21 Jun 2022 21:27:11 GMT" />
+	<meta name="robots" content="noindex,follow" />
+	<link rel="shortcut icon" href="/dwarves/mantisbt/images/favicon.ico" type="image/x-icon" />
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Text Search" href="http://bay12games.com/dwarves/mantisbt/browser_search_plugin.php?type=text" />	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Issue Id" href="http://bay12games.com/dwarves/mantisbt/browser_search_plugin.php?type=id" />	<title>View Issues - Dwarf Fortress Bug Tracker</title>
+<script type="text/javascript" src="/dwarves/mantisbt/javascript/min/common.js"></script>
+<script language="javascript">var loading_lang = "Loading...";</script><script type="text/javascript" src="/dwarves/mantisbt/javascript/min/ajax.js"></script>
+	<meta http-equiv="Refresh" content="1800;URL=http://bay12games.com/dwarves/mantisbt/view_all_bug_page.php?page_number=1" />
+</head>
+<body>
+<div align="left"><a href="my_view_page.php"><img border="0" alt="Mantis Bug Tracker" src="/dwarves/mantisbt/images/mantis_logo.gif" /></a></div><table class="hide"><tr><td class="login-info-left">Anonymous | <a href="/dwarves/mantisbt/login_page.php?return=%2Fdwarves%2Fmantisbt%2Fview_all_bug_page.php%3F">Login</a> | <a href="/dwarves/mantisbt/signup_page.php">Signup for a new account</a></td><td class="login-info-middle"><span class="italic">2022-06-21 14:27 PDT</span></td><td class="login-info-right"><a href="http://bay12games.com/dwarves/mantisbt/issues_rss.php?project_id=0"><img src="/dwarves/mantisbt/images/rss.png" alt="RSS" style="border-style: none; margin: 5px; vertical-align: middle;" /></a></td></tr></table><table class="width100" cellspacing="0"><tr><td class="menu"><a href="/dwarves/mantisbt/main_page.php">Main</a> | <a href="/dwarves/mantisbt/my_view_page.php">My View</a> | <a href="/dwarves/mantisbt/view_all_bug_page.php">View Issues</a> | <a href="/dwarves/mantisbt/changelog_page.php">Change Log</a> | <a href="/dwarves/mantisbt/roadmap_page.php">Roadmap</a></td><td class="menu right nowrap"><form method="post" action="/dwarves/mantisbt/jump_to_bug.php"><input type="text" name="bug_id" size="10" class="small" value="Issue #" onfocus="if (this.value == 'Issue #') this.value = ''" onblur="if (this.value == '') this.value = 'Issue #'" />&nbsp;<input type="submit" class="button-small" value="Jump" />&nbsp;</form></td></tr></table><div id="filter_open">
+		<br />
+		<form method="post" name="filters_open" id="filters_form_open" action="view_all_set.php?f=3">
+				<input type="hidden" name="type" value="1" />
+				<input type="hidden" name="page_number" value="1" />
+		<input type="hidden" name="view_type" value="simple" />
+		<table class="width100" cellspacing="1">
+
+		
+		<tr class="row-category2">
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=reporter_id[]" id="reporter_id_filter">Reporter:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=user_monitor[]" id="user_monitor_filter">Monitored By:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=handler_id[]" id="handler_id_filter">Assigned To:</a>
+			</td>
+			<td colspan="2" class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=show_category[]" id="show_category_filter">Category:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=show_severity[]" id="show_severity_filter">Severity:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=show_resolution[]" id="show_resolution_filter">Resolution:</a>
+			</td>
+			<td class="small-caption" valign="top">
+									<a href="view_filters_page.php?for_screen=1&amp;target_field=show_profile[]" id="show_profile_filter">Profile:</a>
+							</td>
+					</tr>
+
+		<tr class="row-1">
+			<td class="small-caption" valign="top" id="reporter_id_filter_target">
+							<input type="hidden" name="reporter_id[]" value="0" />any			</td>
+			<td class="small-caption" valign="top" id="user_monitor_filter_target">
+							<input type="hidden" name="user_monitor[]" value="0" />any			</td>
+			<td class="small-caption" valign="top" id="handler_id_filter_target">
+							<input type="hidden" name="handler_id[]" value="0" />any			</td>
+			<td colspan="2" class="small-caption" valign="top" id="show_category_filter_target">
+							<input type="hidden" name="show_category[]" value="0" />any			</td>
+			<td class="small-caption" valign="top" id="show_severity_filter_target">
+							<input type="hidden" name="show_severity[]" value="0" />any			</td>
+			<td class="small-caption" valign="top" id="show_resolution_filter_target">
+																	<input type="hidden" name="show_resolution[]" value="0" />
+										any			</td>
+						<td class="small-caption" valign="top" id="show_profile_filter_target">
+																	<input type="hidden" name="show_profile[]" value="0" />
+										any			</td>
+						</tr>
+
+		<tr class="row-category2">
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=show_status[]" id="show_status_filter">Status:</a>
+			</td>
+			<td class="small-caption" valign="top">
+									<a href="view_filters_page.php?for_screen=1&amp;target_field=hide_status[]" id="hide_status_filter">Hide Status:</a>
+							</td>
+			<td class="small-caption" valign="top">
+						</td>
+						<td colspan="2" class="small-caption" valign="top">
+				&nbsp;
+			</td>
+			<td colspan="1" class="small-caption" valign="top">
+				&nbsp;
+			</td>
+						<td colspan="1" class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=show_priority[]" id="show_priority_filter">Priority:</a>
+			</td>
+			<td colspan="1" class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=target_version[]" id="show_target_version_filter">Target Version:</a>
+			</td>
+					</tr>
+
+		<tr class="row-1">
+			<td class="small-caption" valign="top" id="show_status_filter_target">
+							<input type="hidden" name="show_status[]" value="0" />any			</td>
+			<td class="small-caption" valign="top" id="hide_status_filter_target">
+							<input type="hidden" name="hide_status[]" value="90" />closed (And Above)			</td>
+						<td class="small-caption" valign="top"></td>
+						<td colspan="2" class="small-caption" valign="top">
+				&nbsp;
+			</td>
+			<td colspan="1" class="small-caption" valign="top">
+				&nbsp;
+			</td>
+						<td colspan="1" class="small-caption" valign="top" id="show_priority_filter_target">
+              <input type="hidden" name="show_priority[]" value="0" />any	    	</td>
+			<td colspan="1" class="small-caption" valign="top" id="show_target_version_filter_target">
+							<input type="hidden" name="target_version[]" value="0" />any			</td>
+			
+		</tr>
+
+		<tr class="row-category2">
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=per_page" id="per_page_filter">Show:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=view_state" id="view_state_filter">View Status:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=sticky_issues" id="sticky_issues_filter">Show Sticky Issues:</a>
+			</td>
+			<td class="small-caption" valign="top" colspan="2">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=highlight_changed" id="highlight_changed_filter">Changed(hrs):</a>
+			</td>
+			<td class="small-caption" valign="top" >
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=do_filter_by_date" id="do_filter_by_date_filter">Use Date Filters:</a>
+			</td>
+			<td class="small-caption" valign="top" colspan="2">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=relationship_type" id="relationship_type_filter">Relationships:</a>
+			</td>
+					</tr>
+		<tr class="row-1">
+			<td class="small-caption" valign="top" id="per_page_filter_target">
+				50<input type="hidden" name="per_page" value="50" />			</td>
+			<td class="small-caption" valign="top" id="view_state_filter_target">
+				any<input type="hidden" name="view_state" value="0" />			</td>
+			<td class="small-caption" valign="top" id="sticky_issues_filter_target">
+				Yes				<input type="hidden" name="sticky_issues" value="on" />
+			</td>
+			<td class="small-caption" valign="top" colspan="2" id="highlight_changed_filter_target">
+				6<input type="hidden" name="highlight_changed" value="6" />			</td>
+			<td class="small-caption" valign="top"  id="do_filter_by_date_filter_target">
+									<script type="text/javascript" language="JavaScript">
+		<!--
+			function SwitchDateFields() {
+		    	// All fields need to be enabled to go back to the script
+				document.filters_open.start_month.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.start_day.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.start_year.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_month.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_day.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_year.disabled = ! document.filters_open.do_filter_by_date.checked;
+
+		   		return true;
+			}
+		// -->
+		</script>
+							No			</td>
+
+			<td class="small-caption" valign="top" colspan="2" id="relationship_type_filter_target">
+							<input type="hidden" name="relationship_type" value="-1" /><input type="hidden" name="relationship_bug" value="0" />any			</td>
+					</tr>
+		<tr class="row-category2">
+			<td class="small-caption" valign="top">
+									<a href="view_filters_page.php?for_screen=1&amp;target_field=platform" id="platform_filter">Platform:</a>
+							</td>
+			<td class="small-caption" valign="top">
+									<a href="view_filters_page.php?for_screen=1&amp;target_field=os" id="os_filter">OS:</a>
+							</td>
+			<td class="small-caption" valign="top">
+									<a href="view_filters_page.php?for_screen=1&amp;target_field=os_build" id="os_build_filter">OS Version:</a>
+							</td>
+			<td class="small-caption" valign="top" colspan="5">
+								<a href="view_filters_page.php?for_screen=1&amp;target_field=tag_string" id="tag_string_filter">Tags:</a>
+							</td>
+					</tr>
+		<tr class="row-1">
+						<td class="small-caption" valign="top" id="platform_filter_target">
+								<input type="hidden" name="platform[]" value="0" />
+				any			</td>
+			<td class="small-caption" valign="top" id="os_filter_target">
+								<input type="hidden" name="os[]" value="0" />
+				any			</td>
+			<td class="small-caption" valign="top" id="os_build_filter_target">
+								<input type="hidden" name="os_build[]" value="0" />
+				any			</td>
+			
+			<td class="small-caption" valign="top" id="tag_string_filter_target" colspan="5">
+				<input type="hidden" name="tag_string" value="" />			</td>
+		</tr>
+				<tr class="row-1">
+			<td class="small-caption category2" valign="top">
+                <a href="view_filters_page.php?for_screen=1&amp;target_field=note_user_id" id="note_user_id_filter">Note By:</a>
+            </td>
+            <td class="small-caption" valign="top" id="note_user_id_filter_target">
+                <input type="hidden" name="note_user_id[]" value="0" />any            </td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;target_field=show_sort" id="show_sort_filter">Sort by:</a>
+			</td>
+			<td class="small-caption" valign="top" id="show_sort_filter_target">
+				Updated Descending<input type="hidden" name="sort_0" value="last_updated" /><input type="hidden" name="dir_0" value="DESC" />			</td>
+			<td class="small-caption" valign="top" colspan="6">&nbsp;</td>		</tr>
+				<tr>
+			<td colspan="2">
+				<a href="" onclick="ToggleDiv( 'filter' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Search&nbsp;<input type="text" size="16" name="search" value="" />
+				<input type="submit" name="filter" class="button-small" value="Apply Filter" />
+			</td>
+			</form>
+			<td class="center" colspan="2"> <!-- use this label for padding -->
+				<span class="bracket-link">[&nbsp;<a href="view_all_set.php?type=6&amp;view_type=advanced">Advanced Filters</a>&nbsp;]</span> 			</td>
+			<td class="right" colspan="4">
+								<form method="get" name="reset_query" action="view_all_set.php">
+										<input type="hidden" name="type" value="3" />
+					<input type="hidden" name="source_query_id" value="-1" />
+					<input type="submit" name="reset_query_button" class="button-small" value="Reset Filter" />
+					</form>
+							</td>
+		</tr>
+		</table>
+</div><div id="filter_closed" class="hidden">
+		<br />
+		<form method="post" name="filters_closed" id="filters_form_closed" action="view_all_set.php?f=3">
+				<input type="hidden" name="type" value="1" />
+				<input type="hidden" name="page_number" value="1" />
+		<input type="hidden" name="view_type" value="simple" />
+		<table class="width100" cellspacing="1">
+
+				<tr>
+			<td colspan="2">
+				<a href="" onclick="ToggleDiv( 'filter' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Search&nbsp;<input type="text" size="16" name="search" value="" />
+				<input type="submit" name="filter" class="button-small" value="Apply Filter" />
+			</td>
+			</form>
+			<td class="center" colspan="2"> <!-- use this label for padding -->
+				<span class="bracket-link">[&nbsp;<a href="view_all_set.php?type=6&amp;view_type=advanced">Advanced Filters</a>&nbsp;]</span> 			</td>
+			<td class="right" colspan="4">
+								<form method="get" name="reset_query" action="view_all_set.php">
+										<input type="hidden" name="type" value="3" />
+					<input type="hidden" name="source_query_id" value="-1" />
+					<input type="submit" name="reset_query_button" class="button-small" value="Reset Filter" />
+					</form>
+							</td>
+		</tr>
+		</table>
+</div>		<script type="text/javascript" language="JavaScript">
+		<!--
+			var string_loading = 'Loading...';
+		// -->
+		</script>
+		<script type="text/javascript" src="/dwarves/mantisbt/javascript/min/xmlhttprequest.js"></script>
+<script type="text/javascript" src="/dwarves/mantisbt/javascript/min/addLoadEvent.js"></script>
+<script type="text/javascript" src="/dwarves/mantisbt/javascript/min/dynamic_filters.js"></script>
+<br />
+<form name="bug_action" method="get" action="bug_actiongroup_page.php">
+<table id="buglist" class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="9">
+		<span class="floatleft">
+		Viewing Issues (1 - 50 / 11021) </span>
+
+		<span class="floatleft small"> &nbsp;<span class="bracket-link">[&nbsp;<a href="print_all_bug_page.php">Print Reports</a>&nbsp;]</span> &nbsp;<span class="bracket-link">[&nbsp;<a href="csv_export.php">CSV Export</a>&nbsp;]</span> &nbsp;<span class="bracket-link">[&nbsp;<a href="excel_xml_export.php">Excel Export</a>&nbsp;]</span>  </span>
+
+		<span class="floatright small">[ First&nbsp;Prev&nbsp;1&nbsp;<a href="view_all_bug_page.php?page_number=2">2</a>&nbsp;<a href="view_all_bug_page.php?page_number=3">3</a>&nbsp;<a href="view_all_bug_page.php?page_number=4">4</a>&nbsp;<a href="view_all_bug_page.php?page_number=5">5</a>&nbsp;<a href="view_all_bug_page.php?page_number=6">6</a>&nbsp;<a href="view_all_bug_page.php?page_number=7">7</a>&nbsp;<a href="view_all_bug_page.php?page_number=8">8</a>&nbsp;<a href="view_all_bug_page.php?page_number=9">9</a>&nbsp;<a href="view_all_bug_page.php?page_number=10">10</a>&nbsp;<a href="view_all_bug_page.php?page_number=11">11</a> ... &nbsp;<a href="view_all_bug_page.php?page_number=2">Next</a>&nbsp;<a href="view_all_bug_page.php?page_number=221">Last</a> ] </span>
+	</td>
+</tr>
+<tr class="row-category">
+<td> &nbsp; </td><td> &nbsp; </td><td><a href="view_all_set.php?sort=id&amp;dir=DESC&amp;type=2">ID</a></td><td> # </td><td><a href="view_all_set.php?sort=category_id&amp;dir=DESC&amp;type=2">Category</a></td><td><a href="view_all_set.php?sort=severity&amp;dir=DESC&amp;type=2">Severity</a></td><td><a href="view_all_set.php?sort=status&amp;dir=DESC&amp;type=2">Status</a></td><td><a href="view_all_set.php?sort=last_updated&amp;dir=ASC&amp;type=2">Updated</a><img src="http://bay12games.com/dwarves/mantisbt/images/down.gif" alt="" /></td><td><a href="view_all_set.php?sort=summary&amp;dir=DESC&amp;type=2">Summary</a></td></tr>
+
+<tr class="spacer">
+	<td colspan="9"></td>
+</tr>
+<tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=6708">0006708</a></td><td class="center"><a href="view.php?id=6708&amp;nbn=26#bugnotes">26</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Civilizations/Entities -- Populations</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=6">Footkerchief</a>)</td><td class="center">2021-12-26</td><td class="left">Human civilization's soldier is an Alligator Recruit.</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11014">0011014</a></td><td class="center"><a href="view.php?id=11014&amp;nbn=48#bugnotes">48</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Military</td><td class="center"><span class="bold">crash</span></td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>)</td><td class="center">2021-03-22</td><td class="left">Reproducible crash from corrupted military equipment lists</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11399">0011399</a></td><td class="center"><a href="view.php?id=11399&amp;nbn=2#bugnotes">2</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Justice</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=1294">Knight Otu</a>)</td><td class="center">2021-02-28</td><td class="left">Dead suspects confess to crimes</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=8698">0008698</a></td><td class="center"><a href="view.php?id=8698&amp;nbn=12#bugnotes">12</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Moods</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=6">Footkerchief</a>)</td><td class="center">2021-02-20</td><td class="left">Dwarf entering a strange mood when isolated (e.g. on a stepladder) causes severe lag</td></tr><tr bgcolor="#d2f5b0" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=8410">0008410</a></td><td class="center"><a href="view.php?id=8410&amp;nbn=7#bugnotes">7</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Miscellaneous Crashes</td><td class="center"><span class="bold">crash</span></td><td class="center"><span class="issue-status" title="fixed">resolved</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>)</td><td class="center">2021-01-22</td><td class="left">Crash due to zero-size weasel</td></tr><tr bgcolor="#d2f5b0" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11549">0011549</a></td><td class="center"><a href="view.php?id=11549&amp;nbn=6#bugnotes">6</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Miscellaneous Crashes</td><td class="center"><span class="bold">crash</span></td><td class="center"><span class="issue-status" title="fixed">resolved</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>)</td><td class="center">2021-01-22</td><td class="left">Crash when off-site werecreature gives birth</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=6955">0006955</a></td><td class="center"><a href="view.php?id=6955&amp;nbn=11#bugnotes">11</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Adventure Mode -- Buildings</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=6">Footkerchief</a>)</td><td class="center">2020-10-15</td><td class="left">Abandoned fortresses reconfigure when slept in / strange lighting</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=10369">0010369</a></td><td class="center"><a href="view.php?id=10369&amp;nbn=27#bugnotes">27</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Military</td><td class="center"><span class="bold">crash</span></td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11">Dwarfu</a>)</td><td class="center">2020-08-06</td><td class="left">Game crash (likely) when Dwarves return from mission</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=797">0000797</a></td><td class="center"><a href="view.php?id=797&amp;nbn=19#bugnotes">19</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Pathfinding</td><td class="center"><span class="bold">major</span></td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=6">Footkerchief</a>)</td><td class="center">2020-05-18</td><td class="left">Animals/pets repeatedly try to find path through pet-locked/&quot;tightly closed&quot; doors, causing lag</td></tr><tr bgcolor="#ffcd85" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=481">0000481</a></td><td class="center"><a href="view.php?id=481&amp;nbn=56#bugnotes">56</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Combat</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">acknowledged</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=2">Toady One</a>)</td><td class="center">2020-04-06</td><td class="left">Kill/attack commands/orders don't work</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=3259">0003259</a></td><td class="center"><a href="view.php?id=3259&amp;nbn=38#bugnotes">38</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Combat</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2020-03-20</td><td class="left">Loyalty cascade after ordering squad to attack were-citizens, merchants/traders, guards, or liaison</td></tr><tr bgcolor="#d2f5b0" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=7444">0007444</a></td><td class="center"><a href="view.php?id=7444&amp;nbn=20#bugnotes">20</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Combat</td><td class="center">minor</td><td class="center"><span class="issue-status" title="fixed">resolved</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=2">Toady One</a>)</td><td class="center">2020-02-22</td><td class="left">Sparring dwarves (and other creatures) can knock each other through walls with charge attacks</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=296">0000296</a></td><td class="center"><a href="view.php?id=296&amp;nbn=142#bugnotes">142</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Contaminants/Spatter</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>)</td><td class="center">2020-02-19</td><td class="left">Pools/smears/spatters of blood, dust and other materials multiply themselves, get tracked around too much</td></tr><tr bgcolor="#ffcd85" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=277">0000277</a></td><td class="center"><a href="view.php?id=277&amp;nbn=60#bugnotes">60</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Technical -- General</td><td class="center"><span class="bold">crash</span></td><td class="center"><span class="issue-status" title="open">acknowledged</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=2">Toady One</a>)</td><td class="center">2020-02-16</td><td class="left">Game crash during saving game - cleaning objects phase</td></tr><tr bgcolor="#ffcd85" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=535">0000535</a></td><td class="center"><a href="view.php?id=535&amp;nbn=108#bugnotes">108</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Military</td><td class="center"><span class="bold">major</span></td><td class="center"><span class="issue-status" title="open">acknowledged</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=2">Toady One</a>)</td><td class="center">2020-02-01</td><td class="left">Equipping weapons/armor on military is erratic</td></tr><tr bgcolor="#e3b7eb" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=7161">0007161</a></td><td class="center"><a href="view.php?id=7161&amp;nbn=73#bugnotes">73</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />General</td><td class="center"><span class="bold">major</span></td><td class="center"><span class="issue-status" title="open">needs feedback</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11">Dwarfu</a>)</td><td class="center">2020-01-31</td><td class="left">Morale is screwy across all modes</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=7526">0007526</a></td><td class="center"><a href="view.php?id=7526&amp;nbn=28#bugnotes">28</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Adventure Mode -- Sites</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11">Dwarfu</a>)</td><td class="center">2018-12-20</td><td class="left">Dark towers contain thousands of goblins and trolls, causing lag</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=1451">0001451</a></td><td class="center"><a href="view.php?id=1451&amp;nbn=23#bugnotes">23</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Military</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11">Dwarfu</a>)</td><td class="center">2018-07-17</td><td class="left">Military equipment interferes with civilian equipment (picks/axes/crossbows/quivers)</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=9004">0009004</a></td><td class="center"><a href="view.php?id=9004&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Jobs, Hauling</td><td class="center"><span class="bold">major</span></td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>)</td><td class="center">2018-04-06</td><td class="left">&quot;Store item in container&quot; jobs block access to all items already in the container</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=94">0000094</a></td><td class="center"><a href="view.php?id=94&amp;nbn=24#bugnotes">24</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Jobs, Healthcare</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=2">Toady One</a>)</td><td class="center">2018-02-05</td><td class="left">Injured dwarves not recovered, ignored by doctors, and/or don't get food/water</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=340">0000340</a></td><td class="center"><a href="view.php?id=340&amp;nbn=7#bugnotes">7</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Jobs, Hauling</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2017-02-01</td><td class="left">Dwarf repeatedly try to store job-based weapons in burrow-forbidden stockpiles</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=1265">0001265</a></td><td class="center"><a href="view.php?id=1265&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Adventure Mode -- Movement</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2016-05-15</td><td class="left">Ramps covered with ice have no floors above, adventurer can &quot;fly&quot; over</td></tr><tr bgcolor="#ffcd85" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=8147">0008147</a></td><td class="center"><a href="view.php?id=8147&amp;nbn=2#bugnotes">2</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Reclaim</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">acknowledged</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11">Dwarfu</a>)</td><td class="center">2016-01-21</td><td class="left">Retire with caravan present --&gt; live wagons scattered around site</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=1374">0001374</a></td><td class="center"><a href="view.php?id=1374&amp;nbn=10#bugnotes">10</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Military</td><td class="center"><span class="bold">major</span></td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2015-12-20</td><td class="left">If squad is assigned multiple ammo types, dwarves with &quot;individual choice ranged&quot; carry wrong ammo, and other ammo bugs</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=127">0000127</a></td><td class="center"><a href="view.php?id=127&amp;nbn=6#bugnotes">6</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Contaminants/Spatter</td><td class="center">trivial</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2015-12-19</td><td class="left">Muddy open space in magma pipe</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=1791">0001791</a></td><td class="center"><a href="view.php?id=1791&amp;nbn=8#bugnotes">8</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Map Features</td><td class="center"><span class="bold">major</span></td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2015-12-04</td><td class="left">Magma sea breaching into Hell</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=307">0000307</a></td><td class="center"><a href="view.php?id=307&amp;nbn=8#bugnotes">8</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Creatures</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2015-08-04</td><td class="left">No announcements for blistering/charring, and other fire-related problems</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=600">0000600</a></td><td class="center"><a href="view.php?id=600&amp;nbn=10#bugnotes">10</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Jobs, Hauling</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2015-07-03</td><td class="left">haulers in burrows seem to stand around contemplating hauling jobs they can't perform</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=309">0000309</a></td><td class="center"><a href="view.php?id=309&amp;nbn=21#bugnotes">21</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Jobs, Healthcare</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11">Dwarfu</a>)</td><td class="center">2014-11-25</td><td class="left">Injured dwarves won't/can't rest</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=703">0000703</a></td><td class="center"><a href="view.php?id=703&amp;nbn=9#bugnotes">9</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Jobs, Childcare</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11">Dwarfu</a>)</td><td class="center">2014-09-01</td><td class="left">Chained mother &quot;cancels seek infant&quot; until death from dehydration, and other imprisonment issues</td></tr><tr bgcolor="#e3b7eb" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=1510">0001510</a></td><td class="center"><a href="view.php?id=1510&amp;nbn=7#bugnotes">7</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Cave-ins</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">needs feedback</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=6">Footkerchief</a>)</td><td class="center">2014-08-19</td><td class="left">Floating creatures stuck in projectile status</td></tr><tr bgcolor="#fff494" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=576">0000576</a></td><td class="center"><a href="view.php?id=576&amp;nbn=13#bugnotes">13</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Diplomacy</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">confirmed</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=6">Footkerchief</a>)</td><td class="center">2014-08-13</td><td class="left">Diplomat &quot;Leaves Unhappily&quot; if expedition leader dies</td></tr><tr bgcolor="#ffcd85" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=428">0000428</a></td><td class="center"><a href="view.php?id=428&amp;nbn=41#bugnotes">41</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Interface, Squad Control</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">acknowledged</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=2">Toady One</a>)</td><td class="center">2014-01-27</td><td class="left">Dwarves refuse to train, and other training weirdness</td></tr>               <tr>
+                       <td class="left" colspan="9" bgcolor="#999999">&nbsp;</td>
+               </tr>
+<tr bgcolor="#d2f5b0" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11876">0011876</a></td><td class="center"><a href="view.php?id=11876&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Interface, Stockpiles</td><td class="center">minor</td><td class="center"><span class="issue-status" title="not fixable">resolved</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>)</td><td class="center">2022-06-19</td><td class="left">Item randomly being designated to melt</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11775">0011775</a></td><td class="center"><a href="view.php?id=11775&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Civilizations/Entities -- General</td><td class="center">tweak</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-06-19</td><td class="left">Useage of custom-defined [UNIQUE_DEMON] is impossible as 'master' is hardcoded</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11875">0011875</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Legends Mode -- Historical Figures</td><td class="center">feature</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-06-12</td><td class="left">Forgotten Beast that created a false identity that became it's own unique entity in legends and world gen</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11874">0011874</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Legends Mode -- Historical Maps</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-06-11</td><td class="left">Roads don't remember when they are created.</td></tr><tr bgcolor="#ffcd85" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11871">0011871</a></td><td class="center"><a href="view.php?id=11871&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Technical -- Rendering</td><td class="center">trivial</td><td class="center"><span class="issue-status" title="open">acknowledged</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>)</td><td class="center">2022-06-01</td><td class="left">Too high FPS displayed as negative.</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11873">0011873</a></td><td class="center"><a href="view.php?id=11873&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Technical -- General</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-06-01</td><td class="left">Material not taking color on higher caste numbers</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11872">0011872</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Adventure Mode -- AI</td><td class="center"><span class="bold">major</span></td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-05-31</td><td class="left">Adventurers kill animals that aren't [BENIGN] even if not dangerous.</td></tr><tr bgcolor="#ffcd85" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=10346">0010346</a></td><td class="center"><a href="view.php?id=10346&amp;nbn=10#bugnotes">10</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Adventure Mode -- Conversation</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">acknowledged</span> (<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9182">Loci</a>)</td><td class="center">2022-05-31</td><td class="left">NPCs demanding other characters identify themselves in a loop</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11649">0011649</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Interface, Manager</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-05-27</td><td class="left">Manager cannot track quantity of plant slurry globs when stored in food containers</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11861">0011861</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Adventure Mode -- Conversation</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-05-27</td><td class="left">Intelligent undead raised by the player cannot speak</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11842">0011842</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Interface, Manager</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-05-27</td><td class="left">&quot;Melt-designated&quot; trait in work order condition does not work if added manually</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=9972">0009972</a></td><td class="center"><a href="view.php?id=9972&amp;nbn=5#bugnotes">5</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Interface, Manager</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-05-27</td><td class="left">Manager conditions do not properly track quantity of dyes</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11870">0011870</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />World Generation -- General</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-05-25</td><td class="left">Name of Age is Partially Missing</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11869">0011869</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Adventure Mode -- Buildings</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-05-19</td><td class="left">Visible Sunlight from Inside Procgen Fortress Guildhall</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11572">0011572</a></td><td class="center"><a href="view.php?id=11572&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Pets</td><td class="center">minor</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-05-16</td><td class="left">Gremlin residents (before petition for citizenship) claim doors as intruders</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11868">0011868</a></td><td class="center"><a href="view.php?id=11868&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Dwarf Mode -- Interface, Announcements: Message Spam</td><td class="center"><span class="bold">major</span></td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-05-13</td><td class="left">Single dwarf went on a rampage after getting drunk in the tavern and now there is spam of everyone interrupting the other</td></tr><tr bgcolor="#fcbdbd" border="1" valign="top"><td>&nbsp;</td><td>&nbsp;</td><td><a href="/dwarves/mantisbt/view.php?id=11867">0011867</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">Dwarf Fortress</a>]</small><br />Creatures</td><td class="center">trivial</td><td class="center"><span class="issue-status" title="open">new</span></td><td class="center">2022-05-11</td><td class="left">COLOR_PATTERN:STRIPES_ORANGE_WHITE is actually orange and black stripes</td></tr>	<tr>
+		<td class="left" colspan="9">
+			<span class="floatleft">
+&nbsp;			</span>
+			<span class="floatright small">
+				[ First&nbsp;Prev&nbsp;1&nbsp;<a href="view_all_bug_page.php?page_number=2">2</a>&nbsp;<a href="view_all_bug_page.php?page_number=3">3</a>&nbsp;<a href="view_all_bug_page.php?page_number=4">4</a>&nbsp;<a href="view_all_bug_page.php?page_number=5">5</a>&nbsp;<a href="view_all_bug_page.php?page_number=6">6</a>&nbsp;<a href="view_all_bug_page.php?page_number=7">7</a>&nbsp;<a href="view_all_bug_page.php?page_number=8">8</a>&nbsp;<a href="view_all_bug_page.php?page_number=9">9</a>&nbsp;<a href="view_all_bug_page.php?page_number=10">10</a>&nbsp;<a href="view_all_bug_page.php?page_number=11">11</a> ... &nbsp;<a href="view_all_bug_page.php?page_number=2">Next</a>&nbsp;<a href="view_all_bug_page.php?page_number=221">Last</a> ]			</span>
+		</td>
+	</tr>
+</table>
+</form>
+
+<br /><table class="width100" cellspacing="1"><tr><td class="small-caption" width="14%" bgcolor="#fcbdbd">new</td><td class="small-caption" width="14%" bgcolor="#e3b7eb">needs feedback</td><td class="small-caption" width="14%" bgcolor="#ffcd85">acknowledged</td><td class="small-caption" width="14%" bgcolor="#fff494">confirmed</td><td class="small-caption" width="14%" bgcolor="#c2dfff">assigned</td><td class="small-caption" width="14%" bgcolor="#d2f5b0">resolved</td><td class="small-caption" width="14%" bgcolor="#c9ccc4">closed</td></tr></table>	<br />
+	<hr size="1" />
+<table border="0" width="100%" cellspacing="0" cellpadding="0"><tr valign="top"><td>	<address>Copyright &copy; 2000 - 2010 MantisBT Group</address>
+</td><td>
+	<div align="right"><a href="http://www.mantisbt.org" title="Free Web Based Bug Tracker"><img src="/dwarves/mantisbt/images/mantis_logo_button.gif" width="88" height="35" alt="Powered by Mantis Bugtracker" border="0" /></a></div>
+</td></tr></table>
+</body>
+</html>

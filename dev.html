@@ -1,0 +1,991 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	<title>Bay 12 Games: Dwarf Fortress</title>
+	<link rel="stylesheet" type="text/css" href="dwstyle3.css" title="Dwarves" />
+</head>
+<body>
+<img alt="Dwarf Fortress" border="0" src="title.png" width="800" height="120" align="center"/>
+<table style="width:800px;margin-top:0px;margin-bottom:0px;" border="0" cellpadding="0" cellspacing="0">
+<tr align="center">
+<td background="back2.png"><a href="index.html"><img alt="Download" border="0" width="130" height="25" src="button_download.png" align="center"/></a></td>
+<td background="back2.png"><a href="features.html"><img alt="Features" border="0" width="130" height="25" src="button_features.png" align="center"/></a></td>
+<td background="back2.png"><a href="screens.html"><img alt="Screenshots" border="0" width="130" height="25" src="button_screens.png" align="center"/></a></td>
+<td background="back2.png"><img alt="Development" border="0" width="130" height="25" src="gbutton_dev.png" align="center"/></td>
+<td background="back2.png"><a href="http://www.bay12forums.com/smf/"><img alt="Forums" border="0" width="130" height="25" src="button_forums.png" align="center"/></a></td>
+<td background="back2.png"><a href="mantisbt/"><img alt="Bug Tracker" border="0" width="130" height="25" src="button_tracker.png" align="center"/></a></td>
+</tr>
+<tr align="center">
+<td background="back2.png"><a href="dev_story.html"><img alt="Threetoe's Stories" border="0" width="130" height="25" src="button_stories.png" align="center"/></a></td>
+<td background="back2.png"><a href="df_talk.html"><img alt="DF Talk" border="0" width="130" height="25" src="button_dftalk.png" align="center"/></a></td>
+<td background="back2.png"><a href="contact.html"><img alt="Contact" border="0" width="130" height="25" src="button_contact.png" align="center"/></a></td>
+<td background="back2.png"><a href="links.html"><img alt="Links" border="0" width="130" height="25" src="button_links.png" align="center"/></a></td>
+<td background="back2.png"><a href="../champions.html"><img alt="Champions" border="0" width="130" height="25" src="button_champions.png" align="center"/></a></td>
+<td background="back2.png"><a href="../index.html"><img alt="Other Games" border="0" width="130" height="25" src="button_games.png" align="center"/></a></td>
+</tr>
+</table>
+<table style="width:800px;margin-top:0px;margin-bottom:0px;" border="0" cellpadding="0" cellspacing="0">
+<tr align="center">
+	<td valign="top">
+	<table style="width:100px;height:100px;margin-top:0px;margin-bottom:0px;" border="0" cellpadding="0" cellspacing="0">
+		<tr align="center">
+		<td background="back2.png"><img alt="Dwarf Fortress Development" border="0" width="100" height="100" src="left.gif" align="center"/></td>
+		</tr>
+	</table>
+	</td>
+	<td>
+	<table style="width:600px;margin-top:0px;margin-bottom:0px;" border="0" cellpadding="10" cellspacing="0">
+		<tr>
+		<td background="back2.png">
+		<h2>
+		Dwarf Fortress Development<br/>
+		</h2>
+		<h3>
+		(last updated: January 29, 2020)<br/>
+		</h3>
+
+<h5>Overview</h5>
+
+<p>
+The long-term goal is to create a fantasy world simulator in which it is possible to take part in a rich history, occupying a variety of roles through the course of several games.  Dwarf Fortress has been in development on-and-off since 2002 and consistently since 2006.  The game is designed by Tarn and Zach Adams.  Fan suggestions are welcome.  The suggestion forum can be found <a href="http://www.bay12forums.com/smf/index.php?board=5.0">here</a>.
+</p>
+<p>
+It has also proven too time-consuming to maintain all of the notes in a presentable form, so we're sticking with incomplete lists for the foreseeable future.  This page doesn't represent everything we'd like to do.  It just has some of the things we're thinking about doing sooner rather than later.  We'll be adding to it as specific roadmaps are drawn up and we are closer to using them.  There is <a href="http://www.bay12forums.com/smf/index.php?topic=169696">a discussion thread</a> on the forum.
+</p>
+
+<h5>Color Key</h5>
+
+<p>
+<table border="1" cellpadding="1" cellspacing="1" align="center">
+<tr align="center">
+<td><span class="dev1">Section</span></td>
+<td><span class="dev2">Subsection</span></td>
+<td><span class="future">Future Goal</span></td>
+</tr>
+<tr align="center">
+<td><span class="inprog">Partially Done</span></td>
+<td><span class="nextr">Done, Next Release</span></td>
+<td><span class="done">Done, Released</span></td>
+</tr>
+</table>
+</p>
+
+<h5>Upcoming Development</h5>
+
+<p>
+Our next major goal is to add creation myth and magic system generation.  There are some things to do first, though!  We need to finish the graphical/usability update for the Steam/itch release.  After that, we're going to finish some delayed features from the first villain release along with doing work on some army/siege features and other matters (listed below.)  The hope is that all of this will sustain us through a necessary map rewrite, a key part of the initial myth/magic release which will unavoidably take a long time, no matter how the rest can be portioned between releases.
+</p>
+<p>
+Once we're ready, we'll do myth and magic additions until we reach a satisfactory point (some options below, we won't get to everything).  After the magic releases, we'll do a lot of foundational work culminating in starting scenarios for your fortresses.  These changes touch upon law, property, status, diplomacy and so on, which will position us for economic work and thief role development, though we haven't committed to a direction beyond the three sections below.  We'll be fixing bugs and making smaller changes between major releases.
+</p>
+
+<p>
+<span class="dev1">Pre-Magic Improvement Candidates</span>
+<ul class="itemized">
+<li><span class="dev2">Dwarf army improvements</span></li>
+	<ul class="itemized">
+	<li><span class="inprog">New missions</span></li>
+		<ul class="itemized">
+		<li><span class="done">Pillaging vs. raids</span></li>
+		<li><span class="done">Razing sites</span></li>
+		<li><span class="done">Demanding tribute</span></li>
+		<li><span class="future">Seizing position-holders as prisoners (see below)</span></li>
+		<li><span class="inprog">Assassinations of position-holders</span></li>
+		</ul>
+	<li><span class="done">Taking over sites and administrators</span></li>
+		<ul class="itemized">
+		<li><span class="done">Getting an off-site holding can jump a fort to barony status</span></li>
+		<li><span class="done">Emphasize holdings on the map</span></li>
+		</ul>
+	<li><span class="done">Attracting hill dwarves to become a baron peacefully</span></li>
+	<li><span class="inprog">Basic hill dwarf / administered site interactions</span></li>
+		<ul class="itemized">
+		<li><span class="inprog">Request migrants, send fort dwarves out to hills</span></li>
+		</ul>
+	<li><span class="future">Shows all your off-site armies, send a squad or messenger to activate them</span></li>
+	<li><span class="future">Defensive off-site armies, ability to stall and report on incoming sieges</span></li>
+	<li><span class="future">Army-army battles, offensive orders for off-site armies (see Army Improvements below)</span></li>
+	</ul>
+<li><span class="dev2">Portions of Improved Sieges (below) are on the table</span></li>
+	<ul class="itemized">
+	<li><span class="future">Also: prisoners from attacking soldiers surrendering/yielding</span></li>
+	<li><span class="future">Prisoner trades, executions, release</span></li>
+	</ul>
+<li><span class="dev2">Adventure overview improvements</span></li>
+	<ul class="itemized">
+	<li><span class="inprog">Prioritize important information</span></li>
+	<li><span class="inprog">Show personal relationships, latest people met, global reputations</span></li>
+	<li><span class="inprog">Show site relations and entity positions, map holdings</span></li>
+	</ul>
+<li><span class="dev2">Improved character creation</span></li>
+	<ul class="itemized">
+	<li><span class="done">Mounts and pets</span></li>
+	<li><span class="inprog">Equipment selection</span></li>
+	<li><span class="done">Adventurer party support</span></li>
+	</ul>
+<li><span class="dev2">Adventurer military improvements</span></li>
+	<ul class="itemized">
+	<li><span class="inprog">Gaining civ-level entity positions (e.g. baron) by reputation or intrigue</span></li>
+	<li><span class="future">Basic command of large armies on travel-scale map</span></li>
+	<li><span class="inprog">Giving local combat orders to companions (see Your Followers below)</span></li>
+	<li><span class="done">Tactical party controls</span></li>
+	<li><span class="future">Medical improvements</span></li>
+	</ul>
+<li><span class="dev2">Better quest handling</span></li>
+	<ul class="itemized">
+	<li><span class="future">Better reputation and proximity checks</span></li>
+	<li><span class="future">Can ask about specific opportunities</span></li>
+	<li><span class="future">Changing how reputation titles work</span></li>
+	<li><span class="future">Ability to ask after artifacts</span></li>
+	</ul>
+<li><span class="dev2">Villainous plots</span></li>
+	<ul class="itemized">
+	<li><span class="inprog">Work existing mechanics into conspiracy chains</span></li>
+		<ul class="itemized">
+		<li><span class="future">Bandit groups raid and pillage the hill dwarves and extort from the fortress</span></li>
+		<li><span class="inprog">Steal/demand artifacts</span></li>
+		<li><span class="done">Thieves stealing items</span></li>
+		<li><span class="inprog">Assassination of position-holding dwarves and meddling adventurers</span></li>
+		</ul>
+	<li><span class="inprog">Prisoner interrogations (both modes)</span></li>
+	<li><span class="future">Receiving tips and rumors (both modes)</span></li>
+	<li><span class="future">Sending out dwarven agents/investigators</span></li>
+	<li><span class="inprog">Improve fort/adv rumor displays to highlight known plot elements</span></li>
+	</ul>
+<li><span class="dev2">Hideouts and strongholds</span></li>
+	<ul class="itemized">
+	<li><span class="future">Better alerts and identity checks</span></li>
+	<li><span class="inprog">Includes bandit forts, return of castles, better necromancer towers</span></li>
+	</ul>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Creation Myths and Magic Systems</span>
+<ul class="itemized">
+<li><span class="dev2">Creation myth generation</span></li>
+	<ul class="itemized">
+	<li><span class="future">Parameters</span></li>
+		<ul class="itemized">
+		<li><span class="future">Magic settings: From none to ubiquitous</span></li>
+			<ul class="itemized">
+			<li><span class="future">Non-magical worlds will still have (possibly multiple) creation myths</span></li>
+			</ul>
+		<li><span class="future">Randomness settings: From Earth-like world to standard fantasy to completely random</span></li>
+		<li><span class="future">Hostility settings: No death or violence to regular settings to bleak and horrifying</span></li>
+		</ul>
+	<li><span class="future">Detailed chronology of creation</span></li>
+		<ul class="itemized">
+		<li><span class="future">Creative actions taken by gods and ancient races, cosmic eggs and primordial chaos, resulting in humans, dwarves, the land, and every other in-game object</span></li>
+		<li><span class="future">Generated explanations for death, the afterlife and the origins of magic fully integrated into the myth</span></li>
+		<li><span class="future">Magical landforms generalizing and/or replacing good-evil regions and the underworld</span></li>
+			<ul class="itemized">
+			<li><span class="future">Can be closely tied in to new magic systems</span></li>
+			<li><span class="future">Shape/materials related to the creation myth</span></li>
+			</ul>
+		<li><span class="future">Deities, angels, demons, forces and spirits further integrated into the world</span></li>
+		<li><span class="future">New generated race categories: primordial giants/titans, fairies</span></li>
+		<li><span class="future">Mythic artifacts and expanded artifact framework</span></li>
+			<ul class="itemized">
+			<li><span class="future">New sources: divine, natural, ancient races</span></li>
+			<li><span class="future">Connections to the world (magical regions, etc.)</span></li>
+			<li><span class="future">Intelligent and semi-intelligent artifacts</span></li>
+			<li><span class="future">Automatons and magical prostheses</span></li>
+			</ul>
+		</ul>
+	<li><span class="future">Update world generation screen to display myth information</span></li>
+	<li><span class="future">Editors for fixed worlds</span></li>
+		<ul class="itemized">
+		<li><span class="future">Maps, sites, entities, historical figures, artifacts, myths, etc.</span></li>
+		</ul>
+	</ul>
+<li><span class="dev2">Recorded history</span></li>
+	<ul class="itemized">
+	<li><span class="future">Bridge myth and recorded history by converting myth output to world generation start map</span></li>
+	<li><span class="future">Wider variety of magical historical figures with new actions and powers, respecting myth</span></li>
+		<ul class="itemized">
+		<li><span class="future">New wizards beyond necromancers: by race, by skill, by object, by corruption, by deal with another power</span></li>
+		<li><span class="future">Wizards that wander</span></li>
+		<li><span class="future">Wizards that live in isolation</span></li>
+		<li><span class="future">Wizards that form groups (councils, covens, etc.), must have rationale (group magic, mutual protection, research, etc.)</span></li>
+		<li><span class="future">Wizards that involve themselves with civilization</span></li>
+		</ul>
+	<li><span class="future">Further involvement of deity-level beings and their servants in mortal affairs</span></li>
+		<ul class="itemized">
+		<li><span class="future">Basic divine law as a precursor to law framework</span></li>
+		<li><span class="future">Manifestation and even integration with civilizations in high-magic settings</span></li>
+		<li><span class="future">Conflicts between deities or the confused/imperfect agents of a single deity</span></li>
+		</ul>
+	<li><span class="future">Magical powers given to civilized creatures and other races in myths must be respected</span></li>
+	<li><span class="future">Respect any magical weather, landforms, reagents, materials etc. from myths</span></li>
+		<ul class="itemized">
+		<li><span class="future">One-way portals bringing creatures or material into the world (two-way will have to wait)</span></li>
+		<li><span class="future">High-magic worlds can have many minor magical objects, usable in play</span></li>
+		</ul>
+	<li><span class="future">Allow permanent changes to occur to myth-level landforms, magic, gods, etc. during regular world gen</span></li>
+		<ul class="itemized">
+		<li><span class="future">Bringing back lost deities/titans</span></li>
+		<li><span class="future">Removing or reawakening magic in the world</span></li>
+		<li><span class="future">Closing/opening new one-way portals</span></li>
+		</ul>
+	</ul>
+<li><span class="dev2">In-play world changes and new activities</span></li>
+	<ul class="itemized">
+	<li><span class="future">Broad expansion of interaction system to support generated magic</span></li>
+		<ul class="itemized">
+		<li><span class="future">New effect types</span></li>
+		<li><span class="future">Interactions can require costs (reagents, rituals, blood, energy, etc.)</span></li>
+		<li><span class="future">New situational and other restrictions on interaction use</span></li>
+		<li><span class="future">Integration with the generated myth's deities, forces and planes</span></li>
+		<li><span class="future">Magical objects beyond artifacts, such as wands, potions, ointments, runestones, etc.</span></li>
+		<li><span class="future">Exposure effects (corruption, etc.)</span></li>
+		<li><span class="future">Various learning methods from innate powers to difficult research</span></li>
+		<li><span class="future">Generated skills and attributes to support diverse magic systems</span></li>
+		</ul>
+	<li><span class="future">Ongoing supernatural involvement with sites</span></li>
+		<ul class="itemized">
+		<li><span class="future">Site afflicted with curse</span></li>
+			<ul class="itemized">
+			<li><span class="future">Might be lifted through player action</span></li>
+			<li><span class="future">Nested conspiracies and disasters might require an investigation or difficult decision</span></li>
+			</ul>
+		<li><span class="future">Seeking guidance from the wise</span></li>
+		<li><span class="future">Artifact can cause or cure curses/effects by existence or position or ritual etc.</span></li>
+		<li><span class="future">Site living in harmony with nature spirits, fairies, ancestral ghosts, angels, etc.</span></li>
+			<ul class="itemized">
+			<li><span class="future">The player or others might disrupt this situation</span></li>
+			</ul>
+		</ul>
+	<li><span class="future">Elves more strongly linked to fairies/nature spirits, related conflicts and quests</span></li>
+	<li><span class="future">Bogeyman, night trolls and others generalized, respecting myths</span></li>
+	<li><span class="future">Various ways to get supernatural companions as an adventurer</span></li>
+	<li><span class="future">Magical beings infiltrating and corrupting society, beyond vampires</span></li>
+		<ul class="itemized">
+		<li><span class="future">Countering this with inquisitions etc.</span></li>
+		</ul>
+	<li><span class="future">Stored artifacts with powers can come into use (incl. heirlooms, holy relics, etc.)</span></li>
+	<li><span class="future">Incorporate new mythic artifacts into existing artifact quest framework</span></li>
+	<li><span class="future">Continue to respect any magical weather, landforms, reagents, materials etc. from myths</span></li>
+	</ul>
+<li><span class="dev2">Wizards</span></li>
+	<ul class="itemized">
+	<li><span class="future">Base, generalizing necromancer towers (if applicable)</span></li>
+		<ul class="itemized">
+		<li><span class="future">Site with appropriate chambers (laboratory, library, ritual, summoning, etc.)</li>
+		<li><span class="future">Apprentices and servants</span></li>
+		<li><span class="future">Conflict or cooperation with locals</span></li>
+		</ul>
+	<li><span class="future">Research</span></li>
+		<ul class="itemized">
+		<li><span class="future">Develop powers which can change the world</span></li>
+		<li><span class="future">Discover nested structure of the inner secrets of magic and the universe</span></li>
+			<ul class="itemized">
+			<li><span class="future">Glimpses of the unknown, mysteries which can slowly become more clear</span></li>
+			</ul>
+		</ul>
+	<li><span class="future">Player or NPC activities as right hand or apprentice</span></li>
+		<ul class="itemized">
+		<li><span class="future">Benefits: magical augmentation, equipment, special companions</span></li>
+		<li><span class="future">Quests and tasks and duties</span></li>
+			<ul class="itemized">
+			<li><span class="future">Defeat opposition</span></li>
+			<li><span class="future">Steal artifacts/books</span></li>
+			<li><span class="future">Collect dangerous reagents for rituals</span></li>
+			<li><span class="future">Treat with rivals</span></li>
+			<li><span class="future">Guard master during long rituals or out-of-body periods</span></li>
+			<li><span class="future">Sacrificed as vessel for demons</span></li>
+			<li><span class="future">Smooth over problems from out-of-control summonings</span></li>
+			<li><span class="future">Remove an artifact from an area so a wizard can act there</span></li>
+			<li><span class="future">Move object from one stronghold to another</span></li>
+			<li><span class="future">Help/hinder bloodlines (especially if bloodline magic is present)</span></li>
+			</ul>
+		</ul>
+	</ul>
+<li><span class="dev2">Magic in the fortress</span></li>
+	<ul class="itemized">
+	<li><span class="future">Artifact powers that matter for the fort</span></li>
+	<li><span class="future">Generalize artifact moods, respecting myths</span></li>
+	<li><span class="future">Various magic types available in fort mode in high-magic worlds</span></li>
+	<li><span class="future">Invasions by magical beings beyond necromancers, creating new challenges</span></li>
+	<li><span class="future">Diplomacy with magical beings</span></li>
+		<ul class="itemized">
+		<li><span class="future">Expanded elf/nature spirit diplomacy</span></li>
+		<li><span class="future">Long-term magical residents and other sorts of integration</span></li>
+		<li><span class="future">Send a dwarf off as a wizard's apprentice</span></li>
+		</ul>
+	<li><span class="future">Magical research incorporated into library system</span></li>
+	<li><span class="future">Fortresses meaningfully built around magical landforms</span></li>
+	<li><span class="future">Impact of simple divine law and other deity/religion interaction</span></li>
+	</ul>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Fortress Starting Scenarios</span>
+<ul class="itemized">
+<li><span class="dev2">Framework</span></li>
+	<ul class="itemized">
+	<li><span class="future">Expand framework of law, custom, rights, property and status as needed to provide a variety of scenarios</span></li>
+	<li><span class="future">Foundation of laws, both natural and supernatural</span></li>
+	<li><span class="future">Explicit standing of different citizens vs. civilization authorities</span></li>
+	<li><span class="future">Possible expansion of religious and family concepts to provide sufficient scenarios</span></li>
+	</ul>
+<li><span class="dev2">Starting scenarios</span></li>
+	<ul class="itemized">
+	<li><span class="future">Various possiblities that guide or govern fortress activity: frontier settlement, religious site, prison colony, mining company, military citadel, roadside inn, secondary/future palace of the monarch</span></li>
+	<li><span class="future">Drastic changes to migrants based on starting scenario</span></li>
+	<li><span class="future">Caravans/diplomatic relationships based on starting scenario</span></li>
+	<li><span class="future">Reclaim mechanics should be folded into this</span></li>
+	<li><span class="future">Generalize starting scenario relationships to every site foundation</span></li>
+	</ul>
+<li><span class="dev2">Hill/deep dwarves</span></li>
+	<ul class="itemized">
+	<li><span class="future">Ability to bring extra dwarves appropriate to the starting scenario</span></li>
+	<li><span class="future">Further formalize populations surrounding your fortress, in appropriate environments both above and below ground</span></li>
+	<li><span class="future">Relationship with surrounding dwarves</span></li>
+	<li><span class="future">Ability to trade/demand food in depot or similar place with surrounding dwarves</span></li>
+	</ul>
+</ul>
+</p>
+
+<h5>Development Lists</h5>
+
+<p>
+Below are the things we'll be working on after the ordered list has been handled.  The idea for the much-neglected adventure mode is to focus on facilitating some specific roles that should be fun by themselves but especially when taken together.  The named roles are for planning purposes only, not for use in the game explicitly.  Dwarf mode will see a round of fan-suggested improvements as well as interaction with the upcoming adventure mode villains, raiders, etc.  The lists below are <i>unordered</i>.
+</p>
+
+<p>
+<span class="dev1">Adventurer Role: Hero</span>
+<ul class="itemized">
+<li><span class="dev2">Your followers</span>
+	<ul class="itemized">
+	<li><span class="done">List of followers and ability to look at their information</span></li>
+	<li><span class="inprog">Being able to take along aggrieved people for a time if you are seeking justice for them</span></li>
+	<li><span class="done">Reputation with entity (see below) allowing for easier followers</span></li>
+	<li><span class="future">Being able to issue orders to attack targets</span>
+		<ul class="itemized">
+		<li><span class="future">It should depend, but orders to kill civilians, especially people they know, should result in various negative reactions, possibly including hostility and violence -- your behavior should cause these reactions as well</span></li>
+		</ul>
+	</li>
+	<li><span class="future">Being able to issue orders to distract and lead off targets</span></li>
+	<li><span class="inprog">Being able to issue orders to stay at a site for general purposes (defense, caring for livestock, etc.)</span>
+		<ul class="itemized">
+		<li><span class="future">Depending on loyalty, they should not follow unreasonable orders for long (like guarding a random wilderness location)</span></li>
+		</ul>
+	</li>
+	<li><span class="done">Expansion of personality system to support more value-judgment-based properties such as bravery vs. cowardice/apathy/recklessness</li>
+	<li><span class="inprog">Better morale failures</span></li>
+	<li><span class="inprog">Having your own entity name for your group if you have a high enough profile (or before that, but nobody will care)</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Capturing people alive and interrogations</span>
+	<ul class="itemized">
+	<li><span class="done">Non-lethal fights, AI understanding the difference and the possible escalation to actual combat</span></li>
+	<li><span class="future">Ability to disarm opponents</span></li>
+	<li><span class="future">Ability to hold somebody and immobilize them</span></li>
+	<li><span class="future">Ability to attempt to knock somebody out without killing them</span></li>
+	<li><span class="inprog">Surrendering in the face of impossible odds, death or death threat coupled with inability to escape or win</span></li>
+	<li><span class="done">Being able to ask people for the specific location of another person or place</span></li>
+	<li><span class="inprog">Allowing people to lie</span></li>
+	<li><span class="future">Ability to offer quick deaths to mortally wounded people to get them to talk</span></li>
+	<li><span class="future">Being able to force a prisoner to guide you somewhere</span></li>
+	<li><span class="future">Other interrogation stuff</span></li>
+	<li><span class="inprog">Making sure tracking works to the point that you could follow a released prisoner or other group back to a hideout</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Breaking into fortified locations</span>
+	<ul class="itemized">
+	<li><span class="inprog">Having locations alerted, being able to yell for help</span></li>
+	<li><span class="future">Disguises and impersonation through use of entity uniforms</span></li>
+	<li><span class="future">Closed doors and passwords</span></li>
+	<li><span class="done">Sneaking mechanics</span>
+		<ul class="itemized">
+		<li><span class="done">Making hiding impossible in wide open areas (at least in adv mode)</span></li>
+		<li><span class="done">Vision arcs for patrolling guards</span></li>
+		</ul>
+	</li>
+	<li><span class="future">Gagging people and tying them up</span></li>
+	<li><span class="future">Allowing constructions to burn, use of kindling/hay/etc. where reasonable</span></li>
+	<li><span class="future">Responding properly to personal fire issues (all modes)</span></li>
+	<li><span class="future">Fleeing burning buildings</span></li>
+	<li><span class="future">Fighting fire (all modes)</span></li>
+	<li><span class="future">Designation to set item or tile on fire in dwarf mode</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Reputation</span>
+	<ul class="itemized">
+	<li><span class="inprog">Reputation with entity populations, site governments, families and individuals</span>
+		<ul class="itemized">
+		<li><span class="done">Increases with heroic acts but can rise out of stranger status just by going to markets etc.</span></li>
+		</ul>
+	</li>
+	<li><span class="inprog">Townspeople fractured among various overlapping allegiances to lords/villains/etc.</span></li>
+	<li><span class="future">People offering free goods to heroes</span></li>
+	<li><span class="future">Being called out by others if you are famous or a stranger in town</span></li>
+	<li><span class="inprog">Revenge from villains/relatives/superiors of people you have killed or troubled (likely through tracking you down, see Thief role)</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Combat flow</span>
+	<ul class="itemized">
+	<li><span class="done">Aimed attacks</span></li>
+	<li><span class="done">Random "opportunities" that increase/decrease the efficacy of all aimed/specific moves as combat progresses</span></li>
+	<li><span class="done">Reaction moments and controllable counter-strikes/movement chances</span></li>
+	<li><span class="future">Notion of stance/guard, with varying bonuses/penalties</span></li>
+	<li><span class="future">Ability to jump up on and ride opponents if they are large enough (can happen to you too of course)</span></li>
+	<li><span class="future">Not being able to hit a giant in the head, hitting a dragon in the head as a reaction when it attempts to bite</span></li>
+	<li><span class="future">Notion of overall wrestling position (who is on top of or controlling whom, etc.)</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Combat styles</span>
+	<ul class="itemized">
+	<li><span class="future">Combat styles involving weapons or natural attacks with associated stances and moves</span></li>
+	<li><span class="future">Ability to learn moves, etc. from others with whom you have a high enough reputation</span></li>
+	<li><span class="future">Certain moves may only be available as specific counters, while others might just be regular attacks</span></li>
+	<li><span class="future">Ability to create new moves/styles when highly skilled</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Better megabeasts</span>
+	<ul class="itemized">
+	<li><span class="future">Variety and randomization within constraints (e.g. various dragons)</span></li>
+	<li><span class="future">Reproduction</span></li>
+	<li><span class="future">Share any intelligent/diplomacy behavior that other hist figs have when appropriate</span></li>
+	</ul>
+</li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Adventurer Role: Thief</span>
+<ul class="itemized">
+<li><span class="dev2">Valuables and mansions</span>
+	<ul class="itemized">
+	<li><span class="future">Towns with large entity populations should have sections/quarters with varying residence quality etc.</span></li>
+	<li><span class="future">Mansions/villas out of the way as well</span></li>
+	<li><span class="future">Many high quality dwarf mode style items in these places</span></li>
+	<li><span class="future">Guards, servants and watch animals/pets associated to the owner wandering the premises</span></li>
+	<li><span class="future">Inns associated to roads and entity pop sprawl where you can stay and get information about the surroundings</span></li>
+	<li><span class="done">Overhearing conversations as you move about town</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Selling stolen property</span>
+	<ul class="itemized">
+	<li><span class="future">Unscrupulous people in markets and others willing to take stolen goods</li>
+	</ul>
+</li>
+<li><span class="dev2">Sneaking and disguise portions of the Hero role above are required</span></li>
+<li><span class="dev2">Bounties and being hunted</span>
+	<ul class="itemized">
+	<li><span class="future">No automatic recognition that you have stolen an item</span></li>
+	<li><span class="future">People should notice when items are missing and raise an alert</span></li>
+	<li><span class="future">Strangers found around town when crime is suspected should be stopped and searched</span></li>
+	<li><span class="future">Your identity/appearance should be remembered for a time if you are seen in an area</span></li>
+	<li><span class="future">If your identity/appearance is associated to an alert over a crime, somebody responsible in the entity should put a bounty on you if appropriate for the entity</span></li>
+	<li><span class="inprog">You should leave tracking information and it should keep track of the last many people you have talked to</span></li>
+	<li><span class="inprog">Entity warriors and other adventurers should follow your tracking information</span></li>
+	<li><span class="future">Villains/raiders/etc. from the Hero role should also receive bounties that you can fulfill</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Justice</span>
+	<ul class="itemized">
+	<li><span class="future">Surrender to those seeking you</span>
+		<ul class="itemized">
+		<li><span class="future">You have to follow orders to remain in surrendered state (generally to go to a location or drop your weapon)</span></li>
+		<li><span class="future">When you make a command that follows an order, there should be an option to skip ahead to stages of the journey (such as to a dungeon or halfway through the journey back if you want to attempt to escape from your captor)</span></li>
+		<li><span class="future">If you leave the surrendered state, you should be attacked until you surrender again, though force should not necessarily be lethal immediately</span></li>
+		</ul>
+	</li>
+	<li><span class="future">Punishment</span>
+		<ul class="itemized">
+		<li><span class="future">Initial beatings</span></li>
+		<li><span class="future">Cutting off some small body part</span></li>
+		<li><span class="future">Branding (requires wounds to support art image from crafts)</span></li>
+		<li><span class="future">Stocks, buried to neck, tied to post</span></li>
+		<li><span class="future">Caned, whipped, hammered</span></li>
+		<li><span class="future">Executions</span></li>
+		<li><span class="future">Imprisonment (until there are ways to escape, might as well retire the character, at which point rescue might be possible by a subsequent character)</span></li>
+		</ul>
+	</li>
+	</ul>
+</li>
+<li><span class="dev2">Concealing your identity</span>
+	<ul class="itemized">
+	<li><span class="done">Being able to assume a different name</li>
+	<li><span class="future">Changing your clothes should affect the appearance tracking</li>
+	<li><span class="future">Covering your face/hair with hoods, masks, etc. should affect appearance tracking</li>
+	<li><span class="future">Skills for changing voice and mannerisms convincingly</span>
+		<ul class="itemized">
+		<li><span class="future">If you screw up, you can be regarded as a suspicious stranger, which is worse than being a regular stranger</span></li>
+		</ul>
+	</li>
+	</ul>
+</li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Adventurer Role: Treasure Hunter</span>
+<ul class="itemized">
+<li><span class="dev2">Adventure sites</span>
+	<ul class="itemized">
+	<li><span class="future">Non-town sites need to created and used for various purposes in world generation (prisons, tombs, temples, mines, castles, etc.)</span></li>
+	<li><span class="future">These places should often fall into disuse (or not be active entity pop locations, as with a tomb)</span></li>
+	<li><span class="future">Old abandoned structures can be partially buried in available soil layers</span></li>
+	<li><span class="future">Sites should contain any appropriate items to their (possibly former) purpose</span></li>
+	<li><span class="future">World gen should utilize defunct sites and get them new inhabitants</span>
+		<ul class="itemized">
+		<li><span class="future">Underground monsters</span></li>
+		<li><span class="future">Villains/bandits/etc. hideouts</span></li>
+		<li><span class="future">Outdoor creatures</span></li>
+		<li><span class="future">Megabeasts</span></li>
+		<li><span class="future">Night creatures (see below)</span></li>
+		<li><span class="future">Regular entity sprawl/migrants near surface</span></li>
+		</ul>
+	<li><span class="inprog">Existing town-style sites should be updated as possible (dwarf fortresses, etc.)</span></li>
+	</li>
+	</ul>
+</li>
+<li><span class="dev2">Movement</span>
+	<ul class="itemized">
+	<li><span class="future">Improved swimming (holding breath, currents, etc.)</span></li>
+	<li><span class="done">Ability to climb in adv mode</span></li>
+	<li><span class="done">Ability to jump in adv mode</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Lighting</span>
+	<ul class="itemized">
+	<li><span class="future">Proper environmental lighting</span></li>
+	<li><span class="future">Construction and use of torches</span></li>
+	<li><span class="future">Candles/lamps/lanterns</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Traps</span>
+	<ul class="itemized">
+	<li><span class="future">Whatever comes out of mechanics (below) should occur in the sites you explore to the extent that the traps can be detected and surpassed</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Writing</span>
+	<ul class="itemized">
+	<li><span class="future">Phrase storage and grammar updates</span></li>
+	<li><span class="future">Have books around that can contain maps/locations/names/traps/purpose/artifacts of older sites</span>
+		<ul class="itemized">
+		<li><span class="future">Sometimes you might just have a name and know an artifact is there, and then be able to cross-reference that in the next source you find until you feel you are prepared</span></li>
+		</ul>
+	</li>
+	<li><span class="future">Some sites might contain additional tomes/tablets/inscriptions that lead to more information</span></li>
+	</ul>
+</li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Adventurer Role: Slayer of Night Creatures</span>
+<ul class="itemized">
+<li><span class="dev2">Night creatures and the undead</span>
+	<ul class="itemized">
+	<li><span class="done">Replace skeletons and zombies with generalized generated types of creature corruption/undeath etc.</span></li>
+	<li><span class="inprog">Causes -- existing from the beginning, death circumstances, being cursed, focusing on specific historical figures at first</span></li>
+	<li><span class="inprog">Goals, if any, as individuals, even if it is murdering or mutilating wayfarers in the woods</span></li>
+	<li><span class="future">Weaknesses, restrictions on movement, other limitations</span></li>
+	<li><span class="future">Nicknames for them that are used by the villagers</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Torment the living</span>
+	<ul class="itemized">
+	<li><span class="future">Night creatures must act out their goals during play</span>
+		<ul class="itemized">
+		<li><span class="future">Villagers should react using the same systems as with villains or player thieves, so that you can overhear conversations or use bounty-type systems</span></li>
+		</ul>
+	</li>
+	<li><span class="future">Some victims can end up drained as subvillains or slaves in the same way a bandit leader has subordinates</span></li>
+	<li><span class="future">Stranger/thief tracking systems could be used to generate some paranoia surrounding night creatures with a human/etc. appearance or that utilize human/etc. slaves</span></li>
+	<li><span class="future">Diseases/plagues could be included as indirect torments, as well as famine once site resources can be assailed</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Hunting them down</span>
+	<ul class="itemized">
+	<li><span class="future">Sometimes they are trackable through methods above, sometimes there are special signs</span></li>
+	<li><span class="future">Killing them might ultimately require burying or burning a body, etc.</span></li>
+	<li><span class="future">Religious or other groups might be able to tell you how to defeat or protect yourself from a night creature and support you with supplies if you can provide reports of its activity/victims etc.</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Curses and exposure</span>
+	<ul class="itemized">
+	<li><span class="future">Can be cursed by night creatures when you put them down</span></li>
+	<li><span class="future">The slaves of night creatures could have extreme effects from proximity that also affect you if you make a business of hunting them</span></li>
+	</ul>
+</li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Adventurer Role: Explorer</span>
+<ul class="itemized">
+<li><span class="dev2">Mapping and obstacles</span>
+	<ul class="itemized">
+	<li><span class="future">It should be possible to optionally hide sections of the map during world generation</span></li>
+	<li><span class="future">Store region names by entity, not all places would have names, ability to give names to the regions/rivers/peaks etc. that you discover</span></li>
+	<li><span class="done">Should not be able to cross every river square from travel map unless there's a bridge</span></li>
+	<li><span class="future">Fording rivers</span></li>
+	<li><span class="future">Ferries</span></li>
+	<li><span class="future">Ports and boats (even if they are just used to teleport to other ports at first)</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Lands and beastiary</span>
+	<ul class="itemized">
+	<li><span class="future">More overland map features and local variations</span></li>
+	<li><span class="future">Scrap good/evil lands for lands with more variety</span></li>
+	<li><span class="future">Randomized critters in other categories (vermin, roaming creatures, soil critters, plants, etc.), naming them</span></li>
+	<li><span class="done">Being able to look at a list of all known creatures you've seen and where</span></li>
+	</ul>
+</li>
+<li><span class="dev2">First contact</span>
+	<ul class="itemized">
+	<li><span class="future">If you are exotic enough, leader might be interested in speaking to you even if you are a stranger</span></li>
+	<li><span class="future">Might be able to exchange gifts between civ leaders and accept and give gifts yourself</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Animal people and other protectors</span>
+	<ul class="itemized">
+	<li><span class="future">Being tracked and hunted if you kill creatures in places you shouldn't</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Scouting and rewards</span>
+	<ul class="itemized">
+	<li><span class="future">Tracking information about new locations and being able to share it with civ leaders</span></li>
+	</ul>
+</li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Adventurer Role: Trader</span>
+<ul class="itemized">
+<li><span class="dev2">Site resources</span>
+	<ul class="itemized">
+	<li><span class="done">Track resources in quantity instead of just by type</span></li>
+	<li><span class="inprog">Should depend on trade/tribute relationships as well as available professions and sprawl sites</span></li>
+	<li><span class="future">Villager/farmer schedules/activities</span></li>
+	<li><span class="future">Work with 3D mineral veins, mine maps and other industrial sites</span></li>
+	</ul>
+</li>
+<li><span class="dev2">World economy</span>
+	<ul class="itemized">
+	<li><span class="inprog">Supply/demand based on current available entity resources etc.</span></li>
+	<li><span class="inprog">Expand on trade/tribute relationships formed in world generation</span></li>
+	<li><span class="future">Realize trade/tribute relationships with actual caravans moving on the map</span></li>
+	<li><span class="future">Ability to get some supply/demand information about nearby locations from travelers and others</span></li>
+	<li><span class="future">Ability to get that information yourself and trade it to merchants, especially as explorer</span></li>
+	<li><span class="future">Replace dwarf mode generated caravans with actual caravans</span></li>
+	<li><span class="future">Improved dwarf mode trade agreements incorporating all the world gen/supply/demand/merchant info etc.</span></li>
+	<li><span class="future">Fairs</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Ability to lead a trade caravan</span>
+	<ul class="itemized">
+	<li><span class="future">Ability to load stuff onto pack mules</span></li>
+	<li><span class="future">Ability to hire bodyguards</span></li>
+	<li><span class="future">Wagon/wagon teams (might do some teleportation travel with them to avoid annoyances for now)</span></li>
+	<li><span class="future">Being able to trade from wagons, large markets might have people to move objects more quickly</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Mansions for sale</span>
+	<ul class="itemized">
+	<li><span class="future">Renting/buying cottages and other properties</span></li>
+	<li><span class="future">Might have to get information about struggling nobles</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Court</span>
+	<ul class="itemized">
+	<li><span class="future">Attaining a certain level of wealth and property should help with access to powerful people, though we have yet to decide what if anything this will grant you in the short term</span></li>
+	</ul>
+</li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Basic Adventure Mode Skills</span>
+<ul class="itemized">
+<li><span class="dev2">Some survival skills</span>
+	<ul class="itemized">
+	<li><span class="done">Ability to butcher corpses with an appropriate tool</span></li>
+	<li><span class="future">Ability to make clothing and some other objects from hides</span></li>
+	<li><span class="done">Ability to obtain a sharp (or at least non-smooth) edge on a rock</span></li>
+	<li><span class="done">Extend adv mode starvation/dehydration times to appropriate number of days</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Wood use</span>
+	<ul class="itemized">
+	<li><span class="future">Ground debris/sticks/underbrush</span></li>
+	<li><span class="done">Ability to chop down tree using appropriate tool</span></li>
+	<li><span class="future">Ability to make simple wooden weapons and ammunition</span></li>
+	<li><span class="done">Ability to use logs to make constructions</span></li>
+	<li><span class="done">Site recognition for saving adventurer-made sites</span></li>
+	<li><span class="done">Ability to name site</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Digging and stone constructions</span>
+	<ul class="itemized">
+	<li><span class="future">Ability to dig out soil tiles</span></li>
+	<li><span class="future">Buried boulders in some soils</span></li>
+	<li><span class="future">Ability to pull up surface boulders</span></li>
+	<li><span class="future">Ability to make rough stone constructions</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Hunting/tracking animals</span>
+	<ul class="itemized">
+	<li><span class="done">Everybody leaving trails of information that can be tracked with the appropriate skill</span></li>
+	<li><span class="future">Trails generated for offscreen animals</span></li>
+	<li><span class="future">Ability for animals to flee into offloaded areas and have some information maintained briefly</span></li>
+	<li><span class="future">Ability to track blood from wounded partially offloaded animals</span></li>
+	<li><span class="future">Ability to find bodies of wounded partially offloaded animals, which could also be slowed by wounds</span></li>
+	<li><span class="inprog">Ability to search for trail information from travel mode</span></li>
+	<li><span class="future">Having it point out animals you happen upon and perhaps some auto-sneak settings for those events</span></li>
+	<li><span class="done">Make sneak status clear to player</span></li>
+	<li><span class="inprog">Better overall wilderness population tracking and regeneration</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Entity populations</span>
+	<ul class="itemized">
+	<li><span class="done">Track larger entity populations during world generation</span></li>
+	<li><span class="done">Update site storage to account for a variety of sprawl</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Growing crops</span>
+	<ul class="itemized">
+	<li><span class="future">Ability to till tile (faster with tool)</span></li>
+	<li><span class="future">Ability to plant seeds</span></li>
+	<li><span class="inprog">Ability to pass time quickly (unlike current sleep command)</span></li>
+	<li><span class="future">Ability to harvest plants</span></li>
+	<li><span class="future">Ability to make a quern from a boulder</span></li>
+	<li><span class="future">Ability to grind grindable plants (designating any proper container for products)</span></li>
+	<li><span class="future">Ability to cook and appropriate tools for this</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Raising livestock</span>
+	<ul class="itemized">
+	<li><span class="future">Farms associated to entity population sprawl</span></li>
+	<li><span class="future">Ability to buy a livestock animal and lead it around</span></li>
+	<li><span class="future">Keep track of your animals as with hunted animals so they are not easily and permanently lost</span></li>
+	<li><span class="future">Ability to build fences (more than one fence tile per tree used, as opposed to wall)</span></li>
+	<li><span class="future">Ability to perform decisive attacks on unsuspecting or heavily injured opponent (a cow being slaughtered, for instance)</span></li>
+	<li><span class="future">Tracking livestock breeding/pregnancy information</span></li>
+	<li><span class="future">Grazing and drinking for livestock</span></li>
+	<li><span class="future">Eggs, chickens and associated objects</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Markets</span>
+	<ul class="itemized">
+	<li><span class="done">Small markets associated to entity population villages</span></li>
+	<li><span class="inprog">Markets need to replenish goods and manage ownership changes</span></li>
+	</ul>
+</li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Hauling Improvements</span>
+<ul class="itemized">
+<li><span class="done">Being able to haul multiple objects</span></li>
+<li><span class="future">Having multiple dwarves involved with item hauling for a job</span></li>
+<li><span class="done">Wheelbarrows</span></li>
+<li><span class="done">Minecarts</span>
+	<ul class="itemized">
+	<li><span class="done">Wooden, stone-carved and metal tracks</span></li>
+	<li><span class="done">Can be filled like stockpiles and moved between destinations</span></li>
+	</ul>
+</li>
+<li><span class="future">Work animals to tow carts and haul objects</span></li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Improved Mechanics</span>
+<ul class="itemized">
+<li><span class="future">Better traps</span>
+	<ul class="itemized">
+	<li><span class="future">Stone traps should require the stone be placed above the tile that is targeted</span></li>
+	<li><span class="future">Stones should be able to roll (perhaps if they are started from or land on a ramp tile)</span></li>
+	<li><span class="future">Weapon traps should be multi-tile and require a spring or other potential energy source -- automatic resetting should require some explicit establishment of a feasible mechanism</span></li>
+	</ul>
+</li>
+<li><span class="future">Large pipe sections -- walk on them or crawl inside them, allow passage for fluids</span></li>
+<li><span class="future">Moving fortress sections (lifts, crushing traps, etc.)</span></li>
+<li><span class="future">Waterproof axles through some mechanism</span></li>
+<li><span class="future">Rock grinders?  Fans?  We'll do some other machines around this time -- whichever feasible ones are the most entertaining for dwarves and treasure hunters</span></li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Farming Improvements</span>
+<ul class="itemized">
+<li><span class="future">Soil moisture tracking and ability to moisten soil (buckets or other irrigation)</span></li>
+<li><span class="future">Soil nutrient requirements for plants and nutrient tracking to the extent the farming interface can provide decent feedback for you, fertilizers can reflect this</span></li>
+<li><span class="future">Harvestable flowers and fruit growing on plants, ability to plant trees</span></li>
+<li><span class="future">Weeds</span></li>
+<li><span class="future">More pests</span></li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Fortress Subgroups</span>
+<ul class="itemized">
+<li><span class="future">Skilled dwarves should form guilds</span></li>
+<li><span class="future">Dwarves with similar religious views should formally associate at times</span></li>
+<li><span class="future">Guilds and sects should be able to make demands for meeting halls, temples, specific furniture or the resources and time to prepare their own furniture, statues of specific gods throughout the fortress, etc.</span></li>
+<li><span class="future">Dwarves that have grudges or personal altercations should be able to drag their groups into it</span></li>
+<li><span class="future">Removal of guild dwarves from their professions should result in trouble between the guild and the currently appointed manager/leader</span></li>
+<li><span class="future">Various benefits to having a well developed guild or sect are under consideration</span></li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Military</span>
+<ul class="itemized">
+<li><span class="dev2">Army improvements</span>
+	<ul class="itemized">
+	<li><span class="inprog">Make armies/beasts that attack fortress come from actual groups moving on world map</span></li>
+	<li><span class="future">Ability to fight other armies with your dwarven armies</span>
+		<ul class="itemized">
+		<li><span class="future">Larger armies should spread over multiple mid-level map squares</span></li>
+		<li><span class="future">Ability to create fortifications/lines/etc. instead of spreading haphazardly</span></li>
+		<li><span class="future">There are complications to be worked out if you can zoom in to battles and control them at the local level, concerning what happens to your fortress</span></li>
+		<li><span class="future">If you can zoom in, situations like being surrounded need to be respected and have the desired results regardless of what area is zoomed in on</span></li>
+		</ul>
+	</li>
+	<li><span class="future">Allow villains to attempt to demand tribute from you</span></li>
+	</ul>
+</li>
+<li><span class="dev2">Improved sieges</span>
+	<ul class="itemized">
+	<li><span class="future">Eliminate remaining edge-of-map exploits</span></li>
+	<li><span class="future">More highly trained attacking soldiers when appropriate</span></li>
+	<li><span class="future">Many trap exploits are handled above by requiring more to produce a trap, things like cage traps should make more sense vs. large creatures etc. (respect strength/ability vs. material, large cages might be separate object)</span></li>
+	<li><span class="future">Coming up with a plan to overcome pathing obstacles to reach fortress innards</span>
+		<ul class="itemized">
+			<li><span class="future">Ability to dig (optionally, default on)</span></li>
+			<li><span class="future">Ability to build bridges/ramps</span></li>
+			<li><span class="future">Ability to use grappling hooks/ladders/climb</span></li>
+		</ul>
+	</li>
+	<li><span class="future">Learning from mistakes if first attempted assault plan fails badly</span>
+		<ul class="itemized">
+			<li><span class="future">For instance, if many siegers are killed, caged, etc. in a given hallway, they shouldn't generally go that way again, even if that means building/climbing/digging</span></li>
+		</ul>
+	</li>
+	<li><span class="future">Siege engine improvements depend on state of boats, lifts/moving fortress sections, since these should all use the same framework</span></li>
+	</ul>
+</li>
+</ul>
+</p>
+
+<p>
+<span class="dev1">Inns, taverns, temples and libraries</span>
+	<ul class="itemized">
+	<li><span class="dev2">In the Fortress</span></li>
+		<ul class="itemized">
+		<li><span class="done">Lay out the basic rooms/furniture in several associated zones</span></li>
+		<li><span class="inprog">Fortress guests include merchants, diplomats, adventurers, mercenaries, bandits, travelers, etc.</span></li>
+		<ul class="itemized">
+			<li><span class="done">Your dwarves can also visit</span></li>
+			<li><span class="done">Extra interactions with certain guests, including the ability to hire them</span></li>
+		</ul>
+		<li><span class="done">Musical instrument use, dancing, storytelling, etc.</span></li>
+		<li><span class="done">Dwarves perform related jobs, serving and otherwise entertaining guests</span></li>
+		<li><span class="future">Set prices/activities</span></li>
+		<li><span class="future">Recipes/drink quality</span></li>
+		<li><span class="future">Games</span></li>
+		<ul class="itemized">
+			<li><span class="future">Dwarves can gamble with outsiders</span></li>
+			<li><span class="future">Ability to play games directly if a dwarf is involved</span></li>
+		</ul>
+		<li><span class="inprog">Rooms rentable to outsiders</span></li>
+		<li><span class="inprog">Fortress's reputation as inn/tavern tracked</span></li>
+		<li><span class="inprog">Tie-ins with fortress justice if things go badly</span></li>
+		<li><span class="done">Detailed art forms (poetry, music, dancing)</span></li>
+		<li><span class="done">Randomly generated musical instruments</span></li>
+		<li><span class="done">Innovation system for discoveries</span></li>
+		<li><span class="done">Books and scrolls</span></li>
+		<li><span class="done">Temple locations with prayer activities</span></li>
+		</ul>
+	<li><span class="dev2">Adventure mode</span></li>
+		<ul class="itemized">
+		<li><span class="done">Update town taverns to the new layout</span></li>
+		<li><span class="inprog">Inns in some towns and on roads, with rooms available for the player</span></li>
+		<li><span class="inprog">Food and drink service for the player and others</span></li>
+		<li><span class="done">New fort activities like songs and dancing in adv mode taverns</span></li>
+		<li><span class="future">Games to play and player gambling</span></li>
+		</ul>
+	</ul>
+</p>
+
+<p>
+<span class="dev1">Improvements to Artifacts</span>
+<ul class="itemized">
+<li><span class="dev2">World generation preliminaries</span></li>
+	<ul class="itemized">
+	<li><span class="done">Worldgen fortress artifacts</span></li>
+	<li><span class="done">Worldgen named weapons/armor for heroes</span></li>
+	<li><span class="done">Worldgen holy relics</span></li>
+	<li><span class="done">Various claims and ownership types for artifacts (heirloom, entity symbol, etc.)</span></li>
+		<ul class="itemized">
+		<li><span class="done">Conflict over competing artifact claims</span></li>
+		<li><span class="done">Conflict can be resolved/ties deepened with artifact gifts</span></li>
+		<li><span class="done">Worldgen invaders loot artifacts</span></li>
+		<li><span class="done">Worldgen thieves directed toward new artifacts</span></li>
+		<li><span class="done">Some worldgen megabeasts seize new artifacts</span></li>
+		</ul>
+	</ul>
+<li><span class="dev2">Background changes</span></li>
+	<ul class="itemized">
+	<li><span class="inprog">Site maps vs. artifacts</span></li>
+		<ul class="itemized">
+		<li><span class="done">All sites should understand how artifacts can be stored</span></li>
+			<ul class="itemized">
+			<li><span class="future">Based on entity, balance desire to display with guards/traps/etc.</span></li>
+			</ul>
+		<li><span class="done">Handle kobold site maps</span></li>
+		<li><span class="done">Some buildings/items used to display artifacts (all modes)</span></li>
+		</ul>
+	<li><span class="done">Knowledge/rumors for artifact locations/possessors</span></li>
+	</ul>
+<li><span class="dev2">Artifact quests and agents</span></li>
+	<ul class="itemized">
+	<li><span class="done">Quest to retrieve, steal or otherwise obtain artifact for somebody</span></li>
+	<li><span class="done">Quests can be taken by player adventurer or other characters</span></li>
+		<ul class="itemized">
+		<li><span class="future">Support for the journey</span></li>
+		<li><span class="done">Ability to present artifact (quest or not)</span></li>
+		<li><span class="done">Recognition of where artifact is placed by player and others</span></li>
+		</ul>
+	<li><span class="future">Artifacts as rewards for quests</span></li>
+	</ul>
+<li><span class="dev2">Fortress artifact interactions</span></li>
+	<ul class="itemized">
+	<li><span class="done">Player's fort mode artifacts can be the target of artifact quests</span></li>
+	<li><span class="done">Invaders can demand artifacts and leave with them</span></li>
+	<li><span class="done">Ability to send a squad off the map to fetch a stolen artifact</span></li>
+		<ul class="itemized">
+		<li><span class="inprog">Handle the squad's tale upon return or rumors if the squad is delayed or doesn't survive</span></li>
+		</ul>
+	</ul>
+</ul>
+</p>
+
+		</td>
+		</tr>
+	</table>
+	</td>
+	<td valign="top">
+	<table style="width:100px;margin-left:0px;margin-top:0px;margin-bottom:0px;" border="0" cellpadding="0" cellspacing="0">
+		<tr align="center">
+		<td><a href="../support.html"><img alt="" border="0" src="imgs/support_large.png" width="100" height="100" align="center"/></a></td>
+		</tr>
+	</table>
+	</td>
+</tr>
+</table>
+
+
+</body>
+</html>

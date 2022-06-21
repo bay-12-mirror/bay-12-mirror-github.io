@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+
+<channel>
+<title>Dwarf Fortress Talk</title>
+<link>http://www.bay12games.com/dwarves/df_talk.html</link>
+<language>en-us</language>
+<copyright></copyright>
+<itunes:subtitle></itunes:subtitle>
+<itunes:author>Rainseeker, Capntastic, Toady One, Threetoe</itunes:author>
+<itunes:summary>Each episode of Dwarf Fortress talk typically covers a topic or two of interest to Dwarf Fortress fans, whether it's future development, discussions of game mechanics, news from Bay 12 Games, progress reports, Q&amp;A, or the occasional equipment adjustment by Scamps.</itunes:summary>
+<description>Bay 12 news, progress reports, Q&amp;A etc.</description>
+<itunes:owner>
+<itunes:name>Tarn Adams</itunes:name>
+<itunes:email>toadyone@bay12games.com</itunes:email>
+</itunes:owner>
+<itunes:image href="http://www.bay12games.com/dwarves/df_talk.png" />
+<itunes:category text="Games &amp; Hobbies">
+<itunes:category text="Video Games" />
+</itunes:category>
+<itunes:explicit>yes</itunes:explicit>
+
+<item>
+<title>Dwarf Fortress Talk #28</title>
+<itunes:author>Rainseeker, Capntastic, Toady One, Scamps</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One answer lots of questions and digress from time to time.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_28.mp3" length="25820429 " type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_28.mp3</guid>
+<pubDate>Thu, 4 Feb 2021 00:00:00 GMT</pubDate>
+<itunes:duration>61:28</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #27</title>
+<itunes:author>Rainseeker, Capntastic, Toady One, Scamps</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One discuss the in-game dwarf art, answer many questions, and check out some fan art by Arne.  If you can while you are listening, visit Arne's page at http://www.androidarts.com/df/dorf.htm and admire along with us.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_27.mp3" length="25857739" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_27.mp3</guid>
+<pubDate>Fri, 9 Oct 2020 00:00:00 GMT</pubDate>
+<itunes:duration>61:33</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #26</title>
+<itunes:author>Brian Bucklew, Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, special guest Brian Bucklew of Freehold Games joins Rainseeker, Capntastic and Toady One to talk about Caves of Qud development and other matters.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_26.mp3" length="35170844" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_26.mp3</guid>
+<pubDate>Tue, 1 Sep 2020 00:00:00 GMT</pubDate>
+<itunes:duration>83:44</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress, freehold games, caves of qud</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #25</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One discuss a few reddit posts, the possibility of human forts and other topics, and answer questions.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_25.mp3" length="25793000" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_25.mp3</guid>
+<pubDate>Tue, 11 Aug 2020 00:00:00 GMT</pubDate>
+<itunes:duration>61:24</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #24</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker returns to join Capntastic and Toady One to tease UI development and play with the myth generator prototype.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_24.mp3" length="30976299" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_24.mp3</guid>
+<pubDate>Fri, 17 Jul 2020 00:00:00 GMT</pubDate>
+<itunes:duration>73:45</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #23</title>
+<itunes:author>Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Capntastic and Toady One return after several years to discuss the upcoming graphical version and other developments.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_23.mp3" length="34247230" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_23.mp3</guid>
+<pubDate>Sat, 27 Jun 2020 00:00:00 GMT</pubDate>
+<itunes:duration>81:41</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #22</title>
+<itunes:author>Toady One, Threetoe</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this emergency episode, Threetoe and Toady One discuss the new development plans and answer the entire gigantic backlog of questions.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_22.mp3" length="33122722" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_22.mp3</guid>
+<pubDate>Thu, 13 Nov 2014 00:00:00 GMT</pubDate>
+<itunes:duration>78:51</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #21</title>
+<itunes:author>Rainseeker, Capntastic, Toady One, Threetoe</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One discuss the recent developments in combat and conversations, among other things.  Threetoe and Toady answer between two and three dozen questions as they continue to work on the pile.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_21.mp3" length="46790712" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_21.mp3</guid>
+<pubDate>Thu, 23 May 2013 00:00:00 GMT</pubDate>
+<itunes:duration>113:13</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #20</title>
+<itunes:author>Rainseeker, Capntastic, Toady One, Threetoe</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One discuss the continuing development of Dwarf Fortress (at least up until succession which I was working on during the time of the recording).  Threetoe and Toady answer a small fraction of your questions, which appeared in great numbers.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_20.mp3" length="41862852" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_20.mp3</guid>
+<pubDate>Wed, 13 Feb 2013 00:00:00 GMT</pubDate>
+<itunes:duration>72:23</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #19</title>
+<itunes:author>Rainseeker, Capntastic, Toady One, Threetoe</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One return to discuss the development of Dwarf Fortress.  Threetoe appears again on the question and answer segment.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_19.mp3" length="60044328" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_19.mp3</guid>
+<pubDate>Wed, 14 Nov 2012 00:00:00 GMT</pubDate>
+<itunes:duration>104:06</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #18</title>
+<itunes:author>Rainseeker, Capntastic, Toady One, Threetoe</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One discuss the latest release of Dwarf Fortress and what's coming next.  Threetoe makes his first appearance to answer questions with Toady.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_18.mp3" length="38971418" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_18.mp3</guid>
+<pubDate>Sat, 21 Apr 2012 00:00:00 GMT</pubDate>
+<itunes:duration>66:17</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #17</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One discuss Dwarf Fortress play styles and answer your questions.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_17.mp3" length="22063440" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_17.mp3</guid>
+<pubDate>Sun, 13 Nov 2011 00:00:00 GMT</pubDate>
+<itunes:duration>52:31</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #16</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, recorded in August, Rainseeker, Capntastic and Toady One discuss legacies of forts and adventurers as well as a bit about planes of existence.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_16.mp3" length="29046528" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_16.mp3</guid>
+<pubDate>Sun, 25 Sep 2011 00:00:00 GMT</pubDate>
+<itunes:duration>69:09</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #15 Mini</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this short episode, Rainseeker, Capntastic and Toady One perform the main task of reminding listeners of the Redding meetup (Saturday, July 16!) and then ramble a bit about recent developments.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_15_Mini.mp3" length="18854809" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_15_Mini.mp3</guid>
+<pubDate>Wed, 16 Jul 2011 00:00:00 GMT</pubDate>
+<itunes:duration>26:11</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #14</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One discuss the new night creatures and answer questions.  The first half was recorded back in the middle of May, but it's all still relevant.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_14.mp3" length="42539784" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_14.mp3</guid>
+<pubDate>Tue, 31 May 2011 00:00:00 GMT</pubDate>
+<itunes:duration>101:17</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #13</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One discuss cities and answer questions.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_13.mp3" length="21644616" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_13.mp3</guid>
+<pubDate>Sat, 23 Apr 2011 00:00:00 GMT</pubDate>
+<itunes:duration>51:32</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #12</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One discuss inns, talk about the past and future of DF, and answer questions.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_12.mp3" length="47816202" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_12.mp3</guid>
+<pubDate>Thu, 24 Mar 2011 00:00:00 GMT</pubDate>
+<itunes:duration>99:37</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #11</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One talk a little about personalities, answer questions, and ramble on at length about the upcoming releases.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_11.mp3" length="26790816" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_11.mp3</guid>
+<pubDate>Tue, 22 Feb 2011 00:00:00 GMT</pubDate>
+<itunes:duration>111:37</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #10</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One talk about the upcoming release, answer questions and carry on.  We had difficulty scheduling a time for this recording, so we recorded two segments with Toady and each co-host on different weeks and we didn't attempt to cover a listener suggested topic.  Toady also forgot the credits at the end of the second segment, so here they are amplified in the description:  Ollieh did the music.  mallocks generally does the transcript, which'll be posted in time.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_10.mp3" length="27787680" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_10.mp3</guid>
+<pubDate>Mon, 11 Oct 2010 00:00:00 GMT</pubDate>
+<itunes:duration>115:46</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #9</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One talk about some of the sciences with respect to Dwarf Fortress and answer some email questions.  There is also a heat-addled extra hour available on the web page.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_9.mp3" length="15977568" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_9.mp3</guid>
+<pubDate>Wed, 04 Aug 2010 00:00:00 GMT</pubDate>
+<itunes:duration>66:34</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #8</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One talk about some of the sciences with respect to Dwarf Fortress and answer some email questions.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_8.mp3" length="60151039" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_8.mp3</guid>
+<pubDate>Sat, 17 Apr 2010 00:00:00 GMT</pubDate>
+<itunes:duration>125:18</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #7 Part 2</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this missing segment, Rainseeker, Capntastic and Toady One talk about the future of artifacts.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/df_7_missing_segment.mp3" length="6532416" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/df_7_missing_segment.mp3</guid>
+<pubDate>Mon, 22 Feb 2010 00:00:00 GMT</pubDate>
+<itunes:duration>27:13</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #7</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One talk about artifacts.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_7.mp3" length="32668152" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_7.mp3</guid>
+<pubDate>Sun, 14 Feb 2010 00:00:00 GMT</pubDate>
+<itunes:duration>68:03</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #6</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One talk about the future of adventure mode and answer some email questions.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_6.mp3" length="43137612" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_6.mp3</guid>
+<pubDate>Thu, 07 Jan 2010 00:00:00 GMT</pubDate>
+<itunes:duration>71:53</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #5</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One talk about the future of the game's cultures and do some forum questions.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_5.mp3" length="45258292" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_5.mp3</guid>
+<pubDate>Sat, 05 Dec 2009 00:00:00 GMT</pubDate>
+<itunes:duration>94:17</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #4</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker and Toady One talk about world generation, legends, crafting and do some forum questions while pondering Capntastic's crimefighting-related absence.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_4.mp3" length="68323008" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_4.mp3</guid>
+<pubDate>Tue, 03 Nov 2009 00:00:00 GMT</pubDate>
+<itunes:duration>94:53</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #3</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic and Toady One talk about the underground caverns, followed by questions from the forum.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_3.mp3" length="51082464" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_3.mp3</guid>
+<pubDate>Thu, 15 Oct 2009 00:00:00 GMT</pubDate>
+<itunes:duration>70:56</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #2</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>In this episode, Rainseeker, Capntastic, Ampersand and Toady One discuss sieges with a sprinkling of megabeasts and other topics, followed by a forum Q&amp;A session.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/Dwarf_Fortress_Talk_2.mp3" length="43855296" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/Dwarf_Fortress_Talk_2.mp3</guid>
+<pubDate>Tue, 01 Sep 2009 00:00:00 GMT</pubDate>
+<itunes:duration>91:21</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+<item>
+<title>Dwarf Fortress Talk #1</title>
+<itunes:author>Rainseeker, Capntastic, Toady One</itunes:author>
+<itunes:subtitle></itunes:subtitle>
+<itunes:summary>During our first time out, Toady One answers a wide variety of questions that Rainseeker and Capntastic collected from the forum.</itunes:summary>
+<enclosure url="http://www.bay12games.com/media/b12_call_1.mp3" length="37671054" type="audio/x-mp3" />
+<guid>http://www.bay12games.com/media/b12_call_1.mp3</guid>
+<pubDate>Thu, 06 Aug 2009 00:00:00 GMT</pubDate>
+<itunes:duration>78:03</itunes:duration>
+<itunes:keywords>bay 12, dwarf fortress</itunes:keywords>
+</item>
+
+</channel>
+</rss>

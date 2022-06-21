@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/dwarves/mantisbt/css/default.css" />
+	<script type="text/javascript" language="JavaScript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma-directive" content="no-cache" />
+	<meta http-equiv="Cache-Directive" content="no-cache" />
+	<meta http-equiv="Expires" content="Tue, 21 Jun 2022 21:27:15 GMT" />
+	<link rel="shortcut icon" href="/dwarves/mantisbt/images/favicon.ico" type="image/x-icon" />
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Text Search" href="http://bay12games.com/dwarves/mantisbt/browser_search_plugin.php?type=text" />	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Issue Id" href="http://bay12games.com/dwarves/mantisbt/browser_search_plugin.php?type=id" />	<title>0011842: &quot;Melt-designated&quot; trait in work order condition does not work if added manually - Dwarf Fortress Bug Tracker</title>
+<script type="text/javascript" src="/dwarves/mantisbt/javascript/min/common.js"></script>
+<script language="javascript">var loading_lang = "Loading...";</script><script type="text/javascript" src="/dwarves/mantisbt/javascript/min/ajax.js"></script>
+</head>
+<body>
+<div align="left"><a href="my_view_page.php"><img border="0" alt="Mantis Bug Tracker" src="/dwarves/mantisbt/images/mantis_logo.gif" /></a></div><table class="hide"><tr><td class="login-info-left">Anonymous | <a href="/dwarves/mantisbt/login_page.php?return=%2Fdwarves%2Fmantisbt%2Fview.php%3Fid%3D11842">Login</a> | <a href="/dwarves/mantisbt/signup_page.php">Signup for a new account</a></td><td class="login-info-middle"><span class="italic">2022-06-21 14:27 PDT</span></td><td class="login-info-right"><a href="http://bay12games.com/dwarves/mantisbt/issues_rss.php?"><img src="/dwarves/mantisbt/images/rss.png" alt="RSS" style="border-style: none; margin: 5px; vertical-align: middle;" /></a></td></tr></table><table class="width100" cellspacing="0"><tr><td class="menu"><a href="/dwarves/mantisbt/main_page.php">Main</a> | <a href="/dwarves/mantisbt/my_view_page.php">My View</a> | <a href="/dwarves/mantisbt/view_all_bug_page.php">View Issues</a> | <a href="/dwarves/mantisbt/changelog_page.php">Change Log</a> | <a href="/dwarves/mantisbt/roadmap_page.php">Roadmap</a></td><td class="menu right nowrap"><form method="post" action="/dwarves/mantisbt/jump_to_bug.php"><input type="text" name="bug_id" size="10" class="small" value="Issue #" onfocus="if (this.value == 'Issue #') this.value = ''" onblur="if (this.value == '') this.value = 'Issue #'" />&nbsp;<input type="submit" class="button-small" value="Jump" />&nbsp;</form></td></tr></table><br /><table class="width100" cellspacing="1"><tr><td class="form-title" colspan="3">View Issue Details&nbsp;<span class="small"><span class="bracket-link">[&nbsp;<a href="#bugnotes">Jump to Notes</a>&nbsp;]</span> </span></td><td class="center"><span class="small"><span class="bracket-link">[&nbsp;<a href="bug_view_page.php?bug_id=11861">&lt;&lt;</a>&nbsp;]</span> <span class="bracket-link">[&nbsp;<a href="bug_view_page.php?bug_id=9972">&gt;&gt;</a>&nbsp;]</span> </span></td><td class="right" colspan="2"><span class="small"><span class="bracket-link">[&nbsp;<a href="view.php?id=11842&amp;history=1#history">Issue History</a>&nbsp;]</span> </span><span class="small"><span class="bracket-link">[&nbsp;<a href="print_bug_page.php?bug_id=11842">Print</a>&nbsp;]</span> </span></td></tr><tr><td class="category" width="15%">ID</td><td class="category" width="20%">Project</td><td class="category" width="15%">Category</td><td class="category" width="15%">View Status</td><td class="category" width="15%">Date Submitted</td><td class="category" width="20%">Last Update</td></tr><tr class="row-1"><td>0011842</td><td>Dwarf Fortress</td><td>Dwarf Mode -- Interface, Manager</td><td>public</td><td>2021-12-30 02:04</td><td>2022-05-27 20:53</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-2"><td class="category">Reporter</td><td>qeveren</td><td colspan="4">&nbsp;</td></tr><tr class="row-1"><td class="category">Assigned To</td><td></td><td colspan="4">&nbsp;</td></tr><tr class="row-2"><td class="category">Priority</td><td>normal</td><td class="category">Severity</td><td>minor</td><td class="category">Reproducibility</td><td>always</td></tr><tr class="row-1"><td class="category">Status</td><td bgcolor="#fcbdbd">new</td><td class="category">Resolution</td><td>open</td><td colspan="2">&nbsp;</td></tr><tr class="row-2"><td class="category">Platform</td><td>Windows</td><td class="category">OS</td><td>Windows 10 Home</td><td class="category">OS Version</td><td>19042.1415</td></tr><tr class="row-1"><td class="category">Product Version</td><td>0.47.05</td><td colspan="4">&nbsp;</td></tr><tr class="row-2"><td class="category">Target Version</td><td></td><td class="category">Fixed in Version</td><td></td><td colspan="2">&nbsp;</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-1"><td class="category">Summary</td><td colspan="5">0011842: &quot;Melt-designated&quot; trait in work order condition does not work if added manually</td></tr><tr class="row-2"><td class="category">Description</td><td colspan="5">When creating a &quot;Melt a Metal Object&quot; work order via the manager or workshop profile, if you &quot;a: add item condition&quot; and then set the trait &quot;melt-designated items&quot; to that condition, the order will not detect any number of melt-designated items.<br />
+<br />
+If you instead create the condition using &quot;r: Add conditions from reagents/materials&quot;, the work order will detect the correct number of melt-designated items and operate as desired.<br />
+<br />
+Both the working and not-working versions are visually identical in the UI.</td></tr><tr class="row-1"><td class="category">Steps To Reproduce</td><td colspan="5">1. Mark some number of metal objects to be melted.<br />
+2. Create a new &quot;Melt a Metal Object&quot; work order via the Manager or a Workshop Profile.<br />
+3. Add a condition to this work order using the generic &quot;Add item condition&quot; option.<br />
+4. Set the trait &quot;melt-designated&quot; on this condition; it should then read &quot;Amount of melt-designated items available is at least 0&quot;.<br />
+5. Set the number of items in the work order to any non-zero number less than or equal to the number of objects marked to be melted.</td></tr><tr class="row-2"><td class="category">Tags</td><td colspan="5"><a href='tag_view_page.php?tag_id=1441' title=''>0.47.05</a>, <a href='tag_view_page.php?tag_id=143' title=''>Fortress Mode</a>, <a href='tag_view_page.php?tag_id=109' title=''>manager</a>, <a href='tag_view_page.php?tag_id=63' title=''>manager screen</a>, <a href='tag_view_page.php?tag_id=277' title=''>melt</a></td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-1"><td class="category"><a name="attachments" id="attachments" />Attached Files</td><td colspan="5"></td></tr><tr align="center"><td align="center" colspan="6"><table><tr class="vcenter"><td class="center"></td><td class="center"></td><td class="center"></td><td class="center"></td><td class="center"></td><td class="center"></td></tr></table></td></tr></table><br/>
+
+<div id="relationships_open"><table class="width100" cellspacing="1">
+<tr class="row-2" valign="top">
+	<td width="15%" class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'relationships' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Relationships	</td>
+</tr>
+<tr>
+	<td colspan="2"></td>
+</tr>
+</table>
+
+</div><div id="relationships_closed" class="hidden"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title">
+		<a href="" onclick="ToggleDiv( 'relationships' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Relationships	</td>
+</tr>
+</table>
+
+</div>
+<a name="bugnotes" id="bugnotes" /><br />
+
+<div id="bugnotes_open"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+<a href="" onclick="ToggleDiv( 'bugnotes' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;		Notes	</td>
+</tr>
+<tr>
+	<td class="center" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</table>
+
+</div><div id="bugnotes_closed" class="hidden">
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'bugnotes' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;		Notes	</td>
+</tr>
+</table>
+</div>
+<a name="history" id="history" /><br />
+
+<div id="history_open"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+<a href="" onclick="ToggleDiv( 'history' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Issue History	</td>
+</tr>
+<tr class="row-category-history">
+	<td class="small-caption">
+		Date Modified	</td>
+	<td class="small-caption">
+		Username	</td>
+	<td class="small-caption">
+		Field	</td>
+	<td class="small-caption">
+		Change	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2021-12-30 02:04	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11957">qeveren</a>	</td>
+	<td class="small-caption">
+		New Issue	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2022-05-27 20:51	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11957">qeveren</a>	</td>
+	<td class="small-caption">
+		Tag Attached: 0.47.05	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2022-05-27 20:51	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11957">qeveren</a>	</td>
+	<td class="small-caption">
+		Tag Attached: container	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2022-05-27 20:51	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11957">qeveren</a>	</td>
+	<td class="small-caption">
+		Tag Attached: manager	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2022-05-27 20:51	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11957">qeveren</a>	</td>
+	<td class="small-caption">
+		Tag Attached: manager screen	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2022-05-27 20:51	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11957">qeveren</a>	</td>
+	<td class="small-caption">
+		Tag Attached: melt	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2022-05-27 20:52	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11957">qeveren</a>	</td>
+	<td class="small-caption">
+		Tag Detached: container	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2022-05-27 20:53	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=11957">qeveren</a>	</td>
+	<td class="small-caption">
+		Tag Attached: Fortress Mode	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+</table>
+</div><div id="history_closed" class="hidden"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+	<a href="" onclick="ToggleDiv( 'history' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Issue History	</td>
+</tr>
+</table>
+
+</div>	<br />
+	<hr size="1" />
+<table border="0" width="100%" cellspacing="0" cellpadding="0"><tr valign="top"><td>	<address>Copyright &copy; 2000 - 2010 MantisBT Group</address>
+</td><td>
+	<div align="right"><a href="http://www.mantisbt.org" title="Free Web Based Bug Tracker"><img src="/dwarves/mantisbt/images/mantis_logo_button.gif" width="88" height="35" alt="Powered by Mantis Bugtracker" border="0" /></a></div>
+</td></tr></table>
+</body>
+</html>
