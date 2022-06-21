@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dwarf Fortress Development Log</title>
+<atom:link href="http://www.bay12games.com/dwarves/dev_now.rss" rel="self" type="application/rss+xml" />
+    <link>http://www.bay12games.com/dwarves/index.html</link>
+    <description>DF development updates</description>
+    <item>
+      <title>06/17/2022</title>
+      <pubDate>Fri, 17 Jun 2022 13:05:00 PDT</pubDate>
+      <link>http://www.bay12games.com/dwarves/index.html#2022-06-17</link>
+      <description xml:space="preserve">(Toady One)(Threetoe) It's miserable news but some of you will want to know.  On Wednesday morning, we took Scamps in to the vet after a sudden deterioration and it turned out to be widespread lymphoma.  He passed away Wednesday afternoon.  He was a good baby man and will be missed very much.
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href="https://bay12games.com/imgs/scamps_2009.jpg"&gt;Scamps (2009)&lt;/a&gt;
+&lt;br /&gt;&lt;br /&gt;
+&lt;a href="https://bay12games.com/imgs/scamps_2022.jpg"&gt;Scamps (2022)&lt;/a&gt;</description>
+      <guid>http://www.bay12games.com/dwarves/index.html#2022-06-17</guid>
+    </item>
+  </channel>
+</rss>

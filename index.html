@@ -1,0 +1,1548 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN'
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	<title>Bay 12 Games: Dwarf Fortress</title>
+	<link rel="stylesheet" type="text/css" href="dwstyle.css" title="Dwarves" />
+</head>
+<body>
+<img alt="Dwarf Fortress" border="0" src="title.png" width="800" height="120" align="center"/>
+<table style="width:800px;margin-top:0px;margin-bottom:0px;" border="0" cellpadding="0" cellspacing="0">
+<tr align="center">
+<td background="back2.png"><img alt="Download" border="0" width="130" height="25" src="gbutton_download.png" align="center"/></td>
+<td background="back2.png"><a href="features.html"><img alt="Features" border="0" width="130" height="25" src="button_features.png" align="center"/></a></td>
+<td background="back2.png"><a href="screens.html"><img alt="Screenshots" border="0" width="130" height="25" src="button_screens.png" align="center"/></a></td>
+<td background="back2.png"><a href="dev.html"><img alt="Development" border="0" width="130" height="25" src="button_dev.png" align="center"/></a></td>
+<td background="back2.png"><a href="http://www.bay12forums.com/smf"><img alt="Forums" border="0" width="130" height="25" src="button_forums.png" align="center"/></a></td>
+<td background="back2.png"><a href="mantisbt/"><img alt="Bug Tracker" border="0" width="130" height="25" src="button_tracker.png" align="center"/></a></td>
+</tr>
+<tr align="center">
+<td background="back2.png"><a href="dev_story.html"><img alt="Threetoe's Stories" border="0" width="130" height="25" src="button_stories.png" align="center"/></a></td>
+<td background="back2.png"><a href="df_talk.html"><img alt="DF Talk" border="0" width="130" height="25" src="button_dftalk.png" align="center"/></a></td>
+<td background="back2.png"><a href="contact.html"><img alt="Contact" border="0" width="130" height="25" src="button_contact.png" align="center"/></a></td>
+<td background="back2.png"><a href="links.html"><img alt="Links" border="0" width="130" height="25" src="button_links.png" align="center"/></a></td>
+<td background="back2.png"><a href="../champions.html"><img alt="Champions" border="0" width="130" height="25" src="button_champions.png" align="center"/></a></td>
+<td background="back2.png"><a href="../index.html"><img alt="Other Games" border="0" width="130" height="25" src="button_games.png" align="center"/></a></td>
+</tr>
+</table>
+<table style="width:800px;margin-top:0px;margin-bottom:0px;" border="0" cellpadding="0" cellspacing="0">
+<tr align="center">
+	<td valign="top">
+	<table style="width:100px;height:100px;margin-top:0px;margin-bottom:0px;" border="0" cellpadding="0" cellspacing="0">
+		<tr align="center">
+		<td background="back2.png"><img alt="Dwarf Fortress Development Log" border="0" width="100" height="100" src="left.gif" align="center"/></td>
+		</tr>
+	</table>
+	</td>
+	<td>
+	<table style="width:600px;margin-top:0px;margin-bottom:0px;" border="0" cellpadding="10" cellspacing="0">
+		<tr>
+		<td background="back2.png">
+<h2>
+<span STYLE="color: #EEEEEE;">Coming to <a href="https://store.steampowered.com/app/975370">Steam</a> and <a href="https://kitfoxgames.itch.io/dwarf-fortress">itch.io</a>!</span>
+</h2>
+<h2>
+<span STYLE="color: #FFFF00;">DOWNLOAD<br/>DWARF FORTRESS CLASSIC 0.47.05 (January 28, 2021)</span>
+</h2>
+
+<h2 align="center">
+<a href="df_47_05_win.zip">Windows</a> |
+<a href="df_47_05_linux.tar.bz2">Linux</a> |
+<a href="df_47_05_osx.tar.bz2">Mac</a>
+</h2>
+<p align="center">
+<a href="older_versions.html">All Versions</a>
+</p>
+
+<h2>Current Development: <a href="dev_now.rss">RSS Feed</a>, <a href="dev_release.rss">Release Feed</a>, <a href="http://www.twitter.com/bay12games">@Bay12Games</a></h2>
+
+<p/>
+
+      <ul>
+
+<li id="2022-06-17" class="dev_progress">
+          <span class="date">06/17/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" />
+          <img src="threetoe.png" alt="Threetoe" border="0" class="author_img" title="Threetoe" /> It's miserable news but some of you will want to know.  On Wednesday morning, we took Scamps in to the vet after a sudden deterioration and it turned out to be widespread lymphoma.  He passed away Wednesday afternoon.  He was a good baby man and will be missed very much.
+<br />
+          <br />
+<a href="https://bay12games.com/imgs/scamps_2009.jpg">Scamps (2009)</a>
+<br />
+          <br />
+<a href="https://bay12games.com/imgs/scamps_2022.jpg">Scamps (2022)</a>
+        </li>
+
+<li id="2022-06-13" class="dev_progress">
+          <span class="date">06/13/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> The continuing efforts.  One side of it as we've mentioned is setting up the framework for further tutorials and instruction sheets and filling them with text.  Another is fixing up bugs as they arise to keep the upcoming Stage 3 manageable.
+<br />
+          <br />
+Then there's the general approachability of the game, which is where stuff like the worldgen speed changes came in.  To make sure that wasn't just reliant on necromancers killing the world, I ran a world without any of that, and a medium still only took 27 minutes!  I noticed the world was infested with rocs, and people worshipped them, as they tend to do when there's enough city attacks, but there weren't any formal roc religions.  Turns out megabeast prophets weren't generating properly - fixed now!  Ran another world and after some hundreds of years, somebody founded a bronze colossus worshipping monastery ha ha.  They are reasonably rare but it is wholesome to have them.
+<br />
+          <br />
+As for the necromancers tending to kill off most worlds in their later years, we're still pondering that - our planned solution for that was to have religions organize the destruction of the secret scrolls and the keeping of forbidden slabs, and the rise of undead-hunting orders and such, but it's probably best not to start anything ambitious or prone to breakdown at this stage.  But we'll see what happens!
+<br />
+          <br />
+Also in the usability vein, I added in place and object lists, kind of analogous to the previous rooms and treasure list buttons, but with categories and more information.  So far I've done zones, stockpiles, locations, workshops, and farm plots in separate subtabs, and objects are grouped as crafted artifacts, symbols (of positions), named objects, and written content.  This means that if you've misplaced your dump zone or a favorite stockpile, say, you won't have to look all over for it.  You can just find it in the list and recenter.
+<br />
+          <br />
+We've also extended the endgame and given it a bit of optional structure, on top of the underground rewrite we already mentioned.  Getting the monarch requires a certain baseline of happiness now.  Once you get your monarch situated with proper rooms, it'll give you a little congratulatory message, and then the game gives you a more ambitious goal to become a true Mountainhome, involving the underground and such.  If you can do it, you're pretty good at the game!  It's not like Archcrystal-ambitious, just a little taste.  It doesn't kick you out for 'winning' the game (see: a much older version of DF that literally did this ha ha), but it's good to continue to have something, just as the goal of getting the monarch or deeper treasures was there already as a previous form of victory.  Now they are just united somewhat.  You can still get the monarch early if you know how, and go from there (get them rooms, do the ambitious thing.)</li>
+
+<li id="2022-06-10" class="dev_progress">
+          <span class="date">06/10/2022</span>
+          <img src="threetoe.png" alt="Threetoe" border="0" class="author_img" title="Threetoe" /> A game with this level of complexity can be confusing and overwhelming for the average gamer.  It already has a reputation for being one of the most obtuse games every created.  That ends here.  As we go through the UI overhaul, we are adding short guides for the crucial mechanics on top of the tooltips that are already there.  These can be dismissed and disabled in order not to annoy, but we are on a mission.  There are so many aspects of this game that are hidden inside menus or info screens.  We are going to shed a light on these tools and show the world the result of twenty plus years of work they have only seen a glimpse of.
+<br />
+          <br />
+These guides are only a tiny part of the time we are spending on improvements, improvements that you made possible.  Your generosity is being put to use squashing some of the most important bugs that have dogged the project for years.  Did we tell you that we ran worldgen on the laptop for 1000 years on a medium world and it only took 28 minutes?</li>
+
+<li id="2022-06-06" class="dev_progress">
+          <span class="date">06/06/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> After the various additions from last time, I turned back to instructing new players.  It didn't take us long to decide we needed tutorials after all, ha ha ha.  Now as you are entering the embark map, it asks if you'd like to do a tutorial.  The game searches the world for an optimal tutorial location - forested, brook, pretty flat, shallow metals, if it can get all this - and plops you down there after a short animation.  As it stands, and this is subject to change of course, there's a short four stage tutorial covering camera controls, mining a staircase, chopping trees and stockpiling wood, making a carpenter's shop and adding a task.  Obviously there's a lot left to teach, and this may expand.  Whatever isn't tutorialized we're trying to cover by other means - I've also added ten instructional popups so far for various menus (using the typical "don't show me this again" checkbox), and we have more stuff in the works.  Hopefully by the time we're done, people will have enough of a handle on the game to continue learning on their own.
+<br />
+          <br />
+I also updated the save options and cleanup screens which had been lingering up to this point - no news here, just making them fit.  Thanks to a tip from Putnam, world gen is somewhat faster now (25% or so, people were obsessing about their books a bit too much), and I did some other speed optimizations that apply everywhere.  Continued tweaking item values.  And Jacob and Carolyn have been sending in art which I've been incorporating.  More items show their material colors now where they didn't before.</li>
+
+<li id="2022-06-03" class="dev_progress">
+          <span class="date">06/03/2022</span>
+          <img src="threetoe.png" alt="Threetoe" border="0" class="author_img" title="Threetoe" /> Thanks to everyone who helped out in our time of need!  Without your help we can't keep the lights on, even this close to the Steam release, so we are so very grateful for your support.
+<br />
+          <br />
+Old and new features are coming along great in the graphical interface.  I have now put my stamp of approval on the minecart system after having my waterwheel powered rollers shoot a minecart carrying a dwarf carpenter out of a hole in the wall and out over a three layer drop into the underground cavern.  There was more chaos above.  The new animal agitation system in the Savage Wilds seemed to work on the first try.  After cutting down a bunch of trees my poor unprepared fortress was stormed by a pack of enraged ostriches.  Even the caravan and price calibration is more satisfying as it meters the rate at which your population used to balloon out of control.  All and all, I think things are coming off better than was expected.</li>
+
+<li id="2022-06-01" class="dev_progress">
+          <span class="date">06/01/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=179926.0">June's report</a> and <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8378595#msg8378595">a Future of the Fortress reply.</a>
+        </li>
+
+<li id="2022-05-30" class="dev_progress">
+          <span class="date">05/30/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Aside from any bits that get added or changed, the tooltips are done.  There's about 350 of them.  For the end of May we decided to branch out to various matters to give the documentation brain a bit of rest.  I still have to do the larger instructional texts.
+<br />
+          <br />
+What did this mean in practice?  There's the difficulty stuff Zach mentioned.  Lots of new settings to govern old behavior, triggers, scales, and caps.  We also added settings for the irritation of underground caverns, which governs forgotten beasts, but which now also governs the underground people for their triumphant return.  There's also a new irritation variable for outdoor wild areas - some additional smaller scale fun, fun for everybody.  Other changes were also made deeper underground (this occupied quite a bit of the weekend.)
+<br />
+          <br />
+I did the hotkey recenter menu.  It's opened with a happy little button by the minimap, with its two friends - the 'pop to surface' and 'pop to deepest discovered point' buttons.  These can be very handy.  We still only have the sixteen hotkeys for recentering, but you can also open the list and name/add as many hotkeyless recenter points as you want, and just click on their recenter button from the scrollable list.
+<br />
+          <br />
+We didn't have the old 'Z' overview information about different categories of created wealth anywhere, so I've put that on a tooltip when you hover on your fort name/level (outpost, etc.) which are now in the top status bar.  This window will also let you know generally what you need to improve on your way up the nobility chain.  We've tried to make the nobility matter a bit more by linking them to the size of incoming caravans, but we're still balancing that out.  I've started tweaking item values as well.  Also, as part of my fun mind-easing additions for the end of the month, I added the ability to assign any item to be a symbol for any position (as happens in worldgen), and your dwarves in noble and administrator positions will carry them around or put them on.  If the item is not already a named artifact, it becomes a (non-crafted) artifact and you can give it a name (as with the soldier weapon attachment.)
+<br />
+          <br />
+Also played around with farming to shake up some patterns.  Farming in the shallow soil layers far above the caverns is now no longer as viable, and farming in the cavern layers is as rich as usual.  These aren't large mechanical changes, since we don't have time to do anything sweeping and potentially destabilizing, but we're testing this as one of many ways we're trying to make the caverns more engaging.  One of the redacted changes also aims to entice the player to get out there and explore a bit.</li>
+
+<li id="2022-05-27" class="dev_progress">
+          <span class="date">05/27/2022</span>
+          <img src="threetoe.png" alt="Threetoe" border="0" class="author_img" title="Threetoe" /> As far as game difficulty goes, we have studied you like a hungry tiger seeking to find the weaknesses in your strategy.  We are taking Memorial Day weekend and instead of menus we are taking break from the UI to give you old players the challenge you deserve for the Steam release!  More on that next week.
+<br />
+          <br />
+For now, let's talk about the toggleable settings.  There will be difficulty settings that adjust the wealth triggers and frequency of invasions, thieves, and beast attacks.  These will be customizable just as if you have been editing the text files, but you set them when you embark.
+<br />
+          <br />
+As a side note, I've been testing the minecart tracks, sending loads of goblin equipment down to the magma forge to be melted down.  If you think that's a waste of time, you can now buy them off as they will demand an artifact as a bribe before they attack, or adjust the frequency of their attacks down from once every two seasons (there was even a bug that caused them to escalate too fast).
+<br />
+          <br />
+The elves are also getting reworked to make them more of a challenge.  The number of trees felled that it takes to anger them has been greatly reduced, and their attacks are more deadly.  These settings can also be changed if you choose, but watch out when you start in the savage lands as you are in for a surprise, along with the rest of the horrible stuff we have planned for this weekend!</li>
+
+<li id="2022-05-23" class="dev_progress">
+          <span class="date">05/23/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> The hauling menu is done now.  The dwarves are merrily riding carts again, generally causing trouble.  There aren't changes to the systems here, but it's much easier to set departure conditions and link up stockpiles to the stops.  There's no longer that nebulous state where a pile hasn't been selected - just click linkage type (give/take/exchange), click stockpile on screen, done.
+<br />
+          <br />
+This means we're moving on to the next stage of the Roadmap!  There've been some days of note sorting, and today we went through every menu and pondered the tooltip situation.  Regardless of how nice the icons end up looking, certain things can always use some more explanation.  Tooltips are also an opportunity to mention systems and connections so that the player can find other bits and pieces of this reasonably giant and sprawling game, and to shore up some basic knowledge about Z levels and so forth.  We're also considering which screens will need instructional popups (which'll you'd be able to dismiss and then get back with a small help button).  Overall, we're trying to avoid explicit step-by-step tutorials, but we'll see how that shakes out in testing later on.  Getting people to understand camera movement and stairways and ramps may lead us back there.</li>
+
+<li id="2022-05-20" class="dev_progress">
+          <span class="date">05/20/2022</span>
+          <img src="threetoe.png" alt="Threetoe" border="0" class="author_img" title="Threetoe" /> How hard a game should Dwarf Fortress be?  The more technical among you have already found the text files that govern this.  The various triggers that cause everything from dragon attacks to goblin snatchers are relics of a more primitive game where nothing existed outside the patch of mountain you dug into.  Now the world is super-big, filled with all sorts of bad stuff waiting to find you.  The triggers still exist, simulating the rumors of your wealth that the trade caravans spread to the outside world.  However, nowadays, instead of generating an army from nothing, enemies are drawn from existing populations all over the world.  The triggers are pretty much the same, but it is possible to do stuff like tick off the elves with a raid in order to get them to attack early.  That might give you some control, but you are still on the same clock for everything else.
+<br />
+          <br />
+It's for the sake of the noobies that the triggers exist.  No one wants to get overrun while they are still figuring out how to play in year 1.  There has to be a default difficulty.  We are in the process of logging the invasions versus different scenarios to calibrate this.  Should it be based on population?  Maybe traded wealth?  Maybe you think you should have some time to prepare for the invaders with your hundred dwarves.  Or maybe you want the dragon to come right after you buy out your first caravan.  We are going to make this all customizable in a settings menu, but what about before you mess with that?  How hard should the game be?
+<br />
+          <br />
+Sound off on the regular channels!  We are monitoring you.</li>
+
+<li id="2022-05-16" class="dev_progress">
+          <span class="date">05/16/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> I've spent the last some days updating tracks and rollers and stops.  I've also updated how constructions work - you can place any construction over a constructed floor now, so you don't have to remember to deconstruct them or think about which ones are itemless wall tops.  I've also tried to make carved and constructed tracks play nice with each other - they understand each other's jobs a bit and can update work in progress to keep the tracks connected if you make additions.
+<br />
+          <br />
+With all that done, it was time to do the hauling menu itself, and that's been going well.  The track stops still plug into the custom stockpile menu like before, and I also had a stockpile linkage menu sitting around from the workshops and stockpiles, so much of what we needed was already there.  The messiest part of the previous hauling menu is the conditions, with its nested and strange keyboard options.  That's the next bit I'm working on, and it should just end up all cleanly laid out and hopefully sensible.  Then there are some quality of life things we'd like to add, like being able to view routes from track stop sheets, that sort of thing.
+<br />
+          <br />
+Last week I mentioned being done with the image and name creators - you can see some images over at <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8373216#msg8373216">the last Steam News.</a>  All the while, the artists have been trucking along through items and interface elements and snakes and things, ha ha.  We'll continue to show these in the screenshots as they come up, though we are always a little behind (for instance, we now have final art for the old announcement alert icons in those image creator screen.)</li>
+
+<li id="2022-05-13" class="dev_progress">
+          <span class="date">05/13/2022</span>
+          <img src="threetoe.png" alt="Threetoe" border="0" class="author_img" title="Threetoe" /> As the work goes on... and the game gets easier and easier to interface with, you will find new mechanics to rely on that you scarcely knew existed.  This week I want to talk about the work order system.  This screen is only available once you have appointed a manager, but if you have you will find yourself clicking on it again and again as your fortress grows and you have more important things to worry about than ordering enough beds for the new living quarters.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/may_13_2022_work_order_screen.png">Work order screen</a>
+<br />
+          <br />
+As you can see, it takes a metric ton of work orders to keep my fortress running smoothly.  However, if you aren't afraid of a little typing and logic, you will never have to worry about running out of wooden doors, rock toys, or dwarven rum!  The orders are created via typing filter or by selecting the tasks exactly like you would if you clicked on the appropriate workshop.  Just make sure you have the right material and workshops available and away you go.
+<br />
+          <br />
+This might be good if you want to fire away an order for 5 silk ropes without looking for the clothier, but what if you need a standing order to keep your fortress going full-auto?  Here is the new standing order screen: 
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/may_13_2022_work_order_conditions.png">Work order conditions</a>
+<br />
+          <br />
+The veterans may see the newly suggested conditions.  You will find that your propensity for making orders will skyrocket when you notice how easy it is now.  You will never run out of empty bins, or barrels, and never will your dwarves go thirsty because you were in the middle of designing your latest drowning chamber for the goblin invaders.  All you need to make sure everything keeps running is to piss off the elves and cut down as many trees as it takes!</li>
+
+<li id="2022-05-09" class="dev_progress">
+          <span class="date">05/09/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> I've been updating various menus to get through Stage 1 of our roadmap.  The name and image creators are done, and I've also updated the pressure plate menu.  The image creator is about the same as before, but it's much easier to notice that job details can be set now, since you can just click on the prominent magnifying glass by the relevant jobs or work orders.  Clicking on planned engravings is currently non-obvious, but we'll handle that during Stage 2 when we're doing tooltips and such.  Hopefully this'll lead to more custom statues and pictures.
+<br />
+          <br />
+          <br />
+The last big project is to get tracks and rollers and stops placed and integrated with the minecart hauling menu.  Track construction might still be a little clumsy, because it can't easily guess where you want your ramps, but we're going to do a few helpful things like allowing you to build constructions over constructed floors more easily which should help a bit.  And the hauling menu itself will definitely end up not nearly so nestedly weird as it is currently.</li>
+
+<li id="2022-05-06" class="dev_progress">
+          <span class="date">05/06/2022</span>
+          <img src="threetoe.png" alt="Threetoe" border="0" class="author_img" title="Threetoe" /> I want to address something that might have been lost on those of you old hands that haven't been following the Steam news feed.  We aren't just designing a UI for the noobies, we are redesigning everything to make this a great experience, as well as an oddity that's hanging on the wall at a museum in New York.  For that reason basic systems have been replaced with ones that are much more transparent, intuitive, and fun.
+<br />
+          <br />
+Many now think that the new stress system is too easy, but I doubt anyone wants to return to the days when annoying red arrows meant your fort was doomed.  We have changed the system into something different than both of these extremes.  But more importantly, we are going to show you what's actually going on instead of letting flashing arrows drive you crazy.
+<br />
+          <br />
+First of all, even in the easy version of the stress system, there is a spectrum of emotions that (like most complex systems in DF) was hidden under the surface.  You may or may not be following the Steam news, but now we have a string of smiley faces representing your dwarves' immediate emotional state. 
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/outraged_mayor.png">Mayor's sheet (with many new icons by Carolyn, who has been working on the interface)</a>
+<br />
+          <br />
+You can see the spread of varied emotions in this fort.  This is the best I could do after 7 years, and 200 dwarves, giving them everything their little hearts desired.  With a detailed thought and memory tab you can see what brought them to the state they are in.  For example, one of my angriest dwarves was the mayor who hated that I gave the count his posh office and was outraged that I had convicted a goose of being drunk and disorderly.  You might not be able to please everyone, but at least there are no more blinking arrows.</li>
+
+<li id="2022-05-01" class="dev_progress">
+          <span class="date">05/01/2022</span>
+          <img src="threetoe.png" alt="Threetoe" border="0" class="author_img" title="Threetoe" /> Hi, this is Zach.  Here's <a href="http://www.bay12forums.com/smf//index.php?topic=179795.0">the report for May</a> and <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8371140#msg8371140">the Future of the Fortress reply.</a>
+<br />
+          <br />
+To everyone eagerly reading this blog looking forward to seeing what Tarn has been working on these many months, it may seem like there is little progress as we have had few dev logs along the way.  We are going to fix that.  Let me tell you about the effort this one man has made to transform 20 years of work on the most complex simulation in gaming into a playable state in a mere three.
+<br />
+          <br />
+This has been far more than an exercise in UI design.  We have been adjusting game mechanics, fixing bugs, and generally making this fantasy world generator into a game anyone can pick up and get started right away instead of struggling to learn or decipher with the help of third party apps.  I have been testing every aspect of the game one by one and going over them with an aim to improve.  In the process, the game has become so much easier I would say you can accomplish your goals in a fraction of the time, minus the headache and progression of carpal tunnel syndrome.
+<br />
+          <br />
+Let me tell you now that we are almost done.  We are already over the biggest challenges.  All that's left of the UI is a few screens such as the Hauling screen for the planning of minecart tracks, and the placement of track stops and rollers.  We really need this for the people who want to make Turing complete computers inside the game but for some reason can't deal with the ASCII. 
+<br />
+          <br />
+Just stick with us!  It will be soon, depending on your proximity to time.</li>
+
+<li id="2022-04-23" class="dev_progress">
+          <span class="date">04/23/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8367158#msg8367158">The Steam news</a> from a little over a week ago featured a post by Zach and some new artwork by Jacob.
+<br />
+          <br />
+The main thing we've accomplished this month is the completion of the world/'c' screen in fort mode.  The information and function is about the same as before, but now it all happens over the world map with some overlays, much like fort mode itself, rather than having modes like the civization list that happen in isolation.  The mission/tribute/spoils reports are also incorporated into this world map view rather than being accessed from the main dwarf screen like they used to be.  Zach has been running raids and kicking out dwarves and requesting them with messengers and so forth - we'll continue to get various weird behaviors and frustrations cleaned up as we go.
+<br />
+          <br />
+I've also finished up the name creator and am halfway through the image creator.  The name creator is similar to its text-based counterpart, with a new ability to randomize parts of names.  Alllmost out of stage 1 of the roadmap we posted earlier this year.  There's still the hauling stuff to do, and lots of little missing submenus (for instance, pressure plate weight selection), but we'll find them all!
+<br />
+          <br />
+The stress changes we've made over the year are also panning out really well.  You may have noticed the spread of various happiness levels in some of the images of Zach's forts.  I don't remember if I mentioned this before, but the old immediate happiness levels are somewhat back, but they are linked to the newer long-term stress levels instead of being replaced by them.  So dwarves can now be genuinely miserable in the short-term without being lost causes - it still takes some years of ongoing misery to make them fall apart, but it's easier to spot and correct now.  Only the reddest dwarves can be lost.  Midlevel yellow/orange dwarves can sink to the state of occasional tantrums but will never go berserk/etc. unless things get even worse.  We'll keep messing with it, but with the civil war bugs also fixed (as far as I can tell!), it does feel like we've turned a corner on this stuff.</li>
+
+<li id="2022-04-01" class="dev_progress">
+          <span class="date">04/01/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> The month of April with <a href="http://www.bay12forums.com/smf//index.php?topic=179690.0">the April report,</a> and <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8364199#msg8364199">the April Future of the Fortress.</a>
+<br />
+          <br />
+We spent the last few weeks working on the dwarf sheets, and you can see the latest iteration of over at <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8363411#msg8363411">the latest news post.</a>  It was pretty exciting to bring out some of the details that had been languishing several nested obscure menus within the old views, especially the medical history, and hopefully we can continue to do that as we shift our focus to the wider world now with the C screen.</li>
+
+<li id="2022-03-20" class="dev_progress">
+          <span class="date">03/20/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Since the posting of the roadmap, we've been working on roadmap stuff!  To start, here's <a href="https://youtu.be/Y-q1KNvSuTA">an interview with BlindiRL</a> where we chat about the roadmap and other matters for a few hours, from earlier this month.  Then last week, <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8359974#msg8359974">we posted a news update</a>, with some of the new palette-based graphics in a fort, as well a progress report on the roadmap.
+<br />
+          <br />
+In that progress report, I mentioned getting mostly through justice, doing petitions, and being halfway through diplomacy.  Diplomacy is done now.  The flow is a bit different.  It no longer interrupts you repeatedly while the meeting is going on, but rather there's an alert that pops up under the top bar (as with petitions now) that you click to handle the entire meeting (or as much of the meeting as you like, so you can go check Stocks and then come back, etc.)  I also changed export agreements.  They now just pick one or two goods to focus on each year and raise the prices more than they did before, rather than giving you a longer list of percentages for lots of goods.  Ultimately, we want to have even more tailored arrangements, but this was a fast change that helps a bit.
+<br />
+          <br />
+Since then, I've started in on the unfinished tabs in the unit sheets.  For instance, the Thoughts tab now displays all of their recent thoughts (the overview page it starts with just has a shorter list at the bottom) in a list.  This is more legible than the old thought paragraph.  I've also added a memories section, where you can see which memories they've relived in their thoughts, which emotions are attached to them, and if their personality changed as a result.  These are grouped by season and year chronologically, and it gives you a nice impression of how their life has been over time.
+<br />
+          <br />
+Other bits have come up during this time, since Zach is always running a fort and we've been repairing things as they come up incidentally, before the more focused bug push in stage 3 of the roadmap.  Loyalty cascades should be gone now.  I've fixed a few ways that intrafort fights can start lethal or become lethal, but knowing that some will always creep in, I've also had the game cancel lethal intrafort fights periodically.  This stops the job cancellations where civilians are constantly running from each other before they ruin the fort.  We eventually want to tie this into the justice system so there can be an actual resolution to whatever the lethal issue was, hopefully without calling it involuntary dwarfslaughter.
+<br />
+          <br />
+Next up, more unit tabs!  That should also get us through the health stuff when it's done.</li>
+
+<li id="2022-03-01" class="dev_progress">
+          <span class="date">03/01/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=179612.0">Here's a report.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8356405#msg8356405">Here's a Future of the Fortress post.</a>
+<br />
+          <br />
+Things have been so samey and also newsy and otherwise troublesome that I missed doing a dev log entirely last month.  That's probably a first?  In any case, things have been going on.  <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8354566#msg8354566">Here's the roadmap post.</a>  The justice screen is almost done.  I just need to integrate the interrogation reports.  Combat reports are now in - they appear grouped under a few icons on the right with the other announcements, and you can click all of those icons now to get to the recenter and expansion options.  We've also controlled spammed icons there a bit more, though that's a neverending struggle.
+<br />
+          <br />
+New item artwork is underway, and we've improved the coloration code to avoid some of the washed-out/dulling effects from grayscale shading.  Now we are using explicit palettes to do the color shifts.  These live in rows in their own moddable image file and are linked to the color descriptors in the raws.  <a href="https://www.bay12games.com/dwarves/imgs/materials.png">Here's an image of some items that Jacob made, recolored in-game by material.</a>
+        </li>
+
+<li id="2022-03-01" class="dev_progress">
+          <span class="date">03/01/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=179612.0">Here's a report.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8356405#msg8356405">Here's a Future of the Fortress post.</a>
+<br />
+          <br />
+Things have been so samey and also newsy and otherwise troublesome that I missed doing a dev log entirely last month.  That's probably a first?  In any case, things have been going on.  <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8354566#msg8354566">Here's the roadmap post.</a>  The justice screen is almost done.  I just need to integrate the interrogation reports.  Combat reports are now in - they appear grouped under a few icons on the right with the other announcements, and you can click all of those icons now to get to the recenter and expansion options.  We've also controlled spammed icons there a bit more, though that's a neverending struggle.
+<br />
+          <br />
+New item artwork is underway, and we've improved the coloration code to avoid some of the washed-out/dulling effects from grayscale shading.  Now we are using explicit palettes to do the color shifts.  These live in rows in their own moddable image file and are linked to the color descriptors in the raws.  <a href="https://www.bay12games.com/dwarves/imgs/materials.png">Here's an image of some items that Jacob made, recolored in-game by material.</a>
+        </li>
+
+<li id="2022-02-01" class="dev_progress">
+          <span class="date">02/01/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> One twelfth of the way through 2022, and we have <a href="http://www.bay12forums.com/smf//index.php?topic=179512.0">a report for the month.</a>  Also, <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8349015#msg8349015">the questions and the answers.</a>
+        </li>
+
+<li id="2022-01-22" class="dev_progress">
+          <span class="date">01/22/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> For context, here's <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8344213#msg8344213">the news from last week.</a>
+<br />
+          <br />
+That work concerned legends mode, turning it into a little browser-style critter with clickable links and tabs.  It's quite fun to surf around.
+<br />
+          <br />
+Most recently, I've moved some of that over to world generation and have generally been trying to make that process a little friendlier.  There's now a nice and colorful history readout that advances as you go.  <a href="https://www.bay12games.com/dwarves/imgs/chronicle.png">Here.</a>  The most important event of the last 1000 is added every second, so you get a decent collection of events.  I've also cut up the history making routines so that the input is much more responsive even as the years get into the hundreds and slow down - the change doesn't speed up the process itself of course, but it is easier to pause and stop, ha ha.
+<br />
+          <br />
+The colorful text in the short world generation chronicle there is not clickable, though it has occurred to us that we could in fact let you in to see some form of legends pages even during world generation now.  I'm a little worried about this because certain information is only finalized once worldgen is over, but it'd probably still work okay, although it is funny that the player could get sucked in to browsing before the world is even made and saved.  Seeing more information there also makes an active worldgen that the player can mess with feel more possible, though we'll reserve that for the mythy-much-later.</li>
+
+<li id="2022-01-01" class="dev_progress">
+          <span class="date">01/01/2022</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Happy New Year!  There was an icy snow storm that put lutefisk on hold.  I will offer updates as possible, unless we are all consumed by what rises when the ritual is not observed in timely fashion.
+<br />
+          <br />
+<a href="http://www.bay12forums.com/smf//index.php?topic=179406.0">A report for 2021 to start 2022.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8341484#msg8341484">A Future of the Fortress Q&amp;A reply.</a>
+        </li>
+
+<li id="2021-12-24" class="dev_progress">
+          <span class="date">12/24/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> First, <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8336972#msg8336972">here's the Steam news from last week</a> - a video of the latest world map with art by new artist Jacob!
+<br />
+          <br />
+I've also been working on the title screen, save/modding restructure, and new world creation, as they all tie together.  Lots has changed here.  Mods are now zip files in their own folder, and the vanilla objects are stored similarly (though they aren't zipped.)  Plop a zip file in the mods folder, and it becomes available for use - it needs to have a little info.txt file inside of it so that the system can read it.  The vanilla files also use the same format, so there'll be plenty of examples.  The info file also allows author information, descriptions, and version/compat info, including required/conflicting mod identifiers.
+<br />
+          <br />
+When you create a world, you can set a load order from among the mods that are installed on your computer, including the vanilla objects.  The default is just to load the vanilla objects in order, and you don't even see this if you haven't put mods on your system.  On the other hand, vanilla objects don't need to be loaded at all, though obviously in that case you'll generally want something to replace them.  Hopefully this will allow total object conversions and other large changes without needing to leave the in-game interface.
+<br />
+          <br />
+Saves no longer store their mods - this isn't feasible with all the graphics, so you'll need to have the right mods installed to load modded saves.  Different saves on the same computer can still use different mods; it loads the specified mods with each save, so it doesn't matter if you have conflicting mods installed, as long as they don't conflict within a single world.  Mods store version compatibility information, so saves should be able to update their mods if the authors provide when they release new versions.  I've also generally restructured the data and raw folders so that more of the text files are encompassed in the object/mod system.
+<br />
+          <br />
+Lutefisk is on New Year's Day this year.  Another week of anticipation.</li>
+
+<li id="2021-12-01" class="dev_progress">
+          <span class="date">12/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Slowly getting out of 2021, and on to whatever 2022 may bring.  <a href="http://www.bay12forums.com/smf//index.php?topic=179293.0">December's report is here.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8333690#msg8333690">The Future of the Fortress is here.</a>
+        </li>
+
+<li id="2021-11-19" class="dev_progress">
+          <span class="date">11/19/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="https://www.youtube.com/watch?v=_vVmIJoaiig">Here's another BlindiRL interview.</a>  It runs a little under two hours and we discussed all sorts of dwarfy matter.
+<br />
+          <br />
+In particular, the map part of the embark screen is done!  Previously, near the beginning of the graphical work, we started with the "prepare carefully" part of embarking, but we were saving the map part where you choose your embark location for later.  The pesky and notorious uhkm+UHKM key use from the current version, for the embark rectangle, has been replaced.  The whole thing is a lot different - rather than having several different teeny panes open, the entire screen is the world map, and you can scroll/drag it around (which is necessary if you have a medium or large world.)
+<br />
+          <br />
+You can also zoom in sixteen times to an expansive zoomed-in view which used to be restricted to adventure mode -- it's great to see all of the little brooks coming down through the mountains, and to see the tiny one or two tile islands blow up into their true shapes complete with beaches.
+<br />
+          <br />
+We've also gotten rid of the F1-F8 biome view, which was very clunky, and replaced it with a more normal-feeling hover window.  The site finder is currently unchanged, and you can still pick your civilization - it gives you information about the total population, ruler, and number of sites.  It also gives you a little more information about your neighbors and your civs diplomatic state with them.</li>
+
+<li id="2021-11-01" class="dev_progress">
+          <span class="date">11/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> It's November!  <a href="http://www.bay12forums.com/smf//index.php?topic=179190.0">Here is the report.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8325696#msg8325696">And also the Future of the Fortress reply.</a>
+        </li>
+
+<li id="2021-10-21" class="dev_progress">
+          <span class="date">10/21/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> The military menus have progressed pretty far!  First, here's <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8318467#msg8318467">the Steam news from the 7th with an underground well.</a>  More on topic, the more recent <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8322599#msg8322599">Steam news from today with a siege and a brief look at the squad menu.</a>
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/01_squad_menu.png">Squad menu</a>
+<br />
+          <br />
+Here's a still image of the squad menu.  This looks similar to the old 's'quad menu we have in the ASCII version, but the major difference is that this menu is now the entire military screen.  You can do everything from here.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/02_squad_positions.png">Squad positions</a>
+<br />
+          <br />
+Before we look at equipment and schedules, here's a look at where you assign dwarves to positions in the squad and also give individuals orders.  I've set three of the dwarves to stand in the hallway (the white rectangle is animated.)
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/03_squad_equipment.png">Squad equipment</a>
+<br />
+          <br />
+Here's the information you get when you click the equipment button.  Green means they have everything in the category, .../yellow means they have an assigned item but haven't grabbed it yet, and !/red means they haven't been able to choose at least one item.  So you can tell very quickly for instance in this fort that there is a boot shortage.  Some of the dwarves with weapons don't show them in their image because they are strapped to their body.  I haven't set up the hover yet; the idea is to show the exact items/problems if you hover on a cell, but that isn't the only way to see the assignments.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/04_squad_customize.png">Equipment customization</a>
+<br />
+          <br />
+Here's what you get when you click customize.  This works like the uniform/customization in the ASCII version, but is easier to use.  You can also save the customized equipment as a uniform by giving it a name up at the top.  Then using the assign uniform option on the last menu, you can assign it to everybody who is selected.  You can also use the add uniform button from the main equipment menu to create a uniform using this menu.  The only difference is that you can only assign specific items when customizing (since they don't make sense in uniforms.)  We have more graphics to put in here - you can see that the helmet is using a generic/wrong picture, for instance, and there are lots of blue cubes.  These are done; I just have to type them in.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/05_squad_schedule.png">Squad schedules</a>
+<br />
+          <br />
+And here are the squad schedules, another notoriously obtuse screen from the ASCII version.  Now, the months are optional.  You can set orders for each routine, and copy/paste them as before, but the orders are on all the time unless you opt-in to doing them month by month.  The routines are named along the top.  These were formerly "alerts".  Alerts/emergency burrow assignments still exist, but they've changed a bit and we'll describe the in a future post.  You can add as many routines as you like and page the columns by clicking some arrows that pop up.
+<br />
+          <br />
+The new default "ready" routine has dwarves pick up their equipment and remain as active as possible for special orders.  Equipment is also not replaced as often, so they shouldn't run off all the time for every new item, though we're still working out some details there.
+<br />
+          <br />
+The distinction between "off duty" and "no orders" is that off duty only shows when you've set the grid cell to allow civilian clothing and sleeping outside the barracks.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/06_squad_monthly.png">Monthly schedules</a>
+<br />
+          <br />
+Here's the monthly schedule view.  I'd like to cram/extend things a bit to get all 12 months in there without a scroll bar, but this is how it stands currently.  The months should probably also be colored by season and the active month highlighted so you don't have to glance up to the calendar.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/07_squad_edit_orders.png">Editing scheduled orders</a>
+<br />
+          <br />
+And finally here's the editing of a grid cell.  Here I'm telling a squad to patrol a hallway.  Points are created automatically as you click through the route points (instead of having to go through differnet menus as in the ASCII version), and routes are named/saved at the time you give an order, so there's a lot less to fiddle with but you can still re-use patrol routes easily.  You can name the grid cells as before, and set the inactive/sleeping behavior here.
+<br />
+          <br />
+We still have to handle food, drink, and ammunition concerns, and a few other things, but it feels like we've jumped the major hurdles.</li>
+
+<li id="2021-10-01" class="dev_progress">
+          <span class="date">10/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=179075.0">A report to start the month.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8316954#msg8316954">Here is a Future of the Fortress as well.</a>
+        </li>
+
+<li id="2021-09-25" class="dev_progress">
+          <span class="date">09/25/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Hmm, the chugging along continues.  <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8311667#msg8311667">The Steam news from the 9th has 
+a short gif and summarized the cleanup I'd been doing early in the month.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8315004#msg8315004">The Steam news from the 23rd has a video of a desert fort where you can see elements of the new interface in action.</a>
+<br />
+          <br />
+I appeared <a href="https://stackoverflow.blog/2021/09/21/podcast-377-you-dont-need-a-math-phd-to-play-dwarf-fortress-just-to-code-it/">on the Stack Overflow Podcast.</a>
+<br />
+          <br />
+So yeah, the first part of the month was mostly catching up on stuff, as described in the first news post.  After that, I did burrows.  That part hasn't changed - we'll probably just be focusing on cleaning up issues with them rather than changing how they work.  You can place them, assign dwarves to them, give them symbols, and set their workshop behavior like before.  Ah, I did add the ability to "pause" burrows, so you can quickly turn them on and off without worrying about alerts.  They'll likely change a bit more as we get to the military stuff, and we'll need to do a pass on their bugginess now that they are back in the game.
+<br />
+          <br />
+The military stuff is also underway!  I'm starting from a squad window, which like many games these days is handled in a popup on the right under the minimap.  The working theory is doing everything from there, reserving the military info tab as a way to get an overview and for whatever multi-squad equipment/schedule controls are useful.  So far so good - we've recaptured the functionality of the old squad menu, in that you can give orders to squads or individual squad members.  You can also create squads from the squad popup.  The real challenges are managing equipment and handling scheduling without it being a confusing mess, ideally just from some quick squad popups that give you a breakdown of the held/assigned/missing/etc. equipment and so forth.
+<br />
+          <br />
+It feels like handling the military interface is one of the last potentially horrifying bits to manage, even though there's still a lot of work left to do overall, so our morale has been increasing as it has started off well!  But we'll see how equipment goes, ha ha ha.  I have to do an internal rewrite there in another attempt to squish the raid crash as well.
+<br />
+          <br />
+I also did the display of snow, though there are a few edging issues left there on hillsides.</li>
+
+<li id="2021-09-01" class="dev_progress">
+          <span class="date">09/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=178956.0">Here's the report.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8309877#msg8309877">And the Future of the Fortress answers!</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8308563#msg8308563">And here's the latest Steam news on locations/hospitals.</a>
+        </li>
+
+<li id="2021-08-20" class="dev_progress">
+          <span class="date">08/20/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8304059#msg8304059">Steam news update on labor management.</a>  Beyond the information there, which was posted on the 12th, the work has continued in the same vein.  The next task has been handling occupations, stuff like tavern keepers, performers, priests, scholars, that sort of thing.  This led to doctors being left in a strange spot, and ultimately we decided to change doctors into a location occupation, and upgrade hospitals to a location, which means that hospitals get historically-remembered names and can span several zones.  Doctors will also be assignable to the whole site as before, if you want them to work in multiple hospitals.  We're also taking this opportunity to finish updating all the different location details interfaces, e.g. where you could see the size of the dancefloor and goblet numbers, though we're probably not going to change much about that so we can move on.</li>
+
+<li id="2021-08-01" class="dev_progress">
+          <span class="date">08/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=178829.0">The report to start August.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8300987#msg8300987">The Q&amp;A for August.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8300084#msg8300084">The summer video update post</a> <a href="https://www.youtube.com/watch?v=LlzCrJS1Fho">(video link on YouTube).</a>
+<br />
+          <br />
+I also did a more code-oriented <a href="https://stackoverflow.blog/2021/07/28/700000-lines-of-code-20-years-and-one-developer-how-dwarf-fortress-is-built/">interview over on Stack Overflow.</a>
+        </li>
+
+<li id="2021-07-24" class="dev_progress">
+          <span class="date">07/24/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="https://www.youtube.com/watch?v=o5c81GNBaA4">I did another interview with BlindiRL</a> about developments near and far.
+<br />
+          <br />
+For me, menus within menus!  As of <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8296108#msg8296108">the last news post</a>, we had done stockpile links being created from workshops and were working on work orders.  Then through the week which just passed, we haven't left work orders, since work orders are complicated!  In particular, adding conditions for them.  But those are done now at least, ha ha.  The conditions for work orders related to products and reagents are a lot less cryptic now.  We've moved them to a "suggested conditions" section which is hopefully easier to understand.  Here's a look, adding to the news post's add work order menu:
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/work_orders_1.png">Work orders list</a>
+<br />
+          <br />
+The main new thing on the work order list is the ability to change the number left in an order at any point, doing either an infinity order, or from 1 to 9999 completions.  The brown/green scroll is my placeholder validation symbol.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/work_orders_2.png">Work order conditions</a>
+<br />
+          <br />
+We still have some of those all-caps adjectives, but it's a bit easier to understand now, anyway.  The type/mat/adj buttons pull up the filterable lists that you might remember from the current version, but generally suggested conditions will be enough.  You can use the buttons in the top right to add your own custom conditions that you tailor in that way, and also to add order-based conditions so you can set the order in which work orders are completed.
+<br />
+          <br />
+I think all that remains here is getting building-based work orders up from the building sheet.  Then we can finally move on!</li>
+
+<li id="2021-07-01" class="dev_progress">
+          <span class="date">07/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=178692.0">A report, for July!</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8292042#msg8292042"> The monthly Q&amp;A as well!</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8291897#msg8291897"> And a Steam news post concerning the new information hub!</a>
+        </li>
+
+<li id="2021-06-25" class="dev_progress">
+          <span class="date">06/25/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> The <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8288161#msg8288161">Steam news from last week</a> has the trade screen image I showed here, but also vertical bars and a floodgate with some flowing water.
+<br />
+          <br />
+As we started to think about labor and military stuff, it became natural to just put it all into an info screen with various tabs.  So far I've mostly finished up the coding on the creatures and tasks tabs, which cover the old 'u'nit and 'j'obs screens (aside from the manager, which is now its own tab).  The new creatures tab also covers the animals section of the old 'z' status screens, and the main unit list also has a stress readout so you can easily figure out who is having trouble.
+<br />
+          <br />
+Late last April, Zach and Annie also welcomed <a href="https://bay12games.com/media/small_jo.jpg">Princess Josephine of the Northern Lighthouse</a> into their home!  <a href="https://bay12games.com/media/jojo_pigs.jpg">Jojo is very small.</a>  She is also <a href="https://bay12games.com/media/jojobark.3gp">fierce</a> and <a href="https://bay12games.com/media/ridiculous_jojo.mov">ridiculous</a>.</li>
+
+<li id="2021-06-15" class="dev_progress">
+          <span class="date">06/15/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here's <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8284888#msg8284888">the last Steam News, concerning beekeeping</a>, from earlier this month.
+<br />
+          <br />
+Since then, I've mostly been working on <a href="https://bay12games.com/dwarves/imgs/trade_screen.png">the trade screen.</a>  It's basically at a good spot now, though there are various bits that could be added, probably most notably the ability to view items again (it's not compatible with how we have our item sheets set up now, but I can work through it), and a few new lines of text to make the hidden haggling mechanics a little more sensible (to new players, counter-offers feel like they trigger at random, but it's actually <a href="http://dwarffortresswiki.org/index.php/DF2014:Trading">based on skill rolls vs. profit/mood, etc.</a>)  Also notably, there are item string filters now.  The little merchant in the top left is so low because creatures can be 64 pixels tall now, and dwarves can even be taller than 32 pixels if they have the right hair style, I think, but I'll probably adjust the positioning for smaller creatures before the end.  These sorts of things add up to make each of these screen rewrites take longer than expected, but another one down brings us that much closer.
+<br />
+          <br />
+Next up we'll probably be looking at finishing the labor rewrite, the workshop profiles, and then how that all connects up e.g. to the military stuff (through e.g. civilian item assignments.)  That's also bound to get a little messy, ha ha.</li>
+
+<li id="2021-06-01" class="dev_progress">
+          <span class="date">06/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> This month, not unusually, there is <a href="http://www.bay12forums.com/smf//index.php?topic=178585.0">a monthly report.</a>  Additionally, <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8284471#msg8284471">a reply to the Future of the Fortress questions from this month</a> can be found by following the second link.  Most notably, the apartment move is done.</li>
+
+<li id="2021-05-17" class="dev_progress">
+          <span class="date">05/17/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> The second Covid shot.  Which is good, because that should convey a healthy chunk of anti-Covidness.  But it has also knocked me out for days, and I've still got insomnia and I physically tire quickly.  Hopefully that'll all pass before too long.  Still moving this month, and it's going to keep slowing everything down to a crawl.  The lease on the old place lapses this month, so we'll get through it one way or another!  <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8276864#msg8276864">Here's the Steam news from earlier, with the excellent trade depots and pack critters Patrick drew up.</a>
+<br />
+          <br />
+Here is an archive of <a href="https://web.archive.org/web/20210515045034/https://www.ign.com/articles/how-to-help-palestine/">IGN's list of charities helping Palestinian civilians</a>, before it was taken down.  The organizations listed are
+<br />
+          <br />
+<a href="https://www.pcrf.net/">Palestine Children's Relief Fund</a>
+<br />
+          <br />
+<a href="https://www.anera.org/">Anera</a>
+<br />
+          <br />
+<a href="https://www.unrwa.org/gaza-emergency">United Nations Relief and Works Agency</a>
+<br />
+          <br />
+<a href="https://www.map.org.uk/">Medical Aid for Palestinians</a>
+<br />
+          <br />
+<a href="https://www.doctorswithoutborders.org/">Doctors Without Borders</a>
+<br />
+          <br />
+We oppose US-backed war crimes and the continuing apartheid, including the ongoing bombing in Gaza and evictions in Jerusalem and the West Bank.</li>
+
+<li id="2021-05-01" class="dev_progress">
+          <span class="date">05/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> And here's <a href="http://www.bay12forums.com/smf//index.php?topic=178475.0">a report.</a>  Also <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8275328#msg8275328">a future of the fortress reply.</a>
+        </li>
+
+<li id="2021-04-30" class="dev_progress">
+          <span class="date">04/30/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here's <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8272387#msg8272387">the Steam news post</a> from last time showing the new lever interface and a barrels-show-their-contents update.
+<br />
+          <br />
+The trade depot stuff is going well.  We have a new trade depot design that shows the goods of the traders on the top portion, and the fortress goods at the bottom portion, so you'll be able to more easily see what has been placed and who is ready.  The traders stand on the north side of a little table in the depot, and the broker takes their place on the south side with the fortress goods.  Wagons no longer pull all the way into the depot but stop short so nothing is obscured.  Pack animals are shown with graphical saddlebags now to indicate roughly the number of items they are carrying.
+<br />
+          <br />
+I've also mostly finished up the new "bring stuff to the trade depot" screen.  Even though it is easier to select things now, it's sort of fundamentally unsatisfying to have everything so centralized, so we'll likely also allow the player to select individual items or entire stockpiles to be brought to the depot as well.  The next big project is the trade screen itself.</li>
+
+<li id="2021-04-17" class="dev_progress">
+          <span class="date">04/17/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Ack, dev log updates slipped again.  My Excuses, he he: first Covid shot!  Birthday incoming.  Moving very soon after 12 years in the same place, which is a load of distraction to say the least and will continue to be an issue through May.  Regardless, of course, work has been ongoing.  First, here is <a href="https://www.youtube.com/watch?v=G5x_ZCo2B2k">the Spring Update Video</a> with some more shots of the underground.
+<br />
+          <br />
+So what has happened...  levers can be linked through a few clicks now.  Click on lever, click 'link lever', click on target, and the job is queued.  Two viable mechanisms are chosen by default, but you'll also be able to pick the mechanisms you want to use if you'd like (the two mechanisms are visible in a little window during target selection.)  It shows a list of all the buildings that the lever is currently linked to and you'll be able to recenter on them.  I also updated the farm interface; it works about the same but is click-friendly now.
+<br />
+          <br />
+We've got new container graphics underway!  I went through today and selected alcohol colors for all of the alcohols, because you can now see them in the barrel tops, along with meats, bags, fish, prepared food, and the various plants.  This is also true of large pots, and we're also doing bags and some other similar items.  Lots of improved furniture graphics.  Large and small gem graphics including specific cut types.
+<br />
+          <br />
+Should have images of these things as they get closer to being finalized.  Next up will be the trade depot and the trade screen!</li>
+
+<li id="2021-04-01" class="dev_progress">
+          <span class="date">04/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Welcome to the month of April and <a href="http://www.bay12forums.com/smf//index.php?topic=178324.0">a monthly report.</a>  Also <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8265542#msg8265542">a Future of the Fortress reply.</a>  Additionally, <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8263082#msg8263082">the Steam news post on the underground caverns</a> from a few days back.</li>
+
+<li id="2021-03-19" class="dev_progress">
+          <span class="date">03/19/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> The elf images I mentioned before popped up in colorful fashion over on the Steam news (<a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8258388#msg8258388">forum post here</a>.)  The rest of the work the last week has mainly been on the room-to-zone conversion.  If you are placing bedrooms, dining halls, offices, or tombs, you can now just drag a rectangle over an area with a bunch of enclosed potential rooms of that kind and have them all made at the same time.  It works on whatever shapes as long as they are reasonably sized (fewer than 20 tiles to flood) and enclosed by walls and doors - it uses a flood routine from each potential piece of furniture and tries to be reasonable about conflicts, etc.  You can undo its selections with one click if you don't like them or if you made a mistake (forgetting a door, etc.)  It also reports back failures that came from furniture that was already being used or that failed to be in an enclosed space.  Drawing single rooms in the normal way is also possible.
+<br />
+          <br />
+On the subject of continuing to be wrong in old Future of the Fortress replies, archery ranges also no longer depend on individual archery targets.  Now you place a zone, and based on the position of existing archery targets, it will guess the shooting direction for you, and each training dwarf will pick a row/column with an archery target, as many targets as there are in the zone, without having to make more than one zone.  You can change the shooting direction manually if the guess is wrong (the guess always gives the best shooting direction for rectangular zones with lines of targets at one end, or anything that looks remotely like that.)  If you haven't placed any archery targets in the archery range, every row/column in the shooting direction will be considered fair.  This will let your practicing dwarves shoot off into space if you'd like to do that for various reasons.  Later on, we'll likely add some squad orders to make ranged dwarves do similar things in combat situations, but we aren't to that part yet.
+<br />
+          <br />
+Archery range zones can also be laid out over space, and the targets don't need to be accessible from the shooting square - I had dwarves shooting from an elevated wooden platform out at some targets on a distant cliffside for instance.  Finally, the distance of the practice shot matters for skill gain, and the existence of the target doubles skill gain.  So if you make a 2x1 zone where the dwarf just shoots at the wall, the dwarves will train at about 1/10th the speed of a dwarf in a 12x1 range with a target at the end.</li>
+
+<li id="2021-03-08" class="dev_progress">
+          <span class="date">03/08/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Having arrived at rooms, we fairly quickly decided that, contrary to an earlier response in one of the Future of the Fortress questions, furniture-based rooms (like the bedroom flooding out from a single bed, whether it's an entire dormitory filled with beds or not) were not going to be survive.  They would have been weird to tutorialize, since the idea that one piece of furniture rules over and determines the function of a room that could have all sorts of furniture in it is kind of strange.  So now it's all done zone-style.  You place a bedroom zone in the new system, for instance, by just laying out a rectangle (or whatever shape) and selecting that type.  Have a bed placed there?  Good.  Don't have a bed?  The floor is being suggested, and if you add a bed later, that'll work too.  The logic for tombs, dining halls, archery ranges, some meeting halls, etc. is being tweaked a bit in line with this.
+<br />
+          <br />
+This has been a somewhat involved ongoing rewrite, but presumably no more than trying to explaining the old system.  So this will be fine.  We also have various exciting art movement on the underground vegetation and elf front, among other things, so we should have some more cool images soon as well.</li>
+
+<li id="2021-03-01" class="dev_progress">
+          <span class="date">03/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8254142#msg8254142">Here is the reply at The Future of the Fortress.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=178188.0">This is the March 2021 report.</a>
+<br />
+          <br />
+I've been letting the news over at Steam take up the work of the dev logs lately, which has been weird, though there hasn't been anything else going on.  We recently showed the statues there, and you can <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8252659#msg8252659">see that over at the forum</a> as well.  I tested out some item statues today (as in, statues representing items, with like a battle axe on a pedestal), and set up the screwpump and hive interfaces (nothing new there.)  We're almost to rooms, which should be entertaining.</li>
+
+<li id="2021-02-13" class="dev_progress">
+          <span class="date">02/13/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Most recently, the screen clicking has moved on to building sheets.  I did the workshops and am working on the various special buildings now.  I don't have anything to add this time to the news writeup with screenshots, which you can see over on the forum <a href="http://www.bay12forums.com/smf//index.php?topic=174112.msg8247339#msg8247339">here,</a> along with some Scamps birthday pictures!
+<br />
+          <br />
+There's also been <a href="http://www.bay12forums.com/smf//index.php?topic=178034.0">another DF Talk earlier this month.</a>
+<br />
+          <br />
+<a href="https://www.youtube.com/watch?v=niKwnEJ5RD4&amp;feature=youtu.be">I did an interview with BlindiRL</a> on various DF matters.  It features Scamps being perhaps as bad as he's been on a recording.</li>
+
+<li id="2021-02-01" class="dev_progress">
+          <span class="date">02/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=178017.0">Here is the February 2021 report.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8243222#msg8243222">Answered the month's questions over at The Future of the Fortress.</a>
+        </li>
+
+<li id="2021-02-01" class="dev_progress">
+          <span class="date">02/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=178017.0">Here is the February 2021 report.</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8243222#msg8243222">Answered the month's questions over at The Future of the Fortress.</a>
+        </li>
+
+<li id="2021-01-28" class="dev_progress">
+          <span class="date">01/28/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here's an interim release - this is a fixer-upper for the old version, and not related at all to the new graphical stuff.  This isn't meant to address everything of course, or even most things, and we'll be cleaning up a lot more bugs and issues for the Premium release itself.  This one gets rid of some long-standing crashes and also attempts to address most of what we learned from the stress discussion from the forum.  There are still a few unmet needs (which don't contribute much to stress, but are an eyesore), and a few outstanding ideas related to winning sieges, ending wars and unattended children, but we'll need larger changes there that are better integrated with the Premium work.
+<br />
+          <br />
+It's always a little weird splitting the bug fixes into the two major/minor categories, but especially here, where the stress changes add up to a lot, so the division below is particularly arbitrary on that score.
+<br />
+          <br />
+Major bug fixes
+<br />
+<ul class="itemized">	<li>Fixed w.g. crash related to dark fortress civs having fixed positions not held by demons</li>
+	<li>Fixed zero-size creature crash</li>
+	<li>Fixed off-site werebirth crash</li>
+	<li>Stopped visitors from siding against fort in any conflict where the fort's tame megabeasts are involved</li>
+	<li>Made cave adaption negative effects less frequent</li>
+	<li>Made people get used to seeing dead bodies</li>
+	<li>Stopped corpse raising, shapeshifting and non-living non-vampire visitors</li>
+	<li>Made basic friendships easier to form for slow-to-love people</li>
+</ul>
+<br />
+Other bug fixes/tweaks
+<br />
+<ul class="itemized">	<li>Made people that work outside a lot get used to bad weather</li>
+	<li>Made valuable food satisfy good meal thought in addition to preferences</li>
+	<li>Added some additional dwarf chat types to meet some other needs and reduce stress</li>
+	<li>Stopped many minor thoughts from forming memories</li>
+	<li>Removed stress from migrants (e.g. ones from old forts)</li>
+	<li>Vengefulness is no longer stressful (as it was mainly related to defending others from attacking animals)</li>
+	<li>Changed balance of migrant professions</li>
+	<li>Patched one form of military item corruption on load (root cause not identified)</li>
+	<li>Expulsion exception 'child not present' now only applies to minor children</li>
+	<li>Fixed MUNDANE and HAS_ANY_CAN_SWIM for interactions/transformations</li>
+</ul>
+        </li>
+
+<li id="R2021-01-28" class="dev_progress hilt">
+          <span class="date">01/28/2021</span>
+		Released Dwarf Fortress 0.47.05</li>
+
+<li id="2021-01-17" class="dev_progress">
+          <span class="date">01/17/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Work continues!  The first bit from News land is a look at the work-in-progress window that pops up when you click on a dwarf (or other creature.)
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/dwarf_sheet.png">Dwarf sheet</a>
+<br />
+          <br />
+The overview seen in the image summarizes elements from all over the place, and hopefully has the data point you are looking for most of the time.  You'll still be able to find everything in full, including the inventory list, all of the skills, the physical description, and whatever else, in the many evolving subsections.  The overview will end up with some additional buttons as we go, as it relates to the various subsections, like the military/workshop stuff, as we tackle those problems, and functions like name customization and camera follow will also be found here, likely up top.
+<br />
+          <br />
+The idea is to carry this approach over to buildings and items (as well as engravings you click on), so that the v-q-t-k modes and all their subscreens from the old version are rendered obsolete.  It remains to be seen how stuff like the manager, unit list, rooms, workshop profiles, etc. get merged in here, but once we're done, a vast swath of the interface work will be done, more than might have seemed to fit under the 'click on a dwarf' umbrella when we started, since we're trying to have the player disappear off into full subscreens less often.
+<br />
+          <br />
+If there's more than one creature in a tile, or a creature is standing on a building or items, some helpful tabs pop up on the right hand side with images of the relevant object so you can select what you want to look at.  These become full scrollable lists if necessary.  Unlike the old look/etc. commands, the game can be unpaused when this is going on.  This lets you watch their thoughts change as they run about.
+<br />
+          <br />
+And here we have the burial hallways of Zach's fortress, from December's video update, now complete with caskets and more dead dwarves:
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/dwarf_caskets.png">Dwarf caskets</a>
+<br />
+          <br />
+Next up...  the promised interim release 0.47.05 for the old version, sometime in the next week or two.  We'll be addressing some crashes, stress balance, and other matters.  This interim release will be here on the site as usual and won't have any of the new stuff we've been talking about, but these are all issues that need to be handled, so we wanted to get some of them out early.  I was hoping to do this for Christmas, but I only managed to get my sleep thing sorted out a week ago.  With new sheets!  New sheets managed to trick my brain somehow.  Hopefully I remain repaired.</li>
+
+<li id="2021-01-01" class="dev_progress">
+          <span class="date">01/01/2021</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Happy New Year!  <a href="http://www.bay12forums.com/smf//index.php?topic=177791.0">It's 2021 (report).</a>  <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8230378#msg8230378">The Future of the Fortress reply is here.</a>  Somehow, a lutefisk delivery was made, so that still happened this year.  It was smellier and chewier than usual.  We ate it.</li>
+
+<li id="2020-12-21" class="dev_progress">
+          <span class="date">12/21/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here's <a href="https://www.youtube.com/watch?v=YqH1ZgZHpRs">a video update</a>, where you can see a somewhat larger fort (one of the many Zach's been playing to test things out) and various of the features.
+<br />
+          <br />
+Fairly quiet week, as my sleep schedule had some kind of 2020 boil-over event, and I was on 3-4 hours sleep at random hours of the day for most of the last 10 days.  That seems to be fixed now, or has been for one whole night anyway, but I'm optimistic tonight will be okay as well.  I put in better liquid and tile edging sprites for liquids in player-made channels, so those are almost ready to show.  Stairs can now be designated in a way that puts an up stair at the bottom and a down stair at the top, with up-down stairs in between, without having to designate the top and bottom separately - just select one column and it handles it.  Dwarven cheese/milk are properly available at embark (came up in art testing, as all of the cheeses have different pictures and dwarven cheese was being elusive.)</li>
+
+<li id="2020-12-13" class="dev_progress">
+          <span class="date">12/13/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> First, to recap the last post over in News land, we have humans!  Here's an invasion, complete with a war elephant:
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/elephant_invasion.png">Human invasion</a>
+<br />
+          <br />
+And not just any elephant...  that was actually a bug where the elephant was raised to invasion leader status, ha ha, which is why it's hanging out on its own.  Many other elephants followed.
+<br />
+          <br />
+Here's a comparison of humans and dwarves with different equipment.  We haven't done human materials yet.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/arena_equipped_humans.png">Arena humans and dwarves 1</a>
+<br />
+          <br />
+And here are some more humans and dwarves in the arena.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/arena_humans.png">Arena humans and dwarves 2</a>
+<br />
+          <br />
+And here's my human adventurer and their camel friend meeting a dwarf on patrol.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/human_adventurer.png">Human adventurer</a>
+<br />
+          <br />
+We also showed various wholesome giant critters in the last news post.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/giant_showcase.png">Giant small critters</a>
+<br />
+          <br />
+Since then, I've continued on with the look-hover/character-building-item sheet stuff and also caught up on some more graphics.  Patrick drews some coffins, which are of course very important to keep the ghost population down:
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/coffins.png">Coffins</a>
+<br />
+          <br />
+When you place them, they are displayed open until they are used:
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/bed_casket.png">Casket and some beds</a>
+<br />
+          <br />
+You can see some bed variations here - we also have improvements, quality, and spatter reflected as with the tables, chairs, and cabinets.
+<br />
+          <br />
+Finally, remains, corpse pieces, and butchery products have their tiles now.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/giant_pieces.png">Proud bronze colossus by rearranged giant</a>
+<br />
+          <br />
+All of those represent some specific piece or other, except the nails, which get the generic "small corpse piece" at the bottom - the nervous tissue, cartilage, fat globs, hair, teeth, and meaty bits are all there.  (The bronze colossus won the fight in the arena, and then I used the arena's butchery button.  I took control of the colossus and arranged things nicely.)  You can see the hover info here as well - we don't have blood smears yet.</li>
+
+<li id="2020-12-01" class="dev_progress">
+          <span class="date">12/01/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here is <a href="http://www.bay12forums.com/smf//index.php?topic=177623.0">the last report posted in 2020.</a>  Here is <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8219280#msg8219280">the last Future of the Fortress reply posted in 2020.</a>
+        </li>
+
+<li id="2020-11-30" class="dev_progress">
+          <span class="date">11/30/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Yes, things got less normal indeed - for instance, the landlord decided to randomly replace all of the windows in my apartment, using a masks-randomly-off contractor.  Perhaps having the windows out for a time made it count as outdoor contact, but it wasn't great.  And so on.  Maybe things will be less stressful now somehow, though cases continue to rise locally and elsewhere.
+<br />
+          <br />
+Most recently, the artists have made progress on giant creatures, and we should also have our first humans and goblins soon!
+<br />
+          <br />
+I've continued a bit on the building interface nonetheless and have also gotten started on the replacement for the various inspect/queue/etc. commands.  The current idea, which is very likely to change, is that you'll get an abridged form of the 'k' look list as you move around, and that clicking the tile of any workshop/item/creature etc. will take you to a pane that handles the v-q-t functions associated with that object.  If there's more than one object in the tile, you'll need to disambiguate using the list.
+<br />
+          <br />
+Once you get to a single object, you'll have the object's pane to work with.  For workshops and other buildings, this combines the q/t information, and for creatures, we're working toward some kind of 'character sheet' that surfaces the most important bits from the various Classic v panes.  There's too much data, so some of it will still be hidden behind tabs, etc., but you should be able to see a lot more at a glance than you do currently.  Cases like items and engravings should be more simple.
+<br />
+          <br />
+For a time, as you may have seen elsewhere, <a href="https://bay12games.com/imgs/scamps_laptop.jpg">Scamps had a co-workerly spirit</a>, on a dead laptop where he couldn't make his typical well-meaning contributions to the codebase.  Now he's back to <a href="https://bay12games.com/imgs/scamps_box.jpg">living in a box.</a>
+        </li>
+
+<li id="2020-11-16" class="dev_progress">
+          <span class="date">11/16/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Oops, all the political/etc. happenings removed me from time.  I can't promise things will be more normal soon, naturally, since things are not normal now, and are in some ways less normal than they've ever been, especially on the Covid front (Bay 12 associated people all still okay so far.)
+<br />
+          <br />
+Most recently, I've been working on the building interface.  We haven't done a graphical pass on it yet, so I don't have any images, but the general idea is that there's a building button at the bottom of the screen, and this leads to categories like workshops and furniture.  Once you choose the building you want, you click a place on the map, and then choose from a material list much like the current material list, but now with a text filter and the ability to expand individual categories of material rather than all-or-nothing.
+<br />
+          <br />
+That means most buildings are along the lines of four clicks to place:  a few to get to the type, one on the map, and one for the material.  The main savings vs. the old interface is in positioning the cursor, and of course you'll have the ability to combine keypresses and the mouse if you want to just use the mouse for positioning and hotkeys to get to buildings faster.  A few buildings like bridges require you to do another mouse press (I haven't done click-and-drag on the play area yet, though scrollbars work, so it's not far away), but that's also better for most people than using the rectangle keyboard commands to resize one row/column at a time.  So this feels like a good step forward.
+<br />
+          <br />
+I was able to keep the game (optionally) unpaused during the type selection and placement portions, but I wasn't able to do so during the material selection, since the distance calculations there rely too much speed-wise on some precalculations being preserved (calculations that are disrupted by mining, etc.)
+<br />
+          <br />
+There are still some pieces of the building interface update left to handle, and then we'll likely be moving to the v-q-t-k look-and-do-stuff command set.</li>
+
+<li id="2020-11-01" class="dev_progress">
+          <span class="date">11/01/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here is <a href="http://www.bay12forums.com/smf//index.php?topic=177464.0">the report to start November.</a>  Here is <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8206593#msg8206593">a Future of the Fortress reply.</a>  Hmm, slipped off the reliable logging wagon there for a bit.  2020 is truly a thing.  I'll get on that for November, which is obviously going to be a normal month.
+Over at Steam news, the last post was about the stockpile interface.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/stockpile_1.png">Placing stockpile</a>
+<br />
+          <br />
+It works much like the new zone interface, and also includes the ability to redraw existing piles.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/stockpile_2.png">Choosing stockpile type</a>
+<br />
+          <br />
+The same main types are available, with the addition of an All button for people that want to use an "everything pile" quickly.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/stockpile_3.png">Choosing stockpile links</a>
+<br />
+          <br />
+You can also set up links as before, but now you can just click on the relevant buildings/piles.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/stockpile_4.png">Custom stockpiles</a>
+<br />
+          <br />
+A few of the more significant additions are for the custom stockpiles.  The lists are now alphabetized, and they can also be filtered!  On some of the lists it would have taken forever to section out, say, the chopped livers of giant creatures, but now it can be done easily with a single filter and click of the all button (the all/none button above the filtered list only applies itself to the visible options.)
+<br />
+          <br />
+Since the last log we've done, well, a ton of corpses.  There are many different things that can die in this game.  Furniture has had a revamp, and they'll even show rain droplets now if they are left outside.  We have floodgates, bridges, the small workshops, traction benches, wells complete with bucket moving below, and vertical bars.  We should be able to take a look at this and some more for next time.</li>
+
+<li id="2020-10-09" class="dev_progress">
+          <span class="date">10/09/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=177366.0">Dwarf Fortress Talk #27 has been posted.</a>  In part, we discuss the new dwarf artwork!  And unlike the more notorious teaser episode where we discussed the embark screen, we can actually share this stuff with you at the same time.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/oct_9_dwarves.png">Professional dwarves</a>
+<br />
+          <br />
+Here we have a fisherdwarf and a stoneworker.  It shows their actual worn clothing (dresses and gloves in this case, based on their generated civ clothing selections), but it is colored according to their profession, like the ASCII smiley faces.  That's one of the two main dwarf display modes we're exploring.  The other is to show the clothing with proper dyes.  We might end up with additional ones as well.  You can also see here that hair styling choices are respected, along with hair colors (or the absence of hair color because shaving has ensued).  We should also end up with at least four skin color groupings (you can see two in the images below.)  The dwarf definitions have a lot of colors, but some of the names are close enough that we're going to use broader categories to keep the amount of artwork under control - we're not using shifts or recolors here, but Mike is rather selecting all of the colors by hand for each palette.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/oct_9_arena_dwarves.png">Arena dwarves</a>
+<br />
+          <br />
+Visible equipment!  The day has finally arrived, ha ha, outside of the venerable 'my adventurer @ changes color when I take off my coat."  This should make it quite a bit easier to tell when a woodcutter has misplaced their axe.  As you can see, the materials are also represented - we have bronze axes and plate at the top, and a variety of clothing items, a steel spear, and iron mail at the bottom.  The clothing are cyan because arena mode treats them like the standard jobless profession currently.  The hoods are also going to be improved by some alpha blending on the next pass.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/oct_9_adventurer_cleaver_bear.png">Adventurer cleaver-dwarf with pet bear</a>
+<br />
+          <br />
+Keeping in mind that we haven't really started in on adventure mode yet, here's another shot with some more item/clothing possibilities - my human-civ'd dwarf adventurer started with an iron meat cleaver (well, I selected it from the equipment screen, ha ha.)  There's a human there on the right, as the debug creature, and they'll also be receiving this layered look, along with goblins, elves, and kobolds.  Others like animal people and night trolls should be able to display their weapons as well - doing additional layers is difficult (as you can imagine, drawing caps for elephant people and slug people are different projects), but we'll see how it unfolds.</li>
+
+<li id="2020-10-01" class="dev_progress">
+          <span class="date">10/01/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Happy October!  Here is <a href="https://www.youtube.com/watch?v=G-FRm78L3kc&amp;feature=youtu.be">an interview I did today with BlindiRL</a> about current developments and also subjects DF more broadly.  Scamps imagery and vocals are included.
+<br />
+          <br />
+Here is <a href="http://www.bay12forums.com/smf//index.php?topic=177324.0">the monthly report</a> and there is also <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8195533#msg8195533">a Future of the Fortress reply.</a>
+        </li>
+
+<li id="2020-09-26" class="dev_progress">
+          <span class="date">09/26/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Lots of videos have happened recently: <a href="https://www.youtube.com/watch?v=uYS-kNvgXR8">Autumn Dev Update (with mostly-current UI video)</a>, <a href="https://www.youtube.com/watch?v=FGcvmgxmpEg">Meet Tarn Adams at PAX Online</a>, and <a href="https://www.youtube.com/watch?v=ZERuH_hbCH4">Procgen Panel at PAX Online.</a>  I've also finally updated the Links section above with lots of media stuff/etc. from 2019 and 2020.
+<br />
+          <br />
+Of course the reality of the last few weeks has involved more than its fair share of real-world smoke, which was not at all fun or good for work, and also impromptu insulation changes for the whole building which involved a lot of hammering at sleep (for me) hours and then getting called off and doing it again next week...  so progress and any kind of sleep has been iffy on my side.  At least the smoke has been gone for a few days.
+<br />
+          <br />
+There's a ton of art work going on - we are much closer to showing dwarves now, and all sorts of other matter.  While drawing has been happening, I've tried to get the stockpile interface done, somewhat like the zones screen -- this means stockpile repainting (not just partial deletion), and also the ability to make stockpiles larger than 31x31.  I've also added a default option for All/Everything stockpiles.  We should be able to show this as well once things settle down.</li>
+
+<li id="2020-09-13" class="dev_progress">
+          <span class="date">09/13/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Thanks to everybody that dropped by and asked questions at the online meetup-panel PAX thingy yesterday!  Tanya and I will also be on a procgen panel at 3:00-4:00 PDT on Tuesday the 15th.  That one will be differently interactive, since the video is pretaped, but we'll be in the channel on the PAX discord interacting in what I, well, it's like interactive commentary on a movie?  I have no idea what it'll be like, since we'll be talking in the video, and people will want to pay attention to that, but we'll also be able to clarifying/chat in the discord while the panel is playing.  No idea how that'll shake out, ha ha, but I'll be there.  I have another obligation right after, so I'll have to duck out at 4:00.
+<br />
+          <br />
+Also, after the latest Future of the Fortress and today's PAX event, there was a bit of confusion/concern about the "deadline."  This was in the context of a FotF reply where I mentioned wanting to work toward the original contract date as hard as I could so that we could still meet it with as few delays as possible, even though the whole 2020 situation means there'll likely be some flexibility if we need it.  I also tend to treat deadlines on paper somewhat seriously, perhaps as a habit of my schooling, even if it's not apparent with all the 26 month releases of the past, ha ha.
+<br />
+          <br />
+In any case, my response was interpreted by a few people as Kitfox pressure, which it isn't - if there's any Kitfox pressure it is of the form "Tarn, please take a weekend off!"  And you shouldn't be upset by that either!  I should take a weekend off sometime.  This weekend might kind of count, just because the air is so smoky I had some trouble sleeping so I haven't done much useful.  All will be well.  But yeah, my primary perspective on release deadlines and stuff, just to remind people, is all about healthcare.  Healthcare is cool.  We're not rushing anything (we spent the first year+ on the villains after all), and we'll take the time we need, but we're also trying to get the game together as quickly as we can.
+<br />
+          <br />
+Speaking of which, over in Dwarf Land, there's been various progress.  The main thing we talked about over on Steam News was the new zone interface.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/zone.png">Zone (starting the painting process)</a>
+<br />
+          <br />
+I removed the border here with the rest of the buttons and the minimap since we haven't finalized various layout decisions there.  Here we have a rectangle paint and a free-draw which gives you the same feedback from the Classic version, in term of which zone types are supported by the selection.  I still need to do the wall-sensitive flow tool.  We're trying to include a bit more help - there are even tooltips!  You'll see a few below.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/zone_2.png">Zone (selecting type after painting)</a>
+<br />
+          <br />
+There are still five Tarn-icons in this image, complete with default MS Paint colors...  it probably won't take you long to spot them, ha ha ha.  Meph cooked up the rest.  It shows an icon representing the type of zone over in the graphical area as well - this even reflects the level of temples and guildhalls.  Zones are only visible when you are in zone mode, as in Classic.  Once selected, the zone types like gather and pit/pond etc. also have option icons (like tree/shrub/fallen, etc.), but they are also still Tarnish... five may be the cap you can handle there.  We'll stay safe!
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/zone_3.png">Zone (setting location)</a>
+<br />
+          <br />
+The extra space on this one is used for the list of existing locations that you can assign.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/zone_4.png">Zone (setting temple type)</a>
+<br />
+          <br />
+I couldn't capture my mouse cursor on this one (the various alt/etc. modifiers to PrtScr didn't do it for whatever reason), but it's over the True Stick-Fellowship, a human-loaned religion - the list is chronological currently, which is why Utag (the loaned deity) shows up later in the list.  It would probably be helpful to show the number of worshippers and current temple status in the main list without requiring the tooltip.  Lots of improvements to be had as we go.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/zone_5.png">Zone (now a temple)</a>
+<br />
+          <br />
+Utag is into hospitality, so we get lunch.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/zone_multiple.gif">Multiple zone selection</a>
+<br />
+          <br />
+This is the mouse version of "v: next" from Classic zone mode.  You can click on a tile and it gives you the zone there.  If there's more than one zone, you can flip between them with the arrows (or just click somewhere without overlap, if there is such a tile.)
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/zone_tavern.png">Zone (repaint tool tip)</a>
+<br />
+          <br />
+Here the cursor was over the little repaint rectangle there (which is a Tarn icon, so not remotely final).  Zone repaint is exciting!  Zones can even be transported to entirely different places if you draw one rectangle and remove the original (in whatever order, as long as you don't click "Accept" while the zone is empty.)
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/zone_suspended.png">Visible zone suspension</a>
+<br />
+          <br />
+Here's another handy benefit of the tiles, though perhaps I could have reddened my ASCII as well!
+<br />
+          <br />
+On top of the continuing PAX event, there's various tumult over the next several days, but hopefully we'll settle back into the rhythm of things again soon and have some more work to share.</li>
+
+<li id="2020-09-01" class="dev_progress">
+          <span class="date">09/01/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=177174.0">Dwarf Fortress Talk #26 has been posted.</a>  This episode has special guest Brian Bucklew on to talk about Caves of Qud and roguelike/game development more generally.
+<br />
+          <br />
+Naturally, <a href="http://www.bay12forums.com/smf//index.php?topic=177168.0">a monthly report</a> has also surfaced, along with <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8185557#msg8185557">the Future of the Fortress reply.</a>
+        </li>
+
+<li id="2020-08-28" class="dev_progress">
+          <span class="date">08/28/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Been working on various matter - display support for various of the creatures and their child/undead variants, first attempt at the giant mushrooms underground, and a variety of items that weren't yet supported.
+<br />
+          <br />
+Here's the minimap I mentioned in the last dev log:
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/minimap.png">Minimap</a>
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/minimap.gif">Minimap (animated)</a>
+<br />
+          <br />
+We're continuing to experiment with bringing some information out from the status screen, as seen above the static image there.
+<br />
+          <br />
+Meph also brought us to the world of guts!  Here are some placeholder dwarves that have had a run-in with my debug tools:
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/contents_under_pressure.png">Contents under pressure</a>
+<br />
+          <br />
+In the graphical version, they don't drag two tiles behind, since that would look even more ridiculous, ha ha.  So there will be rare mechanical differences after all!  In this case, it seemed fine.</li>
+
+<li id="2020-08-21" class="dev_progress">
+          <span class="date">08/21/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Last week, we worked to get together the embark screen UI for the scheduled post over at Steam News, at which point I descended into the standard August heat-addlement and forgot to make remarks in the dev log.  I haven't slept much recently.  Here are the images:
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/embark_item.png">Item list</a>
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/embark_filter.png">Item filter</a>
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/embark_critters.png">Embarkable critters</a>
+<br />
+          <br />
+Mike and Meph did amazing work, and now there are many little buttons to press.  We don't have the separate screen for choosing new items anymore - that's now all been incorporated into the item tab.  The elements respond well to resizing and it centers itself on ultrawide monitors, thanks to a lot of input from Mike, and we'll keep that standard up as we revisit the various portions of the game.  The keyboard commands are still in, but we haven't decided how to display the bits in focus, so that isn't reflected.
+<br />
+          <br />
+Since then, I've been continuing work on the main screen.  Nothing's ready to show yet, but so far I've got a tile-perfect minimap (for forts embarking at 4x4 or smaller, anyway, otherwise it has to approximate), and a general arrangement for buttons around the border to replace the giant menu pane, with the date always available just above the minimap in the top right.  There's currently a supply/population readout at the top, and you can access the stocks screen directly from there - stocks are not a screen anymore, but a large window that comes down, with visual contents more or less like the embark item above.  Instead of adding and subtracting as in embark, buttons for recenter/view/forbid/dump/melt/hide options are available, both for groups and individual items.  And it has text filtering now!
+<br />
+          <br />
+We're hoping to continue to bring screens hidden in the depths out to the main screen as possible (the Stocks used to be found at 'z' and then some tabs over), allowing you to remain more present in the main play area as in most modern strategy games.  I think the world map ('c') will probably still be its own screen, due to the world map display, but we'll see about the rest!</li>
+
+<li id="2020-08-11" class="dev_progress">
+          <span class="date">08/11/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=177061.0">A new episode of DF Talk has been posted.  Number twenty-five!</a>
+        </li>
+
+<li id="2020-08-08" class="dev_progress">
+          <span class="date">08/08/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Happy 14th DF Release anniversary!  Today's accomplishment was bringing the text display up to 24-bit color so I could set a tab's label color correctly.  The game has been able to display its 16 colors at whatever RGB values were set in the init file for many years, but now it can display more than 16 text colors at a time, ha ha.  We'll definitely be able to show the embark setup screen with the next news post as a sample of the new UI.  The next thing I'm working on is getting those UI elements to respond more nicely to window resizing.  Then we'll be back to the main screen.</li>
+
+<li id="2020-08-01" class="dev_progress">
+          <span class="date">08/01/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <a href="http://www.bay12forums.com/smf//index.php?topic=177006.0">A monthly report.</a>  Also <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8173424#msg8173424">a Future of the Fortress.</a>
+        </li>
+
+<li id="2020-07-27" class="dev_progress">
+          <span class="date">07/27/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> More UI progress - I've finished the first pass and most of the work I'll need to do on designations.  We still need to remove my terrifying scrawled icons, but there are free paint and rectangle dragging modes, and you can do priorities, mining modes, and can easily switch back and forth between blueprints and standard designations, all with the mouse.  Traffic weights have little sliders in an advanced options section.  Icons for forbidden/dump/melt also appear over the relevant items and buildings even in regular play, so it's much easier to diagnose when certain mysterious job failures are happening etc.  And this all can be done both paused and unpaused.  They are currently grouped into six categories in buttons down at the lower left, and expand upward, but we'll see if that sticks as more main screen interface elements are updated.  It was important to highlight digging on the main screen, for instance, and that's done by having it be the leftmost button and a top level category (with all the different sorts of digging within its section.)  Naturally, it'll be easier to understand once the images are deTarned.
+<br />
+          <br />
+<a href="https://bay12games.com/media/df_talk_23_transcript.html">DF Talk 23 now has a transcript!</a>  Thanks go to voliol and Quatch for getting that together.  Episode 24's transcript is still in progress.</li>
+
+<li id="2020-07-17" class="dev_progress">
+          <span class="date">07/17/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Ha ha, sorry for the long break there!  I'd been hoping to get the first UI screen images together, with a glance by the artists (the screens are currently frightful, described as Elven in my programmer's color scheme), but the real world became variously intense again, so that hasn't happened yet.  Cruelly, these are teased in <a href="http://www.bay12forums.com/smf//index.php?topic=176916.0">the latest episode of DF Talk (Rainseeker returns!),</a> and hopefully we'll have something showable soon.
+<br />
+          <br />
+We did post some mostly-animal images over at Steam while I was prototyping those first screens and hoping to log them here.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/glass_floor_trinkets.png">Glass Floor and Seeds and Trinkets</a>
+<br />
+          <br />
+Here I made a glass block floor, placed a seed stockpile, and hoped to show off the seed and craft images.  Immediately, reptile vermin began having a go at them (as seen near the center), so I had to take the shot prematurely, before I could get all of the crafts laid out.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/df_birds.png">Birds</a>
+<br />
+          <br />
+Birds!  Look at them all.  It's great to see every DF player's favorite bird, the kea, finally displayed.  And there's a kakapo.  Owls!  Cassowaries and emus and ostriches.  And more.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/df_underground_giants.png">Underground giants</a>
+<br />
+          <br />
+Some giant underground beasts!  The giant cave spider is a crucial DF menace, and it looks sufficiently sinister.  Giant moles are adorable.  Cave toads and giant cave swallows and the important giant rat, larger than the large rat, of course.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/df_smallish_mammals.png">Smallish mammals</a>
+<br />
+          <br />
+The two monotremes and some of their friends!  Pangolins and porcupines and hoary marmots and opossums and beavers.  Amazing to see them all there, ready to enter the very safe world of DF to make friends.</li>
+
+<li id="2020-07-02" class="dev_progress">
+          <span class="date">07/02/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Hopefully the site has stabilized after the long migration!  Here is <a href="http://www.bay12forums.com/smf//index.php?topic=176801.0">the monthly report.</a>  And here is <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8162224#msg8162224">the Future of the Fortress.</a>
+        </li>
+
+<li id="2020-06-27" class="dev_progress">
+          <span class="date">06/27/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Suddenly, <a href="http://www.bay12forums.com/smf//index.php?topic=176781.0">an episode of DF Talk appears!</a>
+        </li>
+
+<li id="2020-06-18" class="dev_progress">
+          <span class="date">06/18/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here's <a href="https://youtu.be/9xsv9JQ3X5w">an audio interview I did with BLindiRL.</a>
+<br />
+          <br />
+Tomorrow at noon US Pacific time, and 9pm in Austria, I'll be having a conversation with Johanna Pirker at <a href="https://gamedevdays.com">Game Dev Days Graz 2020.</a>  It'll be streamed <a href="http://twitch.tv/gamedevgraz">here on Twitch.</a>  They're also on <a href="https://discord.gg/ActtVuF">Discord.</a>
+<br />
+          <br />
+Most lately we've experimented a bit with material recolors for items.  These are done in code based on the RGB color provided in the raws for the metals so they should work with metal mods etc.  <a href="https://bay12games.com/dwarves/imgs/june_18_swords.png">Here's the Debug Creature we've been using for creatures without tiles, after having arranged some swords of various materials in the arena.</a>
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/june_18_arena_friends.png">Here are some more underground creatures and weapon/tool items made from different materials.</a>
+        </li>
+
+<li id="2020-06-10" class="dev_progress">
+          <span class="date">06/10/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> We're still having some trouble getting <a href="http://dffd.bay12games.com">the Dwarf Fortress File Depot</a> to come up consistently after the site move.  We've tried three options and are continuing discussions with support.  We'll figure something out!  Sorry for the ongoing irritation there.
+<br />
+          <br />
+Here's <a href="https://www.youtube.com/watch?v=VAhHkJQ3KgY">an interview with Noclip</a> we did back at GDC last year when people could sit down in person for interviews and such things.  Has some Kruggsmash bits and other production bits, so not strictly an interview.  Interview+.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/brook.gif">Brook</a>
+<br />
+          <br />
+There's a brook.  I didn't anticipate back when we started that we'd have a sixteen frame animation cycle in the game, but we have one now!  We might revisit flow direction indications a bit with this, and make some additional tweaks, but the rocks and refraction effects are really cool as it stands.  It's going to be exciting to see how floodgate systems and other fluid systems look as they all come online.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/still_water.gif">Still Water (WIP)</a>
+<br />
+          <br />
+We also have an early image here of the more opaque pools.  Otherwise, I've continued catching up with identifiers.  Toys, shields, trap components, prepared food, various constructed floors, and all manner of other tiles up and running, and we should have some additional presentable images soon.</li>
+
+<li id="2020-06-01" class="dev_progress">
+          <span class="date">06/01/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here's <a href="http://www.bay12forums.com/smf//index.php?topic=176554.0">the monthly report,</a> and <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8148050#msg8148050">the Future of the Fortress.</a>  Sorry for the outages over the last few days.  Our site and the Dwarf Fortress File Depot may still be on and offline a bit while we migrate to a new hosting company.
+<br />
+          <br />
+<img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> <img src="threetoe.png" alt="Threetoe" border="0" class="author_img" title="Threetoe" /> While the protests against the murder of George Floyd and police brutality, and the ensuing police riot, continue in this country, we don't want to be silent, nor do we want to make a generic brand statement.  So, specifically, we support efforts to defund the police, as well as those to minimize and abolish incarceration.  No amount of protection afforded to white people is worth the horror we continue to perpetuate in this country against millions in marginalized communities.  Black lives matter.
+<br />
+          <br />
+It's likely those of you that want to contribute to relevant funds have located some already.  We've given to <a href="http://welovelakestreet.com">Rebuild Lake Street</a>, <a href="http://blacklivesseattle.org">the BLM Seattle Freedom Fund</a>, and <a href="http://reclaimtheblock.org">Reclaim the Block.</a>  <a href="http://minnesotafreedomfund.org">Minnesota Freedom Fund</a> will be linking additional organizations as well.</li>
+
+<li id="2020-05-27" class="dev_progress">
+          <span class="date">05/27/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Ah, sorry for the gap there.  I didn't have a scene to show, so I was just pottering away on code bits in a sleep-deprived pandemic haze and lost track (I've remained healthy, but the sleep schedule has become unmoored.)  The main project for the artists is the rivers and brooks, and that's going well.  In the meantime, I've been handling various bits, like support for pet/vermin display and getting adventure mode showing the basic tile view (still quite rough).  We do have a few things we can show this week:
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/may_27_large_workshops.png">Large workshops</a>
+<br />
+          <br />
+Here are the larger workshops, the siege workshop and the kennels.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/may_27_tracks.png">Minecart tracks</a>
+<br />
+          <br />
+And here are the minecart tracks.  There are carved tracks from the top, transitioning into some wooden ones, and finally some stone ones heading up from the southwest.  We also have images for track stops and rollers that aren't coded up yet.  I'm always several identifiers behind, ha ha, and the work continues!</li>
+
+<li id="2020-05-13" class="dev_progress">
+          <span class="date">05/13/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> We've mentioned trees a few times here and showed a few foliage shadows back in April.  Starting with that, this is what the lowest level of a lightly forested area looks like currently:
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/may_13_base_light_forest.png">Tree base</a>
+<br />
+          <br />
+There are saplings and shrubs there as well - we have some specific shrub tiles now, but these species are still generic.  As I mentioned before, the initial challenge was to distinguish trees from stumps, and this was accomplished with the shadow and some general liveliness.  Of course, as you know if you've played the game, what lies above presents entirely new challenges!
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/may_13_tree.gif">Tree cross-sections</a>
+<br />
+          <br />
+That gif has the view going up above a tree and then back down the branching trunk, showing each of the thickness levels a basic 1x1 DF tree can present - trunk, thick branch, thin branches, and twigs/leaves.  In ASCII, the thin branches use the 1/4 symbol, but here they indicate which direction their parent branch/trunk is.  Thick branches can be walked upon, so they have to be reasonably wide, whereas thin branches do not support a walker, and so are much more fragile looking.  On top of that, trunks can grow sideways but are not walkable, so needed to be distinguished from thick branches.  This is accomplished by use of a trunk pillar in each of the trunk tiles, while the trunk tile still indicates its possible horizontal parent and children.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/may_13_crown_shyness.png">Forest and crown shyness</a>
+<br />
+          <br />
+In ASCII, you can sometimes tell adjacent trees apart based on flowers etc. but more often it is just endless touching leaves.  Here we have several leaf tiles depending on adjacency, which allowed the artists to attain the phenomenon of <a href="https://en.wikipedia.org/wiki/Crown_shyness">crown shyness</a>.  Not all species do this in real life, but in the game, it allows players to more easily distinguish which tree they are looking at, so we're using it everywhere.
+<br />
+          <br />
+We're still in various states of handling thicker trunks (highwoods can get up to 3x3!), trees without leaves, growths on trees (fruits etc.), other species of trees, and the more exotic cases of underground mushrooms and evil/good trees and so forth.</li>
+
+<li id="2020-05-07" class="dev_progress">
+          <span class="date">05/07/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here's where the work on the world map stands:
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/may_7_ascii_world_map.png">ASCII Medium World</a> -&gt; <a href="https://bay12games.com/dwarves/imgs/may_7_world_map.png">Same Medium World with Tiles.</a>
+<br />
+          <br />
+This is still in progress, and we have a lot of planned improvements around mountain peaks, river mouths, oceans, and just about everything else, ha ha, but it's definitely come into its own as an image of the world that will work for fort mode, adventure mode, and legends mode alike.  This was well over a thousand images, especially to smooth out the blocky boundaries.  It's still a grid map, and it's not easy to get away from that fully, but the artwork has gone a long way toward making it look more natural.</li>
+
+<li id="2020-05-01" class="dev_progress">
+          <span class="date">05/01/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here is the month's <a href="http://www.bay12forums.com/smf//index.php?topic=176266.0">report,</a> and also <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8134419#msg8134419">the Future of the Fortress.</a>  A few more days of tinkering and we should have some more images to show, and more on through May!</li>
+
+<li id="2020-04-22" class="dev_progress">
+          <span class="date">04/22/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> This week, we've started in on the world map.  There are a ton of tiles to reference, and the edges and layering are a little tricky, but hopefully we'll have some images soon.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/april_22_windmill.gif">First look at machines</a>
+<br />
+I can't show a useful machine yet, but here is a windmill turning some axles and gear assemblies.  Off to the right you can see a hint of a tree shadow.  Here's a fuller picture of where we are with that: <a href="https://bay12games.com/dwarves/imgs/april_22_stockpiles_and_trees.png">tree shadows</a>.  DF's multitile trees are a challenge to draw - even indicating that they are a living tree and not a stump down at the base level takes some work.  The artists went with foliage shadows, and it does the job!</li>
+
+<li id="2020-04-17" class="dev_progress">
+          <span class="date">04/17/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Happy birthday to me!  And appropriately enough, here are our first procedural creature pictures.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/april_17_night_trolls.png">Night trolls!</a>
+<br />
+As you can see here, they reflect a lot of what's going on in the descriptions (horn character and number, tail character and number, hairiness, skinlessness), but because we glue them together from parts that need to be reused, they don't reflect absolutely everything (joints, howling.)  With their much greater diversity, depicting forgotten beasts and demons will require more forms and effort, but similar principles should work out.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/april_17_caste.png">Castes</a>
+<br />
+Here's some additional detail for creatures - differentiation based on 'caste' information.  Now more domestic animals can be distinguished by their images.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/april_17_stockpiles.png">Stockpiles</a>
+<br />
+And finally, the next iteration on stockpiles.  We're still working with these, and signage etc. for custom stockpiles in particular.  As usual, we worked on some other things that aren't quite ready (more with trees, wagons, and so forth.)</li>
+
+<li id="2020-04-08" class="dev_progress">
+          <span class="date">04/08/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> As many of you know (and often already sort out with mods and so forth), the hills in DF can be confusing, especially when they are steep.  Not just because of the ramps, which we showed you with the last set of pictures, but just wrapping your head around the three-dimensional map can be a bit much when it only shows you a cross-section at a time.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/multilevel.png">Multilevel Display</a>
+<br />
+Here's a lot of what we've been working on recently.  There have been additional attempts to sort out a few of the minor issues you see there with soil-edge-shading and so forth, and work is ongoing, but this helps a lot already!
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/multilevel_animation.gif">Multilevel Animation</a>
+<br />
+Ha ha, here's a dev log foray into animated media, scrolling down a few levels.
+<br />
+          <br />
+Those images take place in deserts since our work on vegetation is in flux.  We'll be able to show some pictures there later when it is ready.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/planned_room.png">Finished Placement vs. Planned Furniture</a>
+<br />
+We're experimenting with transparency for planned furniture.  Here are two similar bedrooms.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/tall_creature.png">Blind Cave Ogre and Gorlak</a>
+<br />
+Even in the new display, as some people noted last time with the domestic animals, we can't show the exact size of creatures - there's just not enough room in the tiles.  However, we can bend the constraints of tiles a bit, as we did with workshops.  Our currently specifications allow creatures like dragons to visually occupy most of six tiles (three wide, two tall), though the game logic is still the same (creatures are in one tile, sometimes many creatures.)
+<br />
+          <br />
+More great work from our artists!  More to see next week!  I hope all is well.</li>
+
+<li id="2020-04-01" class="dev_progress">
+          <span class="date">04/01/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Starting the month off with <a href="http://www.bay12forums.com/smf//index.php?topic=176046.0">a report,</a> and <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8117326#msg8117326">the Future of the Fortress.</a>  I also did <a href="https://literate-gamer.zencast.website/episodes/172">an interview with Literate Gamer</a> last month that goes into the graphical release and what comes afterward.</li>
+
+<li id="2020-03-25" class="dev_progress">
+          <span class="date">03/25/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> A lot of this week's work was about making the ramps and their shadows better, since it'll be important for people to understand what has been traditionally a very confusing part of the game.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/march_26_ramps1.png">Ramps</a>
+<br />
+Here's an example of a more gnarly ramp situation (which would of course be a ton of upward triangles in Classic DF.)  We're still working on shadows and transitions, but it's going pretty well, I think.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/march_26_ramps2.png">More ramps</a>
+<br />
+Here's another one that also has some hematite (at the north side) and some brown jasper (at the south side).  We're hoping to shade the stone around the jasper like the sort of stone it is in, rather than the current lighter color.
+<br />
+          <br />
+Additionally, we've continued along with workshops and walls.  All of the standard 3x3 workshops are displaying in the game now.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/march_26_fort.png">Fort</a>
+<br />
+Here's a small fort with a carpenter, mason and metalsmith (under construction, with a little bit sticking up above the wall).  The smoothed walls use the proper picture now (though the color still needs to match the rough stone), and you can also see a constructed wall made from blocks on the top right.  Since many people like to patch up their forts perfectly, and others want constructions to be distinct, the current thinking is to go ahead and allow constructed walls to be smoothed and engraved like regular walls.  Engraving constructions is a long-standing request, so even better.
+<br />
+          <br />
+<a href="https://bay12games.com/dwarves/imgs/march_26_animals.png">Many domestic animals</a>
+<br />
+Finally, in Critter News, we have domestic creatures displaying.  I sold all the material in my starting wagon except for a pick and bought up a barnyard full and set them by the water.</li>
+
+<li id="2020-03-19" class="dev_progress">
+          <span class="date">03/19/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> We've been continuing on with the artwork and graphics code.  I realized late that the last dev log was a bit confusing, and that despite how things have worked here for many years, there should probably be some pictures, ha ha.  Please remember that these are all works in progress, and absolutely everything about them is subject to change.
+          <br />
+<br />
+<a href="https://bay12games.com/dwarves/imgs/soil_carpenter.png">Hill Carpenter</a>
+<br />
+This is what I mean by different grid sizes.  The visible fort area is made up of 32x32 tiles, while the old interface (which we haven't touched yet) is 8x12 tiles.  You can see some of the week's work in this shot as well.  We're experimenting with ramp shadows (there are a few cases there were the shades don't match up), as well as ramp shapes.  You can see to the left and right of the door how some of the recessed ramps don't match up with the others.  There are a lot of different ramp configurations, so this is an ongoing process!  You can see here the stockpile and some log items, as well as a placed door and a carpenter's workshop.  These are mostly soil walls which will likely be reddish brown later, instead of gray - the game is pulling from the RGB values of the material definitions, and the soil materials don't have corrected colors yet.
+          <br />
+<br />
+<a href="https://bay12games.com/dwarves/imgs/walls_floors.png">Some Rooms</a>
+<br />
+In this image, you can see some small rooms underground, where I've smoothed the top portion of the largest room as well as the first small room to the right.  Here you can see the wall shadow effect, as well as the variations in rough stone floor texture and the gem walls where the miners uncovered some rubicelle.
+<br />
+          <br />
+I've mostly been working with these shadow and floor textures, but we also got a preliminary dwarf displaying as well!  They are built from several pieces (twelve layers currently), and we'll be able to show a picture of that once it is further along.  Mike and Patrick have also done hundreds of creatures, items, workshop, plants and more, and I just have to keep working to catch up with them, ha ha ha.</li>
+
+<li id="2020-03-11" class="dev_progress">
+          <span class="date">03/11/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Hmm, interesting month so far, especially today, and I presume tomorrow and the rest of the days for a while.  But work continues!  The basic support for multiple differently-sized grids is done.  I haven't added much tile support yet, so what I saw was just a grass-and-stone field with the menus printed above it, but on the other hand, that was the first major hurdle.  Now I'm just slogging through a list of identifiers and draw commands so the artists can put all of their various art into the game and tweak their existing pictures and so forth.  So far, so good.</li>
+
+<li id="2020-03-01" class="dev_progress">
+          <span class="date">03/01/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> A <a href="http://www.bay12forums.com/smf//index.php?topic=175794.0">report for the month,</a> and the Future of the Fortress: <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8099137#msg8099137">Part 1</a>, <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8099138#msg8099138">Part 2</a>.</li>
+
+<li id="2020-02-29" class="dev_progress">
+          <span class="date">02/29/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Our second leap day release!  Fixes old and new this time.  From the new category, aside from crashes, marriages were being dissolved frequently and friendly visiting experiments were breaking too much furniture.  Among the older bugs fixed, we've got the one where people could teleport through walls while fighting or sparring, a loyalty cascade civil war issue, and a creature/item duplication bugs that was corrupting saves.
+<br />
+          <br />
+Barring sudden issues, this will be the final bug-fix release before we get the code work started on the graphical version.  There's a lot left to fix before that version is ready to be released, and we'll be doing parallel bug fix releases as the graphics stuff progresses.
+<br />
+          <br />
+Major bug fixes
+<br />
+<ul class="itemized">	<li>Fixed w.g. crash related to society infiltration</li>
+	<li>Fixed w.g. crash related to variable position creation</li>
+	<li>Fixed crash involving misbehaving roads</li>
+	<li>Fixed loyalty cascade due to death of questers etc. that had positive relationships with fort dwarves</li>
+	<li>Stopped charge collisions from teleporting people through walls</li>
+	<li>Fixed save corruption/duplication related to fort/adv retirement</li>
+	<li>Stopped dwarves from silently dissolving their marriages when they make a close friend</li>
+	<li>Stopped large visitors and residents from seeking and destroying buildings even if they do so as invaders</li>
+	<li>Stopped overwide shrines in npc forts from flooding the underground</li>
+	<li>Fixed issue causing broken castle maps</li>
+</ul>
+<br />
+Other bug fixes/tweaks
+<br />
+<ul class="itemized">	<li>Stopped pantheons of mortal races from frequently having very high numbers of deities</li>
+	<li>Fixed summon effects for small-sized creatures</li>
+	<li>Removed building destroyer/trample/trapavoid from smaller procedural creatures</li>
+	<li>Made divorce thought appear properly</li>
+	<li>Added stone altar building job</li>
+	<li>Fixed broken reunion historical entry</li>
+	<li>Removed various forgotten beast traits from experiments</li>
+	<li>Corrected issue with rumor system</li>
+	<li>Made item creation interactions work harder to select a material if none is provided</li>
+</ul>
+        </li>
+
+<li id="R2020-02-29" class="dev_progress hilt">
+          <span class="date">02/29/2020</span>
+		Released Dwarf Fortress 0.47.04</li>
+
+<li id="2020-02-26" class="dev_progress">
+          <span class="date">02/26/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> A reminder that crayon and story rewards are ending this month!  If you've already contributed and have been waiting, now is the time to reply to the email I sent, or feel free to email me at toadyone@bay12games.com if you didn't receive or can't find the information.  We won't be able to take new requests starting March 1, and we'll have to be firm about that in order to stop the process from continuing forever, so please don't delay.
+<br />
+          <br />
+The next fix release should be coming by the end of the month.  GDC is rolling around again in March, and the graphical code work will also begin, so it should be a hectic and interesting time.</li>
+
+<li id="2020-02-16" class="dev_progress">
+          <span class="date">02/16/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here's another bug-fix release, ranging into some older issues as well.  There's been some work on the raid crash/corruption problem, though I suspect that is ongoing - hopefully the frequency is lessened.  I've also done a few quick changes to socializing and stress, but that's a longer project as well.  Dwarves clump now in zones and taverns, which should help with the friendship rate, and I've made the most stressable dwarves a little more fixable.  One of the major causes of loyalty spirals/civil wars has been handled, and I did some work with hospital rest and diagnosis problems.
+<br />
+          <br />
+Reminder:  We'll start coding on the graphical version in a few weeks.  We'll still have these bug-fix releases periodically, though there will be an initial gap of some time while I get the core framework done to the point where the artists can use it.  But there should be at least one more bug-fix release around the change of the month before that work begins.
+<br />
+          <br />
+Major bug fixes
+<br />
+<ul class="itemized">	<li>Cleaned up equipment tracking issue for returning fort-mode raiders</li>
+	<li>Made historical spies drop possibly divisive cover identities when arriving as regular fort citizens</li>
+	<li>Stopped patients that have been in traction for a week from requiring diagnosis repeatedly</li>
+	<li>Made dwarves inside hospitals return to rest if rest is cancelled</li>
+	<li>Supported doctor's guildhall to fix broken petitions</li>
+	<li>Fixed freeze related to forbidding doors/hatches</li>
+	<li>Fixed crash related to starting modded fort mode critters with natural skills</li>
+	<li>Stopped crash related to artifacts/books placed on adv pack animals</li>
+	<li>Fixed crash related to deleting zones in adv mode site planning</li>
+	<li>Fixed unretirement crash in adv mode</li>
+	<li>Fixed bug causing you to become a different historical figure when unretiring</li>
+	<li>Fixed w.g. crash related to imprisonment by civilizations that have lost their capitals</li>
+</ul>
+<br />
+Other bug fixes/tweaks
+<br />
+<ul class="itemized">	<li>Allowed placement of altars in fort mode (they have no specific function yet)</li>
+	<li>Added person-seeking behavior to socialize activity and to jobless milling about in zones</li>
+	<li>Changed stress calculation for high vulnerability personalities</li>
+	<li>Made mummies control tombs more fully so allies couldn't call on zombies to fight themselves</li>
+	<li>Stopped mercenaries from being hired to attack their own forts</li>
+	<li>Fixed problem causing w.g. people to falsely befriend themselves for information</li>
+	<li>Fixed xml log for entities acquiring buildings</li>
+	<li>Fixed xml log for entities breaching the underworld</li>
+</ul>
+        </li>
+
+<li id="R2020-02-16" class="dev_progress hilt">
+          <span class="date">02/16/2020</span>
+		Released Dwarf Fortress 0.47.03</li>
+
+<li id="2020-02-13" class="dev_progress">
+          <span class="date">02/13/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Bit of a slow start this week, as my apartment complex is unexpectedly on the market after 13 years.  There were sudden inspections and other such to deal with.  Hopefully I won't have to move soon, but we'll see!
+<br />
+          <br />
+I did get some stuff done the last few days as we now head toward the next fix release.  Another world gen crash fixed.  Hopefully took a chunk out of the raid crashes (there was a large problem with the post-raid equipment manifests), but there are definitely still other issues there.  A few quirky issues like mercenaries attacking themselves, and tomb builders being able to control mummy zombies indirectly and even make them siege themselves.  Crash related to pack animals, and an unretirement crash.  Fixed a fort loyalty cascade from historical spy identities - loyal dwarven spies that had infiltrated the goblins historically would arrive during play, still claiming to be members of the goblin civ (as grown-up or second generation abductions), and fort dwarves would believe them.  Now they sensibly drop those identities and become regular citizens or visitors of the fort, preventing any free-for-all violence from starting.</li>
+
+<li id="2020-02-06" class="dev_progress">
+          <span class="date">02/06/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> This is the first bug-fix release, focusing on newly introduced problems.  Most notably, world gen crashes should happen less often, having babies should cause less trouble, and some adventure mode problems with quests and mounts should be fixed.  We'll continue on with this process, working in some older bugs for next time as well.
+<br />
+          <br />
+Major bug fixes
+<br />
+<ul class="itemized">	<li>Fixed crash from starting in adventure mode as an outsider</li>
+	<li>Fixed world gen crash involving civs attacking ruins that still had livestock</li>
+	<li>Fixed world gen crash involving criminals and arrest</li>
+	<li>Fixed crash from certain description strings</li>
+	<li>Fixed crash involving stressed out wilderness creatures wanting to complain to priests</li>
+	<li>Stopped carried newborns from setting their mothers' paths like riders</li>
+	<li>Stopped flying mount from taking control when it is airborne</li>
+	<li>Fixed broken hearthperson links for adventurers</li>
+	<li>Made animals follow the follow command instead of waiting forever</li>
+	<li>Fixed issues with mount movement after fast travel</li>
+</ul>
+<br />
+Other bug fixes/tweaks
+<br />
+<ul class="itemized">	<li>Made undead riled up by dwarf raids as with normal civs</li>
+	<li>Starting dwarves pulled from underground cultures no longer start with cave adaptation</li>
+	<li>Stopped non-dwarves from doing w.g. underworld disasters</li>
+	<li>Increased werebeast triggers further to match semi-megabeasts</li>
+	<li>Took quantity into consideration in chargen equipment value</li>
+	<li>Fixed item quality interaction effect range setting</li>
+	<li>Fixed masterpiece quality error in chargen equipment value</li>
+	<li>Allowed legless animal people to pet animals</li>
+	<li>Stopped pets from dropping all packed luggage when they attack</li>
+	<li>Stopped some cases of animals being called recruits after travelling</li>
+	<li>Fixed broken scroll/expand commands in adventurer intrigue log</li>
+	<li>Stopped chargen beliefs from persisting incorrectly when certain options are selected</li>
+	<li>Fixed villain network export from legends (only works for living - no snapshots)</li>
+	<li>Changed Create New World civ number distribution (new numbers suggested by Talvieno)</li>
+	<li>Changed human 'fortress' to 'castle' to avoid confusing with dwarf fortresses</li>
+	<li>Fixed inconsistency in kill name changes</li>
+	<li>Fixed interrogator/conspirator xml</li>
+	<li>Fixed some busted world gen param newlines</li>
+</ul>
+        </li>
+
+<li id="R2020-02-06" class="dev_progress hilt">
+          <span class="date">02/06/2020</span>
+		Released Dwarf Fortress 0.47.02</li>
+
+<li id="2020-02-01" class="dev_progress">
+          <span class="date">02/01/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here's the <a href="http://www.bay12forums.com/smf//index.php?topic=175483.0">monthly report,</a> and here's Future of the Fortress: <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8083871#msg8083871">Part 1</a>, <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8083872#msg8083872">Part 2</a>.
+<br />
+          <br />
+Most importantly, we will need to stop accepting reward requests after February.  Anybody can still get one this month.  We'd been fortunate to be able to keep up with them since 2015 and all the new Patreon people (that wasn't a sure thing at all, as we all discussed at the time), and we've finally reached a tipping point where it's starting to detract from development and something needs to change.  Here's a <a href="https://www.patreon.com/posts/33653513">Patreon post</a> with some additional details.
+<br />
+          <br />
+We've clean up some of the worldgen crashes and other issues and will do just a bit more before getting the first fixer-upper release posted.</li>
+
+<li id="2020-01-29" class="dev_progress">
+          <span class="date">01/29/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here is the villains release!  There are various bits we're going to have to loop back around to after the graphics work is complete (see previous lengthy dev log), so perhaps this should be called the first villains release, or more "the guilds and temples and adventurer parties and pets release which also has artifact heists and extensive historical villainy, with lots of new mostly evil magical stuff", ha ha.  We will get to the fortress plots beyond artifact heists when we return, as well as the ability for the adventurer to be a villain and to investigate them more effectively.
+<br />
+          <br />
+The features are listed below.  For fortress mode, the most important new elements that will be commonly encountered are petitions for guildhalls and temples.  When enough believers or laboring dwarves are in the fort, you'll receive a petition, and it's up to you if you want to try to build the location for them or not.  To satisfy the temple petitions, you must assign a priest (the game will remind you with an announcement when your temple is ready for one, after a certain value threshold is crossed.)  The main benefits of guildhalls and priests currently is the ability of guild members to share knowledge, and of priests to give inspiring sermons and comfort stressed-out dwarves.
+<br />
+          <br />
+Less commonly, but also important, a villain may target your fortress, especially when you get up to having artifacts they might covet.  If you notice an artifact has been stolen in a non-kobold way (the announcements will be different, make sure you have a sheriff to receive the reports), you will be able to interrogate anybody about the crime - witness reports might be useful with a name, or they might just indicate the artifact is missing.  Interrogation leads to a report indicator on the left, which you can read in the usual way (with 'r'.)  This also opens up the counterintelligence screen, which will keep track of information for you.  If you manage to interrogate the handler of any treacherous dwarf, generally on a return visit, you might even get the name of their master, if they have one, or get details of other plots throughout the world, though most of them cannot impact your fort directly (yet.)
+<br />
+          <br />
+Dwarves have some more general relationship types now (especially the historical ones, who can arrive as war buddies or athletic rivals), and they can also have multiple lovers or get divorced or have children before they are married.
+<br />
+          <br />
+Most aquifers in the fort are now slower filling.  You still have to act pretty quickly (this makes them remain useful for wells and other liquid matter), but it is very possible to just wall them off or otherwise deal with the water if you are ready.  You can still place a wall on top of shallow water.  If you want an old-style aquifer, just embark where there's a "heavy aquifer."
+<br />
+          <br />
+Your fort may also be invaded by horrible things if the necromancers or demons have been entertaining themselves.
+<br />
+          <br />
+The main new bit in adventure mode is right in the beginning - well, not quite.  Don't be fooled by the first character creation screen (which is unchanged), you'll get to the good stuff right after.  There are a lot of new options there (starting background, religion, starting site selection, equipment including quality, mounts/pets), including the option to make party members, who can be from different civilization.  Mounts greatly speed up travel if everybody has one (make sure the mount is their pet.)  If you forget a mount or meet with tragedy, you can claim a new mount generally from the pastures of human cities, or wherever tame animals can be found.  You do not have to purchase them currently.  Just press 'h' near one (the same key you use to mount and lead animals.)  If the wrong party member claims it, that party member can give it to the right one as a gift (a new conversation option which can be applied to anybody.)  Pack animals (including many mounts) can also carry items.  Press 'p' to place an item on a creature.  This can greatly increase your capacity to carry food or treasure.  If you claim a pet that is unnamed, you can name them as a conversation option (with the pet.)
+<br />
+          <br />
+In adventure mode, if you have judge of intent, you'll be able to see the new readout of your conversation partner's mood/relationship with you (without that skill, you still get some basic info.)  You have the ability to interrogate people, using the persuade and intimidate skills, though this is limited now because we didn't get to most evidence.  People can confess to schemes, and sometimes that'll even be meaningful, but it's mostly a giant mush of data until we add more structure.  But it shouldn't be hard to find some even without proper story/evidence hooks - just go to a nearby castle in a human town, and some portion of the nobles and administrators there will be up to something.  But it'll be ultimately unsatisfying until we get to more.  As a small note, only confessions of schemes will show up in the new adv mode intrigue view currently (confessions of masters/handlers don't have a proper evidence link yet.)  Finally, there were a ton of existing conversation options and most are not linked to the new conversation variables (like confidence and agitation and how much they want to leave.)  But you should see them in action if you interrogate, argue about values, flatter, tell jokes or pacify.  Additionally, depending on personality, most people slowly loses patience with a conversation no matter what the subject is, unless they are kept entertained.  These ephemeral conversation values are reset every two hours, so don't worry if you lose a chance to speak to somebody at a given time.
+<br />
+          <br />
+If you want to play with divination dice, you'll need to find a pedestal with some at a shrine.  About half of the shrines should have them, though a lot of the smaller road and intersection shrines won't have room and will just have statues.  Shrines labeled in text on the travel map have the best chance, since they are large.  Temples can also have them in the basement with the relics.  To roll dice, make sure they are in your hand and 'I'nteract with them.  Rolling should be an option there.  Once you do that, the roll announcement has a lot of information.  Statues generally give some idea as to whose shrine you are at.  Shrines can be both for organized religions or generally to a deity, and both types can have divination traditions.
+<br />
+          <br />
+New stuff
+<br />
+<ul class="itemized">	<li>Guilds organize and petition for guildhalls, guild members can do skill demonstrations</li>
+	<li>Members of organized religions can petition for temples and priesthood recognition, priests give sermons and comfort stressed dwarves</li>
+	<li>Traitor dwarves, artifact heists, interrogation for crime from the justice screen, counterintelligence readout with organization charts</li>
+	<li>Most aquifers are much slower filling</li>
+	<li>Can start with a party in adventure mode</li>
+	<li>Specify background and starting location and beliefs in adventure mode (most labor skills still meaningless)</li>
+	<li>Can start with specified equipment and pets in adventure mode</li>
+	<li>Tactical combat mode for adventurer party</li>
+	<li>Adventurer can ride mounts, place items on pack animals, lead animals, claim pets, gift pets, and name pets (rider skill matters for melee/ranged rolls currently)</li>
+	<li>Can pet animals in adventure mode</li>
+	<li>Addition mood information in adventure mode conversations, (simple) interrogation options, flattery, joke-telling, calming remarks, (very simple) sermons</li>
+	<li>Simple intrigue display with actors and charts discovered in interrogation in adventure mode (in 'Q')</li>
+	<li>Divination shrines with dice and various effects</li>
+	<li>Lots of new intermediate positions (mostly without new mechanics) in entities (chamberlains etc.)</li>
+	<li>Alliances against world-ending threats in world generation</li>
+	<li>Various villainous activity in world generation, in play off-site, and (more limited) in fort mode, world generation surveillance, interrogation and punishment. Historical plots include theft, sabotage, abduction, assassination, coups, corrupt advancement promises, embezzlement, starting wars, and framing enemies.</li>
+	<li>Romantic relationship changes (multiple lovers, affairs, children outside marriage, divorces, etc.) as well as other relationship changes and details (friendship/rival types, variables like trust, respect and loyalty)</li>
+	<li>Merchant companies, military orders and mercenary companies, craft guilds in world generation</li>
+	<li>Individual mercenaries and companies can upgrade their equipment, and richer world gen people can purchase houses and build up their own city towers</li>
+	<li>Various religious interactions (shrine building, sermons, persecution) in world generation, lots of religious demographics tracking which influences shrine creation, religious sites and sermons influencing membership numbers, holy cities and a few levels of priest</li>
+	<li>Various horrifying new necromancer/mummy/demon/vampire etc. matter - snow-balling zombie invasions, multiple experiment types, intelligent undead lieutenants with new powers, nightmarish summons, spreading evil zones, promises of immortality in villainous plots</li>
+	<li>Dwarves can trigger dig-deep disasters in world generation, with repercussions coming to other sites, including fort mode</li>
+	<li>Some new locations, some map details still in-progress, monasteries, private city towers, guildhalls, merchant counting houses, forts (bandits and mercenaries), castles have returned (basically unchanged), better necromancer towers and simple outlying buildings</li>
+</ul>
+<br />
+Major bug fixes
+<br />
+<ul class="itemized">	<li>Fixed visitor crash related to broken meetings</li>
+	<li>Fixed crash related to broken crimes and travelers/sent-away dwarves</li>
+</ul>
+<br />
+Other bug fixes/tweaks
+<br />
+<ul class="itemized">	<li>Changed werecreature trigger condition</li>
+	<li>Bogeyman limited to a few regions and given new powers</li>
+	<li>Fixed error where bandit groups would be deleted prematurely in worldgen</li>
+	<li>Fixed size issue with certain werecreatures</li>
+	<li>Fixed bug where only last half of performance sentence was shown</li>
+	<li>Fixed problem where biome and landmass names were sometimes split on the same biome/landmass</li>
+</ul>
+        </li>
+
+<li id="R2020-01-29" class="dev_progress hilt">
+          <span class="date">01/29/2020</span>
+		Released Dwarf Fortress 0.47.01</li>
+
+<li id="2020-01-22" class="dev_progress">
+          <span class="date">01/22/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> All continues toward a release, in the next some days.  Since the last log, amid the testing and cleaning, one of the more interesting bits is that we've got sermons in, as well as priests being able to comfort people.  Sermons can be on a variety of topics, related to the deity or values, and their main purpose is to give positive feelings to sympathetic people, while only minorly inconveniencing anybody who happens to be in the room that disagrees.  Adventurers can also give sermons if they like, though there isn't a tremendous point to it yet - you can't build a flock, for example, though we'd like to meander in that direction over time.
+<br />
+          <br />
+Got the dwarf mode counterintelligence screen working with organizational chart display, and interrogation reports are cleaned up and displayed over with the other reports (on the left indicator bar.)  In the test heist, the visiting infiltrator that flipped the dwarf traitor gave up their master, who was a war buddy that turned them using a shared belief in Omrak (whomever that is!), and it was all displayed in the report.  So even with the feature delays, there should be the occasional wholesome set of details in fort-mode play (on top of all the detail in legends mode).  Amusingly, instead of mentioning Omrak, a bug at first gave the report as the top villain having "played for sympathy using a shared belief in an unidentified creature", since the deity Omrak did not have an official file over at dwarf counterintel HQ.  They've since been read in on the world's cultures, although this does raise the question about how much they should know and when, for a later time.</li>
+
+<li id="2020-01-13" class="dev_progress">
+          <span class="date">01/13/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Ack, disappeared into the cleanup grind a little too long there.  I was going to try to avoid this fairly typical occurrence by mixing cleaning and the final features, but as described in the last log, several features have been delayed which now leaves us with a relative bucket full of cleaning.  Halfway done with the total list remaining in the month, so we're just ahead of schedule to get to the January release.  Most notable bit that slipped in is skill demonstrations in craft guildhalls, which work just like the military ones, but impart one of the skills which falls under the umbrella of the guild to any attending member, and which also satisfies some needs.  But mostly just fixing uninteresting problems (why is this temple 100x more valuable than it should be?  where is my pet alpaca?  why was this army created two hundred times in a year?  etc.)
+<br />
+          <br />
+There will probably be one more log before the release.  Then we should be ready to go!</li>
+
+<li id="2020-01-01" class="dev_progress">
+          <span class="date">01/01/2020</span>
+          <img src="toadyone.png" alt="Toady One" border="0" class="author_img" title="Toady One" /> Here's the <a href="http://www.bay12forums.com/smf//index.php?topic=175282.0">monthly report.</a>  Here is the <a href="http://www.bay12forums.com/smf//index.php?topic=169696.msg8071983#msg8071983">Future of the Fortress.</a>  Happy New Year!  2020 should be a very exciting one for Dwarf Fortress.  Sometime later today on the 1st, in fact, we should be appearing on a new episode of <a href="https://dfroundtable.com/">Dwarf Fortress Roundtable.</a>  Check back there for a new episode soon.
+<br />
+          <br />
+So yes, we're planning for a release this month!  Notably, we are pushing things up a bit so that I can get started on the graphical version and get the artists squared away, the artists who have been very patiently waiting for me for about a year now!  Then we'll be working with them on an ongoing basis and get the Steam/itch release done.  This leaves a few questions regarding the villain release: what about any serious issues that arise, and which features have been delayed in order to get the release up?
+<br />
+          <br />
+For bug-fixing and stabilization, we're going to do some initial work after the villain release happens - there are plenty of serious issues on the tracker, the villain release will doubtless have issues, and we can afford to do some of them now -- we'd like the new version to be playable and the Steam/itch version will need those bugs fixed anyway.  However, we also need to get the graphical code rolling so the artists can work more easily, and this needs to happen soon.  Therefore the plan is to spend some time with the worst bugs at first, and then, as the Steam work progresses, we'll do additional stabilization releases on the existing branch as well.  It's hard to say what the frequency of these fixer-upper releases will be before starting in on the graphical work, but the goal is not to sit on anything nasty like the old weapon trap crash or the existing military equipment/raid crash for extended periods of time anymore.  This also includes the stress issues that we've been collecting over at the stress thread, and other related issues like socialization problems - they need to be fixed for the Steam/itch release, and it would be nice to fix them sooner.  But the Steam/itch work must begin.
+<br />
+          <br />
+Thus, some feature delays!  We have delayed things before (tavern games!  caravan arc!  army arc!)  But this is a bit different and hopefully a unique event for us, which seems likely given the situation -- a few things we definitely thought we'd make it to are going to have to wait until after Steam/itch, sometimes just on account of testing time.  I should emphasize that these are being moved to just after the graphical release, and *before* the Big Wait, in with the army/adv mode medical/etc. improvements, not to tavern game limbo.  We should get to everything, over several shorter releases, before the map rewrite and myth/magic stuff takes us back to at least one extended cycle (as there's no other way to do the map rewrite, though stabilization releases can happen even then.)
+<br />
+          <br />
+The main wholesale delay is adventurers being villains.  We didn't get to any of that, and now it'll have to wait a bit, including guard systems and access stuff we wanted to do.  I still think the main thrust of giving villainous orders is pretty straightforward, but it takes time to add conversation and interface options for the different missions (along the lines of the dwarf mode 'c' screen).  The adv investigations also aren't going to lead to anything chaining or complicated yet - we didn't get to any of our more interesting evidence ideas.  The system for yelling combat orders at people isn't done (the tactical control system is in, though.)  Adventure mode will have to lean on parties and mounts and tactical mode and the shrines and new buildings and new necro stuff.  Which is okay!  And we'll get to the rest later.
+<br />
+          <br />
+Over in fort mode, the infiltrators and traitors don't yet chain up to a full takeover the way we would have liked.  We didn't get to any of the new household positions (like the chamberlains and so forth which pop up in adventure mode now).  Merchants and mercenary companies don't come up.  We're continue some dwarf villain/justice work this month, before the release, so we should see a bit more here for this time.
+<br />
+          <br />
+In necro land, the old vampire cults were left hanging, though with new ability to pass immortality to subordinates these cults somewhat exist in the villain networks - the new system is more interesting in a few ways, but incorporation of bits of the old system will add some coherence when we get to it.  Also, while intelligent undead lieutenants are in, *ghostly* undead lieutenants need more testing (there are way too many weird duel bugs etc. with their non-corporeal selves), so they'll come in later.
+<br />
+          <br />
+Several of the more involved villainous plots didn't make it out of world generation, and hostages and artifacts don't always have proper places to be stored tile-wise in adv mode.  We were planning a few more dungeon maps and didn't get to them.
+<br />
+          <br />
+Those are the ones, as far as I can tell from the notes.  There should still be quite a bit to play with.  We'll get to the rest after our Steam/itch excursion, which will itself bring a lot of useful and welcome changes beyond the graphics and audio.  So, a little out of order maybe, but things will be well.</li>
+
+</ul>
+      <p>
+<a href="http://www.bay12games.com/dwarves/dev_2019.html">2019 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2018.html">2018 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2017.html">2017 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2016.html">2016 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2015.html">2015 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2014.html">2014 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2013.html">2013 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2012.html">2012 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2011.html">2011 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2010.html">2010 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2009.html">2009 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2008.html">2008 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2007.html">2007 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2006.html">2006 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2005.html">2005 Log</a> <br />
+<a href="http://www.bay12games.com/dwarves/dev_2004.html">2004 Log</a> <br /> <br />
+Dwarf Fortress started October 2002, this log was started around the same time as the <a href="http://www.bay12forums.com/smf/index.php?topic=2525.0">"back to the dwarf game"</a> thread.</p>
+		</td>
+		</tr>
+	</table>
+	</td>
+	<td valign="top">
+	<table style="width:100px;margin-left:0px;margin-top:0px;margin-bottom:0px;" border="0" cellpadding="0" cellspacing="0">
+		<tr align="center">
+		<td><a href="../support.html"><img alt="" border="0" src="imgs/support_large.png" width="100" height="100" align="center"/></a>
+			<br/>
+			<a href="http://www.patreon.com/bay12games"><img alt="" border="0" src="imgs/white_patreon2.png" width="100" align="center"/></a>
+		</td>
+		</tr>
+	</table>
+	</td>
+</tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/dwarves/mantisbt/css/default.css" />
+	<script type="text/javascript" language="JavaScript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma-directive" content="no-cache" />
+	<meta http-equiv="Cache-Directive" content="no-cache" />
+	<meta http-equiv="Expires" content="Tue, 21 Jun 2022 21:27:17 GMT" />
+	<link rel="shortcut icon" href="/dwarves/mantisbt/images/favicon.ico" type="image/x-icon" />
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Text Search" href="http://bay12games.com/dwarves/mantisbt/browser_search_plugin.php?type=text" />	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Issue Id" href="http://bay12games.com/dwarves/mantisbt/browser_search_plugin.php?type=id" />	<title>0011866: Custom built libgraphics.so causes crashes - Dwarf Fortress Bug Tracker</title>
+<script type="text/javascript" src="/dwarves/mantisbt/javascript/min/common.js"></script>
+<script language="javascript">var loading_lang = "Loading...";</script><script type="text/javascript" src="/dwarves/mantisbt/javascript/min/ajax.js"></script>
+</head>
+<body>
+<div align="left"><a href="my_view_page.php"><img border="0" alt="Mantis Bug Tracker" src="/dwarves/mantisbt/images/mantis_logo.gif" /></a></div><table class="hide"><tr><td class="login-info-left">Anonymous | <a href="/dwarves/mantisbt/login_page.php?return=%2Fdwarves%2Fmantisbt%2Fview.php%3Fid%3D11866">Login</a> | <a href="/dwarves/mantisbt/signup_page.php">Signup for a new account</a></td><td class="login-info-middle"><span class="italic">2022-06-21 14:27 PDT</span></td><td class="login-info-right"><a href="http://bay12games.com/dwarves/mantisbt/issues_rss.php?"><img src="/dwarves/mantisbt/images/rss.png" alt="RSS" style="border-style: none; margin: 5px; vertical-align: middle;" /></a></td></tr></table><table class="width100" cellspacing="0"><tr><td class="menu"><a href="/dwarves/mantisbt/main_page.php">Main</a> | <a href="/dwarves/mantisbt/my_view_page.php">My View</a> | <a href="/dwarves/mantisbt/view_all_bug_page.php">View Issues</a> | <a href="/dwarves/mantisbt/changelog_page.php">Change Log</a> | <a href="/dwarves/mantisbt/roadmap_page.php">Roadmap</a></td><td class="menu right nowrap"><form method="post" action="/dwarves/mantisbt/jump_to_bug.php"><input type="text" name="bug_id" size="10" class="small" value="Issue #" onfocus="if (this.value == 'Issue #') this.value = ''" onblur="if (this.value == '') this.value = 'Issue #'" />&nbsp;<input type="submit" class="button-small" value="Jump" />&nbsp;</form></td></tr></table><br /><table class="width100" cellspacing="1"><tr><td class="form-title" colspan="3">View Issue Details&nbsp;<span class="small"><span class="bracket-link">[&nbsp;<a href="#bugnotes">Jump to Notes</a>&nbsp;]</span> </span></td><td class="center"><span class="small"></span></td><td class="right" colspan="2"><span class="small"><span class="bracket-link">[&nbsp;<a href="view.php?id=11866&amp;history=1#history">Issue History</a>&nbsp;]</span> </span><span class="small"><span class="bracket-link">[&nbsp;<a href="print_bug_page.php?bug_id=11866">Print</a>&nbsp;]</span> </span></td></tr><tr><td class="category" width="15%">ID</td><td class="category" width="20%">Project</td><td class="category" width="15%">Category</td><td class="category" width="15%">View Status</td><td class="category" width="15%">Date Submitted</td><td class="category" width="20%">Last Update</td></tr><tr class="row-1"><td>0011866</td><td>Dwarf Fortress</td><td>Technical -- General</td><td>public</td><td>2022-05-01 10:53</td><td>2022-05-02 19:25</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-2"><td class="category">Reporter</td><td>next_ghost</td><td colspan="4">&nbsp;</td></tr><tr class="row-1"><td class="category">Assigned To</td><td>lethosor</td><td colspan="4">&nbsp;</td></tr><tr class="row-2"><td class="category">Priority</td><td>normal</td><td class="category">Severity</td><td>crash</td><td class="category">Reproducibility</td><td>always</td></tr><tr class="row-1"><td class="category">Status</td><td bgcolor="#d2f5b0">resolved</td><td class="category">Resolution</td><td>duplicate</td><td colspan="2">&nbsp;</td></tr><tr class="row-2"><td class="category">Platform</td><td></td><td class="category">OS</td><td>Gentoo Linux</td><td class="category">OS Version</td><td></td></tr><tr class="row-1"><td class="category">Product Version</td><td>0.47.05</td><td colspan="4">&nbsp;</td></tr><tr class="row-2"><td class="category">Target Version</td><td></td><td class="category">Fixed in Version</td><td></td><td colspan="2">&nbsp;</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-1"><td class="category">Summary</td><td colspan="5">0011866: Custom built libgraphics.so causes crashes</td></tr><tr class="row-2"><td class="category">Description</td><td colspan="5">Gento Linux builds its own libgraphics.so from the sources provided in Dwarf Fortress tarball. Due to missing return statements in three functions, the custom built library causes crashes on program startup.</td></tr><tr class="row-1"><td class="category">Steps To Reproduce</td><td colspan="5">1. Build libgraphics.so from sources<br />
+2. Run Dwarf Fortress<br />
+3. Crash</td></tr><tr class="row-2"><td class="category">Tags</td><td colspan="5">No tags attached.</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-1"><td class="category"><a name="attachments" id="attachments" />Attached Files</td><td colspan="5"></td></tr><tr align="center"><td align="center" colspan="6"><table><tr class="vcenter"><td class="center"></td></tr></table></td></tr></table><br/>
+
+<div id="relationships_open"><table class="width100" cellspacing="1">
+<tr class="row-2" valign="top">
+	<td width="15%" class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'relationships' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Relationships	</td>
+</tr>
+<tr>
+	<td colspan="2"><table border="0" width="100%" cellpadding="0" cellspacing="1"><tr bgcolor="#fff494"><td><span class="nowrap">duplicate of</span>&nbsp;</td><td><a href="view.php?id=11564">0011564</a></td><td><span class="issue-status" title="open">confirmed</span></td><td><span class="nowrap"><a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a></span>&nbsp;</td><td>Segfault when starting game, infinite loop when stopping it&nbsp;</td></tr>
+</table></td>
+</tr>
+</table>
+
+</div><div id="relationships_closed" class="hidden"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title">
+		<a href="" onclick="ToggleDiv( 'relationships' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Relationships	</td>
+</tr>
+</table>
+
+</div>
+<a name="bugnotes" id="bugnotes" /><br />
+
+<div id="bugnotes_open"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+<a href="" onclick="ToggleDiv( 'bugnotes' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;		Notes	</td>
+</tr>
+<tr class="bugnote" id="c41249">
+        <td class="bugnote-public">
+				<span class="small">(<a href="view.php?id=11866#c41249" title="Direct link to note">0041249)</a></span><br />
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=23457">next_ghost</a>		<span class="small">(reporter)</span>
+				<br />
+		<span class="small">2022-05-01 10:55</span><br />
+				<br /><div class="small">
+				</div>
+	</td>
+	<td class="bugnote-note-public">
+		Patch to fix the issues in Dwarf Fortress 0.47.05:<br />
+<br />
+--- df_linux_orig/g_src/enabler.cpp	2022-05-01 14:52:07.053022460 +0200<br />
++++ df_linux/g_src/enabler.cpp	2022-05-01 15:08:52.435383092 +0200<br />
+@@ -590,6 +590,7 @@<br />
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp;// Clean up graphical resources<br />
+&nbsp;&nbsp;&nbsp;delete renderer;<br />
++  return 0;<br />
+&nbsp;}<br />
+&nbsp;<br />
+&nbsp;void enablerst::override_grid_size(int x, int y) {<br />
+--- df_linux_orig/g_src/music_and_sound_openal.cpp	2022-05-01 14:52:07.054022447 +0200<br />
++++ df_linux/g_src/music_and_sound_openal.cpp	2022-05-01 15:20:17.963764833 +0200<br />
+@@ -480,7 +480,7 @@<br />
+&nbsp;<br />
+&nbsp;void alEnable( ALenum capability ) { _alEnable(capability); }<br />
+&nbsp;void alDisable( ALenum capability ) { _alDisable(capability); }<br />
+-ALboolean alIsEnabled( ALenum capability ) { _alIsEnabled(capability); }<br />
++ALboolean alIsEnabled( ALenum capability ) { return _alIsEnabled(capability); }<br />
+&nbsp;const ALchar* alGetString( ALenum param ) { return _alGetString(param); }<br />
+&nbsp;void alGetBooleanv( ALenum param, ALboolean* data ) { _alGetBooleanv(param, data); }<br />
+&nbsp;void alGetIntegerv( ALenum param, ALint* data ) { _alGetIntegerv(param, data); }<br />
+@@ -490,7 +490,7 @@<br />
+&nbsp;ALint alGetInteger( ALenum param ) { return _alGetInteger(param); }<br />
+&nbsp;ALfloat alGetFloat( ALenum param ) { return _alGetFloat(param); }<br />
+&nbsp;ALdouble alGetDouble( ALenum param ) { return _alGetDouble(param); }<br />
+-ALenum alGetError( void ) { _alGetError(); }<br />
++ALenum alGetError( void ) { return _alGetError(); }<br />
+&nbsp;ALboolean alIsExtensionPresent( const ALchar* extname ) { return _alIsExtensionPresent(extname); }<br />
+&nbsp;void* alGetProcAddress( const ALchar* fname ) { return _alGetProcAddress(fname); }<br />
+&nbsp;ALenum alGetEnumValue( const ALchar* ename ) { return _alGetEnumValue(ename); }	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="2"></td>
+</tr>
+<tr class="bugnote" id="c41250">
+        <td class="bugnote-public">
+				<span class="small">(<a href="view.php?id=11866#c41250" title="Direct link to note">0041250)</a></span><br />
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>		<span class="small">(manager)</span>
+				<br />
+		<span class="small">2022-05-02 19:23</span><br />
+				<br /><div class="small">
+				</div>
+	</td>
+	<td class="bugnote-note-public">
+		Marking as public because I don't see any identifying information here.	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="2"></td>
+</tr>
+<tr class="bugnote" id="c41251">
+        <td class="bugnote-public">
+				<span class="small">(<a href="view.php?id=11866#c41251" title="Direct link to note">0041251)</a></span><br />
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>		<span class="small">(manager)</span>
+				<br />
+		<span class="small">2022-05-02 19:25</span><br />
+				<br /><div class="small">
+				</div>
+	</td>
+	<td class="bugnote-note-public">
+		Duplicate of <a href="/dwarves/mantisbt/view.php?id=11564" title="[confirmed] Segfault when starting game, infinite loop when stopping it">0011564</a>	</td>
+</tr>
+<tr class="spacer">
+	<td colspan="2"></td>
+</tr>
+</table>
+
+</div><div id="bugnotes_closed" class="hidden">
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'bugnotes' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;		Notes	</td>
+</tr>
+</table>
+</div>
+<a name="history" id="history" /><br />
+
+<div id="history_open"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+<a href="" onclick="ToggleDiv( 'history' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Issue History	</td>
+</tr>
+<tr class="row-category-history">
+	<td class="small-caption">
+		Date Modified	</td>
+	<td class="small-caption">
+		Username	</td>
+	<td class="small-caption">
+		Field	</td>
+	<td class="small-caption">
+		Change	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2022-05-01 10:53	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=23457">next_ghost</a>	</td>
+	<td class="small-caption">
+		New Issue	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2022-05-01 10:55	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=23457">next_ghost</a>	</td>
+	<td class="small-caption">
+		Note Added: 0041249	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2022-05-01 10:55	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=23457">next_ghost</a>	</td>
+	<td class="small-caption">
+		Issue Monitored: next_ghost	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2022-05-01 10:56	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=23457">next_ghost</a>	</td>
+	<td class="small-caption">
+		Issue End Monitor: next_ghost	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2022-05-02 19:23	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Note Added: 0041250	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2022-05-02 19:23	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		View Status	</td>
+	<td class="small-caption">
+		private =&gt; public	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2022-05-02 19:25	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Note Added: 0041251	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2022-05-02 19:25	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Relationship added	</td>
+	<td class="small-caption">
+		duplicate of 0011564	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2022-05-02 19:25	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Status	</td>
+	<td class="small-caption">
+		new =&gt; resolved	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		2022-05-02 19:25	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Resolution	</td>
+	<td class="small-caption">
+		open =&gt; duplicate	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2022-05-02 19:25	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=9161">lethosor</a>	</td>
+	<td class="small-caption">
+		Assigned To	</td>
+	<td class="small-caption">
+		 =&gt; lethosor	</td>
+</tr>
+</table>
+</div><div id="history_closed" class="hidden"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+	<a href="" onclick="ToggleDiv( 'history' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Issue History	</td>
+</tr>
+</table>
+
+</div>	<br />
+	<hr size="1" />
+<table border="0" width="100%" cellspacing="0" cellpadding="0"><tr valign="top"><td>	<address>Copyright &copy; 2000 - 2010 MantisBT Group</address>
+</td><td>
+	<div align="right"><a href="http://www.mantisbt.org" title="Free Web Based Bug Tracker"><img src="/dwarves/mantisbt/images/mantis_logo_button.gif" width="88" height="35" alt="Powered by Mantis Bugtracker" border="0" /></a></div>
+</td></tr></table>
+</body>
+</html>

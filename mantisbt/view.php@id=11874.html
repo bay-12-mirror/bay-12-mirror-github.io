@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="/dwarves/mantisbt/css/default.css" />
+	<script type="text/javascript" language="JavaScript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma-directive" content="no-cache" />
+	<meta http-equiv="Cache-Directive" content="no-cache" />
+	<meta http-equiv="Expires" content="Tue, 21 Jun 2022 21:27:14 GMT" />
+	<link rel="shortcut icon" href="/dwarves/mantisbt/images/favicon.ico" type="image/x-icon" />
+	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Text Search" href="http://bay12games.com/dwarves/mantisbt/browser_search_plugin.php?type=text" />	<link rel="search" type="application/opensearchdescription+xml" title="MantisBT: Issue Id" href="http://bay12games.com/dwarves/mantisbt/browser_search_plugin.php?type=id" />	<title>0011874: Roads don't remember when they are created. - Dwarf Fortress Bug Tracker</title>
+<script type="text/javascript" src="/dwarves/mantisbt/javascript/min/common.js"></script>
+<script language="javascript">var loading_lang = "Loading...";</script><script type="text/javascript" src="/dwarves/mantisbt/javascript/min/ajax.js"></script>
+</head>
+<body>
+<div align="left"><a href="my_view_page.php"><img border="0" alt="Mantis Bug Tracker" src="/dwarves/mantisbt/images/mantis_logo.gif" /></a></div><table class="hide"><tr><td class="login-info-left">Anonymous | <a href="/dwarves/mantisbt/login_page.php?return=%2Fdwarves%2Fmantisbt%2Fview.php%3Fid%3D11874">Login</a> | <a href="/dwarves/mantisbt/signup_page.php">Signup for a new account</a></td><td class="login-info-middle"><span class="italic">2022-06-21 14:27 PDT</span></td><td class="login-info-right"><a href="http://bay12games.com/dwarves/mantisbt/issues_rss.php?"><img src="/dwarves/mantisbt/images/rss.png" alt="RSS" style="border-style: none; margin: 5px; vertical-align: middle;" /></a></td></tr></table><table class="width100" cellspacing="0"><tr><td class="menu"><a href="/dwarves/mantisbt/main_page.php">Main</a> | <a href="/dwarves/mantisbt/my_view_page.php">My View</a> | <a href="/dwarves/mantisbt/view_all_bug_page.php">View Issues</a> | <a href="/dwarves/mantisbt/changelog_page.php">Change Log</a> | <a href="/dwarves/mantisbt/roadmap_page.php">Roadmap</a></td><td class="menu right nowrap"><form method="post" action="/dwarves/mantisbt/jump_to_bug.php"><input type="text" name="bug_id" size="10" class="small" value="Issue #" onfocus="if (this.value == 'Issue #') this.value = ''" onblur="if (this.value == '') this.value = 'Issue #'" />&nbsp;<input type="submit" class="button-small" value="Jump" />&nbsp;</form></td></tr></table><br /><table class="width100" cellspacing="1"><tr><td class="form-title" colspan="3">View Issue Details&nbsp;<span class="small"><span class="bracket-link">[&nbsp;<a href="#bugnotes">Jump to Notes</a>&nbsp;]</span> </span></td><td class="center"><span class="small"><span class="bracket-link">[&nbsp;<a href="bug_view_page.php?bug_id=11875">&lt;&lt;</a>&nbsp;]</span> <span class="bracket-link">[&nbsp;<a href="bug_view_page.php?bug_id=11871">&gt;&gt;</a>&nbsp;]</span> </span></td><td class="right" colspan="2"><span class="small"><span class="bracket-link">[&nbsp;<a href="view.php?id=11874&amp;history=1#history">Issue History</a>&nbsp;]</span> </span><span class="small"><span class="bracket-link">[&nbsp;<a href="print_bug_page.php?bug_id=11874">Print</a>&nbsp;]</span> </span></td></tr><tr><td class="category" width="15%">ID</td><td class="category" width="20%">Project</td><td class="category" width="15%">Category</td><td class="category" width="15%">View Status</td><td class="category" width="15%">Date Submitted</td><td class="category" width="20%">Last Update</td></tr><tr class="row-1"><td>0011874</td><td>Dwarf Fortress</td><td>Legends Mode -- Historical Maps</td><td>public</td><td>2022-06-11 12:43</td><td>2022-06-11 12:43</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-2"><td class="category">Reporter</td><td>S0ZDATEL</td><td colspan="4">&nbsp;</td></tr><tr class="row-1"><td class="category">Assigned To</td><td></td><td colspan="4">&nbsp;</td></tr><tr class="row-2"><td class="category">Priority</td><td>low</td><td class="category">Severity</td><td>minor</td><td class="category">Reproducibility</td><td>always</td></tr><tr class="row-1"><td class="category">Status</td><td bgcolor="#fcbdbd">new</td><td class="category">Resolution</td><td>open</td><td colspan="2">&nbsp;</td></tr><tr class="row-2"><td class="category">Platform</td><td>PC</td><td class="category">OS</td><td>Windows 10</td><td class="category">OS Version</td><td>21H2</td></tr><tr class="row-1"><td class="category">Product Version</td><td>0.47.05</td><td colspan="4">&nbsp;</td></tr><tr class="row-2"><td class="category">Target Version</td><td></td><td class="category">Fixed in Version</td><td></td><td colspan="2">&nbsp;</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-1"><td class="category">Summary</td><td colspan="5">0011874: Roads don't remember when they are created.</td></tr><tr class="row-2"><td class="category">Description</td><td colspan="5">In Legends mode, while viewing historical map, roads are always displayed. Even before their creation, in year 1. Even when the sites the road is connecting do not exist yet. I have a bunch of sites built in years 50-100, and when I view the map for year 1, there are no sites, but there are roads between places where they will be.</td></tr><tr class="row-1"><td class="category">Steps To Reproduce</td><td colspan="5">1) Generate a world until you have at least one road connected to a site that was built sometime after year 1.<br />
+2) Open historical map in Legends mode.<br />
+3) Look at the road going to nowhere in year 1.<br />
+4) (Optional) Scroll through the time to make sure sometime in the history a site appeared at the end of the road.</td></tr><tr class="row-2"><td class="category">Tags</td><td colspan="5">No tags attached.</td></tr><tr class="spacer"><td colspan="6"></td></tr><tr class="row-1"><td class="category"><a name="attachments" id="attachments" />Attached Files</td><td colspan="5"></td></tr><tr align="center"><td align="center" colspan="6"><table><tr class="vcenter"><td class="center"></td><td class="center"></td><td class="center"></td><td class="center"></td><td class="center"></td><td class="center"></td></tr></table></td></tr></table><br/>
+
+<div id="relationships_open"><table class="width100" cellspacing="1">
+<tr class="row-2" valign="top">
+	<td width="15%" class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'relationships' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Relationships	</td>
+</tr>
+<tr>
+	<td colspan="2"></td>
+</tr>
+</table>
+
+</div><div id="relationships_closed" class="hidden"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title">
+		<a href="" onclick="ToggleDiv( 'relationships' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Relationships	</td>
+</tr>
+</table>
+
+</div>
+<a name="bugnotes" id="bugnotes" /><br />
+
+<div id="bugnotes_open"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+<a href="" onclick="ToggleDiv( 'bugnotes' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;		Notes	</td>
+</tr>
+<tr>
+	<td class="center" colspan="2">
+		There are no notes attached to this issue.	</td>
+</tr>
+</table>
+
+</div><div id="bugnotes_closed" class="hidden">
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'bugnotes' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;		Notes	</td>
+</tr>
+</table>
+</div>
+<a name="history" id="history" /><br />
+
+<div id="history_open"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+<a href="" onclick="ToggleDiv( 'history' ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Issue History	</td>
+</tr>
+<tr class="row-category-history">
+	<td class="small-caption">
+		Date Modified	</td>
+	<td class="small-caption">
+		Username	</td>
+	<td class="small-caption">
+		Field	</td>
+	<td class="small-caption">
+		Change	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		2022-06-11 12:43	</td>
+	<td class="small-caption">
+		<a href="http://bay12games.com/dwarves/mantisbt/view_user_page.php?id=21795">S0ZDATEL</a>	</td>
+	<td class="small-caption">
+		New Issue	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+</table>
+</div><div id="history_closed" class="hidden"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+	<a href="" onclick="ToggleDiv( 'history' ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Issue History	</td>
+</tr>
+</table>
+
+</div>	<br />
+	<hr size="1" />
+<table border="0" width="100%" cellspacing="0" cellpadding="0"><tr valign="top"><td>	<address>Copyright &copy; 2000 - 2010 MantisBT Group</address>
+</td><td>
+	<div align="right"><a href="http://www.mantisbt.org" title="Free Web Based Bug Tracker"><img src="/dwarves/mantisbt/images/mantis_logo_button.gif" width="88" height="35" alt="Powered by Mantis Bugtracker" border="0" /></a></div>
+</td></tr></table>
+</body>
+</html>
